@@ -1,3 +1,4 @@
+import ArticleHeader from "@/components/article/ArticleHeader";
 import Link from "next/link";
 import Header from "../../../components/layout/Header";
 
@@ -8,32 +9,25 @@ export default function RumoursArticle() {
 
       <main className="min-h-screen bg-zinc-950 text-white">
         <article className="mx-auto max-w-4xl px-6 py-20">
-          <Link
+         <ArticleHeader
+  category="Feature Story"
+  title="How Heartbreak Created Fleetwood Mac's Greatest Album"
+  subtitle="Five musicians. Five broken relationships. One masterpiece."
+  author="The Analog Replay Editorial Team"
+  date="July 2026"
+/> 
+<Link
             href="/"
             className="text-sm font-bold uppercase tracking-wider text-blue-400 hover:text-blue-300"
           >
             ← Back to Home
           </Link>
 
-          <p className="mt-12 text-sm font-bold uppercase tracking-[0.35em] text-blue-400">
-            Featured Story
-          </p>
-
-          <h1 className="mt-6 text-5xl font-black leading-tight md:text-7xl">
-            Fleetwood Mac&apos;s <em>Rumours</em>: The Album That Turned Chaos
-            Into Gold
-          </h1>
-
-          <p className="mt-6 text-lg text-zinc-400">
-            By The Analog Replay Staff • 1977 Album Feature
-          </p>
-
-          <div className="mt-12 rounded-3xl border border-zinc-800 bg-gradient-to-br from-zinc-900 via-blue-950 to-black p-10">
+          
             <p className="text-2xl font-bold leading-relaxed text-white">
               Heartbreak, tension, and studio perfection collided to create one
               of the defining albums of the 1970s.
             </p>
-          </div>
 
           <div className="prose prose-invert prose-lg mt-12 max-w-none prose-headings:text-white prose-a:text-blue-400">
             <p>
