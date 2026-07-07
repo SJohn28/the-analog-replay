@@ -9,7 +9,7 @@ export default function Hero() {
           The Soundtrack of the '70s & '80s
         </p>
 
-        <h2 className="max-w-5xl text-6xl font-black uppercase leading-none tracking-tight text-white md:text-8xl">
+        <h2 className="max-w-5xl text-5xl font-black uppercase leading-none tracking-tight text-white md:text-7xl">
           Relive the Music.
           <br />
           Rediscover the Memories.
@@ -28,7 +28,9 @@ export default function Hero() {
           <a className="rounded-full border border-zinc-600 px-7 py-3 text-sm font-bold uppercase tracking-wider text-white hover:border-blue-400 hover:text-blue-400">
             Screen & Sound
           </a>
-        </div>
+        </div> <p className="mt-16 text-xs font-bold uppercase tracking-[0.35em] text-zinc-500">
+  Scroll to explore ↓
+</p>
       </div>
     </section>
   );

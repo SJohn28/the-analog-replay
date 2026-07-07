@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { articles } from "../../data/articles";
+
+const featuredArticle = articles[0];
 export default function FeaturedStory() {
   return (
     <section className="bg-zinc-950 px-6 py-20 text-white">
@@ -9,16 +12,15 @@ export default function FeaturedStory() {
           </p>
 
           <h2 className="mt-5 max-w-3xl text-4xl font-black leading-tight md:text-6xl">
-            Fleetwood Mac&apos;s <em>Rumours</em>: The Album That Turned Chaos Into Gold
+            {featuredArticle.title}
           </h2>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
-            Heartbreak, tension, and studio perfection collided in 1977 to create
-            one of the most unforgettable albums of the rock era.
+            {featuredArticle.excerpt}
           </p>
 
           <Link
-  href="/articles/rumours"
+  href={featuredArticle.href}
   className="mt-8 inline-block rounded-full bg-blue-600 px-7 py-3 text-sm font-bold uppercase tracking-wider text-white hover:bg-blue-500"
 >
   Read the Story
