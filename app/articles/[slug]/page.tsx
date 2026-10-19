@@ -20,7 +20,7 @@ const purpleRainPhotos: Record<number, { src: string; alt: string; width: number
   3: { src: "/images/stories/prince-wendy-live.jpg", alt: "Prince singing beside Wendy Melvoin playing guitar on a purple-lit stage", width: 594, height: 451, maxWidth: 594 },
   4: { src: "/images/stories/first-avenue-exterior.jpg", alt: "Black-and-white exterior photograph of the First Avenue and 7th St Entry music venue", width: 4800, height: 3200, maxWidth: 690 },
   6: { src: "/images/stories/prince-when-doves-cry.jpg", alt: "Prince leaning over the edge of a bathtub in the When Doves Cry music video", width: 600, height: 450, maxWidth: 600 },
-  9: { src: "/images/stories/prince-dean-merritt.jpg", alt: "Color drawing of Prince in purple clothing holding a yellow guitar against a purple background", width: 2550, height: 3300, maxWidth: 500, caption: "Drawing by Dean Merritt" },
+  9: { src: "/images/stories/prince-dean-merritt.jpg", alt: "Color drawing of Prince in purple clothing holding a yellow guitar against a purple background", width: 2550, height: 3300, maxWidth: 500, caption: "Drawing by Dean-0" },
 };
 
 export function generateStaticParams() {
