@@ -1,22 +1,22 @@
 export const articles = [
  {
   id: "rumours",
-  title: "How Heartbreak Created Fleetwood Mac's Greatest Album",
+  title: "Fleetwood Mac’s Rumours: Heartbreak Behind the Harmonies",
   category: "Feature Story",
 
   topics: ["artists", "albums"],
-  subtitle: "Five musicians. Five broken relationships. One masterpiece.",
+  subtitle: "The fractured relationships and extraordinary collaboration behind a lasting musical connection.",
 
   image: "/images/stories/fleetwood-mac-rumours.jpg",
 
-  caption: "Fleetwood Mac during the Rumours era, 1977.",
+  caption: "Fleetwood Mac — Rumours. Album artwork.",
 
-  author: "The Analog Replay Editorial Team",
+  author: "Scott Johnson",
 
-  date: "July 2026",
+  date: "Updated October 2026",
 
   excerpt:
-    "Heartbreak, tension, and studio perfection turned personal chaos into one of the defining albums of the 1970s.",
+    "How Fleetwood Mac’s private struggles became songs of anger, longing, and hope—and why listeners still find their own lives in them.",
 
   href: "/articles/rumours",
 },

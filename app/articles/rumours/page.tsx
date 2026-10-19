@@ -2,92 +2,49 @@ import { articles } from "@/data/articles";
 import ArticlePage from "@/components/article/ArticlePage";
 import ReadingProgress from "@/components/layout/ReadingProgress";
 import type { Metadata } from "next";
-export const metadata: Metadata = { title: "How Heartbreak Created Fleetwood Mac’s Greatest Album", description: "How Fleetwood Mac turned heartbreak into the enduring songs of Rumours." };
+
+const article = articles.find((a) => a.id === "rumours")!;
+
+export const metadata: Metadata = {
+  title: article.title,
+  description: article.excerpt,
+};
 
 export default function RumoursArticle() {
-  const article = articles.find((a) => a.id === "rumours");
-
-  if (!article) return null;
-
   return (
-    <>
+    <main>
       <ReadingProgress />
+      <ArticlePage
+        category={article.category}
+        title={article.title}
+        subtitle={article.subtitle}
+        author={article.author}
+        date={article.date}
+        hero={article.image}
+        caption={article.caption}
+      >
+          <p className="article-intro">Listen to <em>Rumours</em> and you hear a band working beautifully together. Look at what was happening during its creation, and that musical connection becomes remarkable.</p>
 
+          <p>When Fleetwood Mac began recording in 1976, relationships within the group were coming apart. Christine and John McVie were separating, while Stevie Nicks and Lindsey Buckingham’s long romance was ending. Mick Fleetwood was also facing turmoil in his marriage. Making an album meant continuing to work closely with people connected to their deepest hurts.</p>
 
-      <main className="min-h-screen bg-zinc-950 text-white">
-        <ArticlePage
-          category={article.category}
-          title={article.title}
-          subtitle={article.subtitle}
-          author={article.author}
-          date={article.date}
-          hero={article.image}
-          caption={article.caption}
-        >
-          <p className="text-2xl font-bold leading-relaxed text-white">
-            Heartbreak, tension, and studio perfection collided to create one
-            of the defining albums of the 1970s.
-          </p>
+          <p>Those experiences found their way into the songs. Buckingham’s “Go Your Own Way” brought frustration to the surface. Written at a rented house in Florida between stretches of touring, the track opens with a painful contradiction: “Loving you isn’t the right thing to do.” Its driving rhythm carries the anger of someone struggling to let go.</p>
 
-          <p className="mb-8">
-            <span className="float-left mr-3 text-8xl font-black leading-none text-blue-400">
-              W
-            </span>
-            hen <em>Rumours</em> arrived in 1977, Fleetwood Mac was already a
-            successful band. But no one could have predicted that an album born
-            from personal turmoil would become one of rock&apos;s most enduring
-            landmarks.
-          </p>
+          <p>For Nicks, however, one lyric felt particularly unfair: “Packing up, shacking up is all you want to do.” She said it misrepresented her behavior and asked Buckingham to remove it. He refused. Singing harmonies on a song that presented his version of their breakup became a recurring source of anger; she later recalled wanting to “go over and kill him” when performing it.</p>
 
-          <h2 className="mt-20 mb-8 text-4xl font-black tracking-tight text-white">
-            Chaos Behind the Console
-          </h2>
+          <p>Nicks gave her own account of their relationship in “Silver Springs,” a song that moves from tenderness toward a fierce determination to remain in a former lover’s memory. Left off the original <em>Rumours</em> album, it became the B-side to “Go Your Own Way”—pairing two painfully different perspectives on the same broken relationship.</p>
 
-          <p className="mb-8">
-            The band was dealing with breakups, pressure, exhaustion, and
-            creative tension. Instead of falling apart, they turned that tension
-            into tightly crafted songs filled with emotion, melody, and
-            unforgettable hooks.
-          </p>
+          <p>“Dreams” approached heartbreak with a quieter, more reflective mood. The story of its creation is almost as memorable as the song itself. During a break from the main studio, Nicks slipped into an adjoining room reportedly designed for Sly Stone, complete with a sunken pit, red-and-black decor, and a large black-velvet bed. Sitting on the bed with a Fender Rhodes electric piano, she recorded her ideas on a cassette player and, by her account, wrote the song in about 10 minutes.</p>
 
-          <h2 className="mt-20 mb-8 text-4xl font-black tracking-tight text-white">
-            Why It Still Resonates
-          </h2>
+          <p>The early version didn’t immediately impress everyone. Christine McVie later recalled finding its simple chord progression unexciting, but Buckingham helped shape the arrangement into the spacious, hypnotic recording, anchored by Mick Fleetwood’s restrained drumming. Despite their fractured relationship, Buckingham and Nicks could still bring out something extraordinary in each other’s music.</p>
 
-          <p className="mb-8">
-            The power of <em>Rumours</em> comes from its balance: polished
-            enough for radio, personal enough to feel intimate, and timeless
-            enough to keep finding new listeners decade after decade.
-          </p>
+          <p>Elsewhere on the album, Christine offered moments of renewal. “Don’t Stop” looked toward a future beyond disappointment, while “You Make Loving Fun” celebrated the happiness of a new relationship. Together, these songs gave <em>Rumours</em> an emotional range that extended beyond the bitterness of a breakup.</p>
 
-          <blockquote className="my-16 border-l-4 border-blue-400 pl-8 text-2xl italic font-light text-white">
-            “Great albums do more than capture a sound.”
-            <br />
-            They capture a moment.
-          </blockquote>
+          <p>Recording demanded patience and extraordinary attention to detail. Beginning at the Record Plant in Sausalito, California, the musicians and production team spent months shaping performances, arrangements and harmonies. Beneath the apparent ease of the finished music lay painstaking work. Personal tension supplied much of the subject matter, but turning those experiences into a cohesive album required skill, discipline and collaboration.</p>
 
-          <p className="mt-4 text-right text-sm uppercase tracking-[0.3em] text-zinc-500">
-            — The Analog Replay
-          </p>
+          <p>Released on February 4, 1977, <em>Rumours</em> became a worldwide success and went on to win the Grammy for Album of the Year. Its songs invited listeners into the band’s private struggles while leaving room for them to recognize their own.</p>
 
-          <h2>The Analog Replay Take</h2>
-
-          <p className="mb-8">
-            More than four decades later, <em>Rumours</em> still feels alive.
-            It is not just a classic rock record. It is a document of artists
-            turning heartbreak into harmony.
-          </p>
-
-          <h2>Why <em>Rumours</em> Still Matters</h2>
-
-          <p className="mb-8">
-            Nearly fifty years later, <em>Rumours</em> remains one of the most
-            celebrated albums ever recorded. Its combination of unforgettable
-            songwriting, studio craftsmanship, and emotional honesty continues
-            to inspire musicians and listeners around the world.
-          </p>
-        </ArticlePage>
-      </main>
-    </>
+          <p>That connection helps explain the album’s lasting power. You don’t need to know who inspired each lyric to understand its anger, longing or hope. The band members could hear their relationships unraveling in the songs, but they still helped one another make those songs extraordinary. Decades later, listeners continue to find pieces of their own lives in the result.</p>
+      </ArticlePage>
+    </main>
   );
 }
