@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { articles } from "@/data/articles";
 import ArticlePage from "@/components/article/ArticlePage";
 import ReadingProgress from "@/components/layout/ReadingProgress";
@@ -27,6 +28,10 @@ export default function RumoursArticle() {
 
           <p>When Fleetwood Mac began recording in 1976, relationships within the group were coming apart. Christine and John McVie were separating, while Stevie Nicks and Lindsey Buckingham’s long romance was ending. Mick Fleetwood was also facing turmoil in his marriage. Making an album meant continuing to work closely with people connected to their deepest hurts.</p>
 
+          <figure style={{ margin: "44px auto", maxWidth: 560 }}>
+            <Image src="/images/stories/fleetwood-mac-studio.webp" alt="Black-and-white photograph of Fleetwood Mac gathered among chairs and recording equipment in a studio" style={{ display: "block", width: "100%", height: "auto" }} width={696} height={695} sizes="(max-width: 650px) calc(100vw - 48px), 560px" />
+          </figure>
+
           <p>Those experiences found their way into the songs. Buckingham’s “Go Your Own Way” brought frustration to the surface. Written at a rented house in Florida between stretches of touring, the track opens with a painful contradiction: “Loving you isn’t the right thing to do.” Its driving rhythm carries the anger of someone struggling to let go.</p>
 
           <p>For Nicks, however, one lyric felt particularly unfair: “Packing up, shacking up is all you want to do.” She said it misrepresented her behavior and asked Buckingham to remove it. He refused. Singing harmonies on a song that presented his version of their breakup became a recurring source of anger; she later recalled wanting to “go over and kill him” when performing it.</p>
@@ -36,6 +41,10 @@ export default function RumoursArticle() {
           <p>“Dreams” approached heartbreak with a quieter, more reflective mood. The story of its creation is almost as memorable as the song itself. During a break from the main studio, Nicks slipped into an adjoining room reportedly designed for Sly Stone, complete with a sunken pit, red-and-black decor, and a large black-velvet bed. Sitting on the bed with a Fender Rhodes electric piano, she recorded her ideas on a cassette player and, by her account, wrote the song in about 10 minutes.</p>
 
           <p>The early version didn’t immediately impress everyone. Christine McVie later recalled finding its simple chord progression unexciting, but Buckingham helped shape the arrangement into the spacious, hypnotic recording, anchored by Mick Fleetwood’s restrained drumming. Despite their fractured relationship, Buckingham and Nicks could still bring out something extraordinary in each other’s music.</p>
+
+          <figure style={{ margin: "44px auto" }}>
+            <Image src="/images/stories/fleetwood-mac-group.webp" alt="Black-and-white group portrait of the five members of Fleetwood Mac standing together" style={{ display: "block", width: "100%", height: "auto" }} width={696} height={392} sizes="(max-width: 740px) calc(100vw - 48px), 690px" />
+          </figure>
 
           <p>Elsewhere on the album, Christine offered moments of renewal. “Don’t Stop” looked toward a future beyond disappointment, while “You Make Loving Fun” celebrated the happiness of a new relationship. Together, these songs gave <em>Rumours</em> an emotional range that extended beyond the bitterness of a breakup.</p>
 
