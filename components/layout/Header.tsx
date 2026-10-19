@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-const links = [["/", "Home"], ["/artists", "Artists"], ["/albums", "Albums"], ["/screen-and-sound", "Screen & Sound"], ["/charts", "Charts"], ["/archive", "Archive"]];
+const links = [["/", "Home"], ["/artists", "Artists"], ["/albums", "Albums"], ["/screen-and-sound", "Screen & Sound"], ["/charts", "Charts"], ["/news", "News"], ["/archive", "Archive"]];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
