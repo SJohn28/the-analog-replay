@@ -1,3 +1,5 @@
+import Image from "next/image";
+import { Fragment } from "react";
 import { notFound } from "next/navigation";
 import { articles } from "@/data/articles";
 import { features } from "@/data/features";
@@ -13,6 +15,12 @@ function InlineText({ text }: { text: string }) {
     return part;
   });
 }
+
+const purpleRainPhotos: Record<number, { src: string; alt: string; width: number; height: number; maxWidth: number }> = {
+  3: { src: "/images/stories/prince-wendy-live.jpg", alt: "Prince singing beside Wendy Melvoin playing guitar on a purple-lit stage", width: 594, height: 451, maxWidth: 594 },
+  4: { src: "/images/stories/first-avenue-exterior.jpg", alt: "Black-and-white exterior photograph of the First Avenue and 7th St Entry music venue", width: 4800, height: 3200, maxWidth: 690 },
+  6: { src: "/images/stories/prince-when-doves-cry.jpg", alt: "Prince leaning over the edge of a bathtub in the When Doves Cry music video", width: 600, height: 450, maxWidth: 600 },
+};
 
 export function generateStaticParams() {
   return Object.keys(features).map((slug) => ({ slug }));
@@ -34,9 +42,17 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     <main>
       <ReadingProgress />
       <ArticlePage category={article.category} title={article.title} subtitle={article.subtitle} author={article.author} date={article.date} hero={article.image} caption={article.caption}>
-        {body.intro.split("\n\n").map((paragraph, index) => (
-          <p key={index} className={index === 0 ? "article-intro" : undefined}><InlineText text={paragraph} /></p>
-        ))}
+        {body.intro.split("\n\n").map((paragraph, index) => {
+          const photo = slug === "purple-rain" ? purpleRainPhotos[index] : undefined;
+          return (
+            <Fragment key={index}>
+              <p className={index === 0 ? "article-intro" : undefined}><InlineText text={paragraph} /></p>
+              {photo && <figure style={{ margin: "44px auto", maxWidth: photo.maxWidth }}>
+                <Image src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} sizes={`(max-width: ${photo.maxWidth + 48}px) calc(100vw - 48px), ${photo.maxWidth}px`} style={{ display: "block", width: "100%", height: "auto" }} />
+              </figure>}
+            </Fragment>
+          );
+        })}
         {body.sections.map((section) => (
           <section key={section.title}>
             <h2>{section.title}</h2>
