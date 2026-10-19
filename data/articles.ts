@@ -21,7 +21,7 @@ export const articles = [
   href: "/articles/rumours",
 },
 {
-id:"escape",title:"Another Spin: Journey’s Escape",category:"Album Review",topics:["artists","albums"],subtitle:"Big melodies, open roads, and a record made for singing along.",image:"/images/albums/escape-cover.jpg",caption:"Journey — Escape. Album artwork.",author:"The Analog Replay",date:"October 2026",excerpt:"Revisiting the hooks, heart, and widescreen ambition of Journey’s 1981 album.",href:"/articles/escape"
+id:"escape",title:"Journey — Escape: A Track-by-Track Review",category:"Album Review",topics:["artists","albums"],subtitle:"Beyond the hits: ten tracks that earn their place on the turntable.",image:"/images/albums/escape-cover.jpg",caption:"Journey — Escape. Album artwork.",author:"Scott Johnson",date:"Updated October 2026",excerpt:"A track-by-track look at the heartfelt ballads, energetic rockers, and remarkable performances that make Journey’s Escape worth a full listen.",href:"/articles/escape"
 },
 {
 id:"purple-rain",title:"Purple Rain: When the Soundtrack Becomes the Story",category:"Screen & Sound",topics:["artists","albums","screen-and-sound"],subtitle:"Prince’s music makes the screen feel bigger—and the emotions feel closer.",image:"/images/stories/purple-rain.jpg",caption:"Purple Rain. Image from the existing Analog Replay archive.",author:"The Analog Replay",date:"October 2026",excerpt:"A listening journey through the tension, release, and unmistakable personality of Purple Rain.",href:"/articles/purple-rain"
