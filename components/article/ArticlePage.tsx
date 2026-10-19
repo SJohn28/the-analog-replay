@@ -12,61 +12,14 @@ type ArticlePageProps = {
   children: React.ReactNode;
 };
 
-export default function ArticlePage({
-  category,
-  title,
-  subtitle,
-  author,
-  date,
-  hero,
-  caption,
-  children,
-}: ArticlePageProps) {
+export default function ArticlePage({ category, title, subtitle, author, date, hero, caption, children }: ArticlePageProps) {
   return (
-    <article className="mx-auto max-w-5xl px-6 py-20 text-white">
-
-      <p className="text-sm font-bold uppercase tracking-[0.35em] text-blue-400">
-        {category}
-      </p>
-
-      <h1 className="mt-6 text-5xl font-black leading-tight md:text-7xl">
-        {title}
-      </h1>
-
-      <p className="mt-6 max-w-2xl text-2xl leading-relaxed text-zinc-300">
-        {subtitle}
-      </p>
-
-      <div className="mt-10 border-t border-zinc-800 pt-6 text-sm uppercase tracking-wider text-zinc-500">
-        <p>{author}</p>
-        <p className="mt-2">{date}</p>
-      </div>
-
-      <div className="mt-12 overflow-hidden rounded-3xl">
-        <Image
-          src={hero}
-          alt={title}
-          width={1600}
-          height={900}
-          className="w-full h-auto"
-        />
-      </div>
-
-      <p className="mt-3 text-center text-sm italic text-zinc-500">
-        {caption}
-      </p>
-
-      <Link
-        href="/"
-        className="mt-8 inline-block text-sm font-bold uppercase tracking-wider text-blue-400 hover:text-blue-300"
-      >
-        ← Back to Home
-      </Link>
-
-      <div className="prose prose-invert prose-lg mt-12 max-w-none">
-        {children}
-      </div>
-
+    <article className="editorial-article">
+      <Link href="/archive" className="article-back">← The archive</Link>
+      <header className="article-heading"><p className="eyebrow">{category}</p><h1>{title}</h1><p className="article-subtitle">{subtitle}</p><div className="article-byline"><span>{author}</span><span>{date}</span></div></header>
+      <figure className="article-figure"><div className="article-image-stage"><Image src={hero} alt={title} width={1500} height={1500} sizes="(max-width: 760px) 100vw, 660px" priority /></div><figcaption>{caption}</figcaption></figure>
+      <div className="article-body">{children}</div>
+      <div className="article-end"><span className="brand-record" aria-hidden="true" /><p>There’s always another story in the grooves.</p><Link className="text-link" href="/archive">Back to the archive ↗</Link></div>
     </article>
   );
 }

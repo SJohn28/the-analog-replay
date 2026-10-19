@@ -1,6 +1,6 @@
 import { articles } from "../../data/articles";
 import Image from "next/image";
-const albumOfTheWeek = articles[1];
+const albumOfTheWeek = articles.find((article) => article.id === "escape")!;
 export default function AlbumOfTheWeek() {
   return (
     <section className="bg-black px-6 py-20 text-white">
@@ -29,7 +29,7 @@ export default function AlbumOfTheWeek() {
   {albumOfTheWeek.excerpt}
 </p>
 
-            <a className="mt-8 inline-block rounded-full border border-blue-500 px-7 py-3 text-sm font-bold uppercase tracking-wider text-blue-400 hover:bg-blue-500 hover:text-white">
+            <a href={albumOfTheWeek.href} className="mt-8 inline-block rounded-full border border-blue-500 px-7 py-3 text-sm font-bold uppercase tracking-wider text-blue-400 hover:bg-blue-500 hover:text-white">
               Read Review
             </a>
           </div>

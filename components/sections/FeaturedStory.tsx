@@ -29,18 +29,15 @@ export default function FeaturedStory() {
 
         <div className="rounded-3xl border border-zinc-800 bg-gradient-to-br from-blue-950 via-zinc-900 to-black p-8">
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-zinc-400">
-            Coming Soon
+            Keep Exploring
           </p>
 
           <h3 className="mt-4 text-3xl font-black">
-            More featured stories from the vault.
+            A great record is only the beginning.
           </h3>
 
           <ul className="mt-6 space-y-4 text-zinc-300">
-            <li>• The rise of MTV</li>
-            <li>• The making of Purple Rain</li>
-            <li>• Top Gun and the soundtrack that soared</li>
-            <li>• The week classic rock ruled the charts</li>
+            <li><Link href="/articles/purple-rain">Prince, Purple Rain, and the power of a soundtrack →</Link></li><li><Link href="/articles/escape">Another spin: Journey’s Escape →</Link></li><li><Link href="/charts">The Replay five: songs built to last →</Link></li><li><Link href="/artists">Meet the artists behind the records →</Link></li>
           </ul>
         </div>
       </div>
