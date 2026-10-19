@@ -6,11 +6,12 @@ import ReadingProgress from "@/components/layout/ReadingProgress";
 import Link from "next/link";
 
 function InlineText({ text }: { text: string }) {
-  return text.split(/(\*[^*]+\*)/g).map((part, index) =>
-    part.startsWith("*") && part.endsWith("*")
-      ? <em key={index}>{part.slice(1, -1)}</em>
-      : part
-  );
+  return text.split(/(\[[^\]]+\]\(https?:\/\/[^\s)]+\)|\*[^*]+\*)/g).map((part, index) => {
+    const link = part.match(/^\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)$/);
+    if (link) return <a key={index} href={link[2]}>{link[1]}</a>;
+    if (part.startsWith("*") && part.endsWith("*")) return <em key={index}>{part.slice(1, -1)}</em>;
+    return part;
+  });
 }
 
 export function generateStaticParams() {
