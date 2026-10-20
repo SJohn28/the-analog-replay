@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-10-19";
+export const newsReviewedOn = "2026-10-20";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage";
 export type NewsItem = {
@@ -6,15 +6,36 @@ export type NewsItem = {
   artist: string;
   category: NewsCategory;
   announcedOn: string;
+  dateLabel?: string;
   title: string;
   summary: string;
-  photo: { src: string; width: number; height: number; alt: string; caption: string; credit: string; url: string; license: string; licenseUrl: string };
+  photo?: { src: string; width: number; height: number; alt: string; caption: string; credit: string; url: string; license: string; licenseUrl: string };
   source: { name: string; url: string };
 };
 
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+  {
+    id: "govt-mule-irving-guests-2026",
+    artist: "Gov’t Mule",
+    category: "Tours",
+    announcedOn: "2026-10-19",
+    dateLabel: "Reported",
+    title: "Gov’t Mule celebrate rock classics with Ziggy Marley and Yola",
+    summary: "Gov’t Mule closed their joint tour in Irving, Texas, on October 17 with guest appearances and songs associated with Bob Marley, Led Zeppelin, and the Grateful Dead. Yola joined for “Black Dog,” while Ziggy Marley contributed to “Lively Up Yourself.” Relix’s report recounts the collaborations from the final evening.",
+    source: { name: "Relix · Concert report", url: "https://relix.com/news/detail/govt-mule-welcome-ziggy-marley-adam-zimmon-damon-grant-and-yola-in-texas-for-led-zeppelin-grateful-dead-and-bob-marley-covers" },
+  },
+  {
+    id: "bob-dylan-oslo-autumn-2026",
+    artist: "Bob Dylan",
+    category: "Tours",
+    announcedOn: "2026-10-18",
+    dateLabel: "Reported",
+    title: "Bob Dylan brings surprises to his autumn tour opener",
+    summary: "At Oslo Spektrum on October 17, Bob Dylan revisited “Tangled Up in Blue” and performed covers of Randy Newman’s “Louisiana 1927” and Guy Clark’s “Dublin Blues.” The varied set offered a fresh start to his European tour. Relix’s report includes the full setlist from the opening night.",
+    source: { name: "Relix · Concert report", url: "https://relix.com/news/detail/bob-dylan-debuts-new-covers-revisits-old-originals-and-welcomes-another-guitarist-in-oslo" },
+  },
   {
     id: "iron-maiden-north-america-2027",
     photo: {"src": "/images/news/iron-maiden-2025.jpg", "width": 1920, "height": 1255, "alt": "Blue-lit Iron Maiden stage and audience on the Run For Your Lives tour", "caption": "Iron Maiden at La Défense Arena, July 2025.", "credit": "Chris93", "url": "https://commons.wikimedia.org/wiki/File:Concert_Iron_Maiden_200725_Seventh_Son.jpg", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"},
