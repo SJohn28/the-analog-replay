@@ -9,6 +9,8 @@ export type NewsItem = {
   dateLabel?: string;
   title: string;
   summary: string;
+  tourDates?: { date: string; city: string; venue: string }[];
+  tourUrl?: string;
   photo?: { src: string; width: number; height: number; alt: string; caption: string; credit: string; url: string; license: string; licenseUrl: string };
   source: { name: string; url: string };
 };
@@ -16,6 +18,25 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+  {
+    id: "bon-jovi-forever-tour-2027",
+    artist: "Bon Jovi",
+    category: "Tours",
+    announcedOn: "2026-10-19",
+    title: "Bon Jovi extend the Forever Tour into 2027",
+    summary: "Bon Jovi have announced seven stadium and outdoor shows across Australia, the United Kingdom, the United States, and Canada. The 2027 run follows their 2026 return to major stages, including multiple nights at Madison Square Garden and Wembley Stadium. Melbourne opens the itinerary in March, with Toronto closing the announced dates in August.",
+    tourDates: [
+      { date: "2027-03-04", city: "Melbourne, Australia", venue: "Marvel Stadium" },
+      { date: "2027-03-11", city: "Sydney Olympic Park, Australia", venue: "Accor Stadium" },
+      { date: "2027-06-24", city: "London, United Kingdom", venue: "BST Hyde Park" },
+      { date: "2027-07-15", city: "East Rutherford, New Jersey", venue: "MetLife Stadium" },
+      { date: "2027-07-21", city: "Chicago, Illinois", venue: "Soldier Field" },
+      { date: "2027-07-28", city: "Foxborough, Massachusetts", venue: "Gillette Stadium" },
+      { date: "2027-08-04", city: "Toronto, Canada", venue: "Rogers Stadium" },
+    ],
+    tourUrl: "https://www.bonjovi.com/live.php",
+    source: { name: "Loudwire · October 19, 2026", url: "https://loudwire.com/bon-jovi-2027-tour/" },
+  },
   {
     id: "govt-mule-irving-guests-2026",
     artist: "Gov’t Mule",
