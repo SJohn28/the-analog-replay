@@ -11,7 +11,7 @@ export type NewsItem = {
   summary: string;
   tourDates?: { date: string; city: string; venue: string }[];
   tourUrl?: string;
-  photo?: { src: string; width: number; height: number; alt: string; caption: string; credit: string; url: string; license: string; licenseUrl: string };
+  photo?: { src: string; width: number; height: number; alt: string; caption: string; credit?: string; url?: string; license?: string; licenseUrl?: string };
   source: { name: string; url: string };
 };
 
@@ -20,6 +20,7 @@ export type NewsItem = {
 export const news: NewsItem[] = [
   {
     id: "bon-jovi-forever-tour-2027",
+    photo: { src: "/images/news/bon-jovi-live.jpg", width: 1500, height: 2000, alt: "Bon Jovi performing onstage with guitars and drums", caption: "Bon Jovi onstage." },
     artist: "Bon Jovi",
     category: "Tours",
     announcedOn: "2026-10-19",
