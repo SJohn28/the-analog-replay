@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-10-20";
+export const newsReviewedOn = "2026-10-21";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage";
 export type NewsItem = {
@@ -11,6 +11,8 @@ export type NewsItem = {
   summary: string;
   tourDates?: { date: string; city: string; venue: string }[];
   tourUrl?: string;
+  tourHeading?: string;
+  tourCheckedOn?: string;
   photo?: { src: string; width: number; height: number; alt: string; caption: string; credit?: string; url?: string; license?: string; licenseUrl?: string };
   source: { name: string; url: string };
 };
@@ -18,6 +20,115 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "eagles-sphere-january-2027",
+  "artist": "Eagles",
+  "category": "Tours",
+  "announcedOn": "2026-10-20",
+  "title": "Eagles add January shows to their Sphere residency",
+  "summary": "The Eagles have added January 8 and 9, 2027, to their Sphere residency in Las Vegas. The October 20 announcement brings the residency to 74 shows in total, extending a run that began in September 2024. Fourteen announced performances remain as of October 21, spanning November and December 2026 and January 2027. General ticket sales for the two newly added shows begin October 30 at 10 a.m. Pacific.",
+  "tourHeading": "Remaining Sphere residency dates",
+  "tourCheckedOn": "October 21, 2026",
+  "tourDates": [
+    {
+      "date": "2026-11-13",
+      "city": "Las Vegas, Nevada",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2026-11-14",
+      "city": "Las Vegas, Nevada",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2026-11-27",
+      "city": "Las Vegas, Nevada",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2026-11-28",
+      "city": "Las Vegas, Nevada",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2026-12-04",
+      "city": "Las Vegas, Nevada",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2026-12-05",
+      "city": "Las Vegas, Nevada",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2026-12-11",
+      "city": "Las Vegas, Nevada",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2026-12-12",
+      "city": "Las Vegas, Nevada",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2027-01-08",
+      "city": "Las Vegas, Nevada",
+      "venue": "Sphere · Newly added"
+    },
+    {
+      "date": "2027-01-09",
+      "city": "Las Vegas, Nevada",
+      "venue": "Sphere · Newly added"
+    },
+    {
+      "date": "2027-01-15",
+      "city": "Las Vegas, Nevada",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2027-01-16",
+      "city": "Las Vegas, Nevada",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2027-01-22",
+      "city": "Las Vegas, Nevada",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2027-01-23",
+      "city": "Las Vegas, Nevada",
+      "venue": "Sphere"
+    }
+  ],
+  "tourUrl": "https://eagles.com/",
+  "photo": {
+    "src": "/images/news/eagles-2008.jpg",
+    "width": 1000,
+    "height": 667,
+    "alt": "The Eagles performing onstage with guitars during their 2008 tour",
+    "caption": "The Eagles on their Long Road Out of Eden tour in 2008, including Glenn Frey. Archive photo; not the current Sphere lineup.",
+    "credit": "Steve Alexander",
+    "url": "https://commons.wikimedia.org/wiki/File:The_Eagles_in_performance,_2008.jpg",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  "source": {
+    "name": "Eagles · Official October 20 announcement",
+    "url": "https://eagles.com/blogs/news/eagles-at-sphere-january-8"
+  }
+},
+  {
+    id: "blondie-high-noon-2027",
+    artist: "Blondie",
+    category: "Releases",
+    announcedOn: "2026-10-20",
+    dateLabel: "Reported",
+    title: "Blondie announce High Noon, with new single “Spectral Eyes”",
+    summary: "Blondie’s twelfth studio album, High Noon, is scheduled for February 26, 2027, through BMG. “Spectral Eyes” is available now, and the album features contributions from Johnny Marr, Glen Matlock, and members of Lucius. The band’s official website includes the track listing and links to hear the single.",
+    photo: { src: "/images/news/blondie-roundhouse-2017.jpg", width: 4026, height: 2264, alt: "Debbie Harry singing with Blondie against colorful stage lights at the Roundhouse", caption: "Blondie at London’s Roundhouse, May 3, 2017. Archive photo.", credit: "Raph_PH", url: "https://commons.wikimedia.org/wiki/File:Blondie_-_Roundhouse_-_Wednesday_3rd_May_2017_BlondieRoundhouse030517-9_(33633922913).jpg", license: "CC BY 2.0", licenseUrl: "https://creativecommons.org/licenses/by/2.0/" },
+    source: { name: "Blondie · Official album announcement", url: "https://blondie.net/" },
+  },
   {
     id: "bon-jovi-forever-tour-2027",
     photo: { src: "/images/news/bon-jovi-live.jpg", width: 1500, height: 2000, alt: "Bon Jovi performing onstage with guitars and drums", caption: "Bon Jovi onstage." },
