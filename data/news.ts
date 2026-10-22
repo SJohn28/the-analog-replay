@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-10-21";
+export const newsReviewedOn = "2026-10-22";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage";
 export type NewsItem = {
@@ -20,6 +20,29 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "u2-thanksgiving-eve-2026",
+  "artist": "U2",
+  "category": "Screen & Stage",
+  "announcedOn": "2026-10-20",
+  "title": "U2 to headline Thanksgiving Eve halftime show on Netflix",
+  "summary": "U2 will perform at halftime during the Green Bay Packers–Los Angeles Rams game at SoFi Stadium in Inglewood, California, on November 25, 2026. Kickoff is scheduled for 8 p.m. Eastern; the performance will follow during halftime. The appearance comes as the band celebrates 50 years together, bringing their stadium sound to Netflix’s holiday football broadcast.",
+  "photo": {
+    "src": "/images/news/u2-twickenham-2017.jpg",
+    "width": 4899,
+    "height": 2763,
+    "alt": "U2 performing on a stadium stage surrounded by fans at Twickenham",
+    "caption": "U2 at Twickenham Stadium, July 9, 2017. Archive photo.",
+    "credit": "Raph_PH",
+    "url": "https://commons.wikimedia.org/wiki/File:U2_-_Twickenham_Stadium_-_Sunday_9th_July_2017_U2Twick090717-14_(35946845695).jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "source": {
+    "name": "U2 · Official October 20 announcement",
+    "url": "https://www.u2.com/blogs/news/halftime-headline-for-nfls-thanksgiving-eve-live-on-netflix"
+  }
+},
 {
   "id": "eagles-sphere-january-2027",
   "artist": "Eagles",
