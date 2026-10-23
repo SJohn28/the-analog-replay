@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-10-22";
+export const newsReviewedOn = "2026-10-23";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage";
 export type NewsItem = {
@@ -20,6 +20,25 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "fleetwood-mac-the-chain-documentary",
+  "artist": "Fleetwood Mac",
+  "category": "Screen & Stage",
+  "announcedOn": "2026-10-22",
+  "title": "Fleetwood Mac’s story comes to Apple TV in The Chain",
+  "summary": "Fleetwood Mac’s music has outlasted the arguments, separations, and changing relationships that helped shape it. A new documentary will look at how those connections held together—and how five very different musicians kept finding a shared sound.\n\nFleetwood Mac: The Chain premieres globally on Apple TV on Friday, January 29, 2027. Directed by Frank Marshall, the fully authorized film brings together the voices and perspectives of Mick Fleetwood, John McVie, Christine McVie, Lindsey Buckingham, and Stevie Nicks. Apple says it includes previously unseen footage and exclusive new interviews.\n\nThe title is a fitting choice. “The Chain” is the only song on Rumours credited to all five members, making it a natural thread for a film about their complicated musical bond. The release also arrives as Rumours approaches its fiftieth anniversary.\n\nFor listeners who know the records by heart, the appeal is the opportunity to hear more about the people behind them: what each brought to the music, what pulled them apart, and what kept drawing them together.",
+  "photo": {
+    "src": "/images/stories/fleetwood-mac-group.webp",
+    "width": 696,
+    "height": 392,
+    "alt": "Fleetwood Mac posing together in a black-and-white band portrait",
+    "caption": "Fleetwood Mac. Archive photograph; not a still from the forthcoming documentary."
+  },
+  "source": {
+    "name": "Apple Original Films · Official October 22 announcement",
+    "url": "https://www.apple.com/tv-pr/news/2026/10/apple-original-films-unveils-title-and-release-date-for-first-ever-fully-authorized-fleetwood-mac-documentary-fleetwood-mac-the-chain/"
+  }
+},
 {
   "id": "u2-thanksgiving-eve-2026",
   "artist": "U2",
