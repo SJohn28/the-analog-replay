@@ -288,3 +288,9 @@ img { max-width: 100%; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+.feature-inline-photo { max-width: 540px; margin: 34px auto 42px; }
+.feature-inline-photo img { display: block; width: 100%; height: auto; }
+.feature-inline-photo figcaption { margin-top: 12px; font-family: var(--font-geist-sans), sans-serif; color: var(--muted); font-size: 12px; line-height: 1.7; }
+
+@media (max-width: 560px) { .cover-story-synchronicity .cover-copy h1 em { font-size: .82em; } }

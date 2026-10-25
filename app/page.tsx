@@ -1,10 +1,10 @@
 import Hero from "@/components/home/Hero";
 import Image from "next/image";
 import Link from "next/link";
-import { articles } from "@/data/articles";
+import { articles, featuredArticleId } from "@/data/articles";
 
 export default function Home() {
-  const stories = articles.filter((article) => article.id !== "rumours");
+  const stories = articles.filter((article) => article.id !== featuredArticleId);
 
   return (
     <main className="magazine-home">

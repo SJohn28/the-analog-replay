@@ -1,4 +1,22 @@
+export const featuredArticleId = "synchronicity";
+
 export const articles = [
+{
+  "id": "synchronicity",
+  "title": "The Police’s Synchronicity: The Triumph That Pulled Them Apart",
+  "category": "Feature Story",
+  "topics": [
+    "artists",
+    "albums"
+  ],
+  "subtitle": "How a demanding recording, a worldwide tour, and the biggest success of their career exposed the limits of a remarkable partnership.",
+  "image": "/images/stories/police-synchronicity-cover.jpg",
+  "caption": "The Police — Synchronicity (1983). Album artwork supplied by Scott Johnson.",
+  "author": "Scott Johnson",
+  "date": "October 2026",
+  "excerpt": "Inside the sessions, arguments, and stadium triumphs that made Synchronicity the Police’s biggest success—and their final studio album.",
+  "href": "/articles/synchronicity"
+},
  {
   id: "rumours",
   title: "Fleetwood Mac’s Rumours: Heartbreak Behind the Harmonies",

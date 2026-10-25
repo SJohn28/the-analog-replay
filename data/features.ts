@@ -1,4 +1,7 @@
+import { synchronicity } from "./synchronicity";
+
 export const features: Record<string,{intro:string;sections:{title:string;text:string}[]}> = {
+  synchronicity,
 escape: {
   "intro": "Some albums are remembered for a couple of hit singles. Journey’s *Escape* gives you plenty of reasons to keep listening after the familiar songs have finished. It brings together heartfelt ballads, energetic rockers, and performances that show how well these five musicians worked together.\n\nSteve Perry’s voice is a huge part of the appeal, but everyone contributes something memorable. Neal Schon’s guitar adds excitement and feeling, Jonathan Cain’s piano helps shape the album’s softer moments, and Ross Valory and Steve Smith keep the rock songs moving with confidence.\n\nWhat makes *Escape* such an enjoyable listen is the variety. It can be romantic, reflective, or ready to turn up the volume, sometimes within the space of a few songs. The hits deserve their reputation, but the rest of the record deserves attention, too.",
   "sections": [
