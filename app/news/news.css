@@ -51,3 +51,10 @@
 .news-tour > p { font-size: 10px; color: var(--muted); line-height: 1.8; margin-top: 12px; }
 .news-tour a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 @media (max-width: 420px) { .news-tour li { grid-template-columns: 83px minmax(0, 1fr); gap: 10px; } }
+
+.news-permalink { display: block; margin-top: 24px; color: var(--accent); font-size: 12px; }
+.news-permalink:hover, .news-entry h2 a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.news-story { max-width: 1040px; }
+.news-back { display: inline-block; margin-bottom: 30px; color: var(--accent); font-size: 13px; }
+.news-story h1 { font-family: Georgia, serif; font-size: clamp(30px, 4vw, 48px); font-weight: 400; letter-spacing: -.03em; line-height: 1.15; margin: 14px 0 24px; }
+.news-story .news-summary { margin-bottom: 18px; font-size: 16px; }
