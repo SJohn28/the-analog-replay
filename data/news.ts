@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-10-23";
+export const newsReviewedOn = "2026-10-25";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage";
 export type NewsItem = {
@@ -14,6 +14,7 @@ export type NewsItem = {
   tourHeading?: string;
   tourCheckedOn?: string;
   photo?: { src: string; width: number; height: number; alt: string; caption: string; credit?: string; url?: string; license?: string; licenseUrl?: string };
+  additionalPhotos?: NonNullable<NewsItem["photo"]>[];
   source: { name: string; url: string };
 };
 
@@ -37,6 +38,42 @@ export const news: NewsItem[] = [
   "source": {
     "name": "Apple Original Films · Official October 22 announcement",
     "url": "https://www.apple.com/tv-pr/news/2026/10/apple-original-films-unveils-title-and-release-date-for-first-ever-fully-authorized-fleetwood-mac-documentary-fleetwood-mac-the-chain/"
+  }
+},
+{
+  "id": "rolling-stones-who-you-callin-crazy",
+  "artist": "The Rolling Stones",
+  "category": "Releases",
+  "announcedOn": "2026-10-20",
+  "title": "The Rolling Stones share “Who You Callin’ Crazy” ahead of expanded album",
+  "summary": "The Rolling Stones have released “Who You Callin’ Crazy,” a new single featuring saxophonist Courtney Pine. Released on October 20, the track offers a preview of Foreign Tongues, Loose Lips, arriving November 27, 2026.\n\nThe expanded collection brings together five recordings from the creative period surrounding Foreign Tongues. Alongside the new single are “Where There’s A Will,” featuring Steve Winwood on organ, “Human Tide,” “Bad Luck Hideaway,” and “She Still Comes Around.” The release will be available on vinyl, two CDs, and digitally.\n\nWritten by Mick Jagger and Keith Richards and produced by Andrew Watt, the single pairs the band’s guitar lineup with Pine’s saxophone, Steve Jordan on drums, and Matt Clifford on keyboards. The label’s announcement includes a link to hear the track.",
+  "photo": {
+    "src": "/images/news/stones-band-2018.jpg",
+    "width": 5647,
+    "height": 3194,
+    "alt": "The Rolling Stones taking a bow together after a London concert",
+    "caption": "The Rolling Stones in London, May 22, 2018, including Charlie Watts. Archive photo.",
+    "credit": "Raph_PH",
+    "url": "https://commons.wikimedia.org/wiki/File:Rolling_Stones_bow_post-show,_London,_22_May_2018_(41437870545).jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "additionalPhotos": [
+    {
+      "src": "/images/news/stones-jagger-2018.jpg",
+      "width": 5738,
+      "height": 3228,
+      "alt": "Mick Jagger singing onstage in front of a stadium audience",
+      "caption": "Mick Jagger performing in London, May 22, 2018. Archive photo.",
+      "credit": "Raph_PH",
+      "url": "https://commons.wikimedia.org/wiki/File:Mick_Jagger_onstage_in_London,_22_May_2018_(40532922060).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+    }
+  ],
+  "source": {
+    "name": "Universal Music Canada · Official October 20 announcement",
+    "url": "https://www.universalmusic.ca/2026/10/20/the-rolling-stones-announce-new-single-who-you-callin-crazy-from-forthcoming-deluxe-edition-foreign-tongues-loose-lips/"
   }
 },
 {
