@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-10-25";
+export const newsReviewedOn = "2026-10-26";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage";
 export type NewsItem = {
@@ -22,6 +22,30 @@ export type NewsItem = {
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
 {
+  "id": "deep-purple-splat-video-2026",
+  "artist": "Deep Purple",
+  "category": "Releases",
+  "announcedOn": "2026-10-23",
+  "dateLabel": "Reported",
+  "title": "Deep Purple release performance video for “Splat!”",
+  "summary": "Deep Purple have released a performance video for “Splat!,” the title track of their July 2026 studio album. The song follows singles “Arrogant Boy,” “Diablo,” and “Guilt Trippin’.”\n\nThe video arrives during the band’s European tour, ahead of November concerts in the United Kingdom. The UK run includes Newcastle, Glasgow, Birmingham, Manchester, and two London shows. Classic Rock’s report includes the official video and the tour itinerary.",
+  "photo": {
+    "src": "/images/news/deep-purple-hellfest-2017.jpg",
+    "width": 1280,
+    "height": 720,
+    "alt": "Deep Purple performing together on a festival stage",
+    "caption": "Deep Purple at Hellfest, June 16, 2017, including Steve Morse. Archive photo; not a still from the new video. Wikimedia thumbnail resized from the original.",
+    "credit": "Selbymay",
+    "url": "https://commons.wikimedia.org/wiki/File:Hellfest2017DeepPurple_07.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "source": {
+    "name": "Classic Rock · October 23, 2026",
+    "url": "https://www.loudersound.com/bands-artists/deep-purple-splat-video"
+  }
+},
+{
   "id": "fleetwood-mac-the-chain-documentary",
   "artist": "Fleetwood Mac",
   "category": "Screen & Stage",
@@ -38,6 +62,30 @@ export const news: NewsItem[] = [
   "source": {
     "name": "Apple Original Films · Official October 22 announcement",
     "url": "https://www.apple.com/tv-pr/news/2026/10/apple-original-films-unveils-title-and-release-date-for-first-ever-fully-authorized-fleetwood-mac-documentary-fleetwood-mac-the-chain/"
+  }
+},
+{
+  "id": "b52s-hollywood-star-2026",
+  "artist": "The B-52s",
+  "category": "Screen & Stage",
+  "announcedOn": "2026-10-21",
+  "dateLabel": "Reported",
+  "title": "The B-52s to receive Hollywood Walk of Fame star on October 29",
+  "summary": "The B-52s will receive a star on the Hollywood Walk of Fame on Thursday, October 29, 2026. The ceremony begins at 11:30 a.m. Pacific / 2:30 p.m. Eastern at 6212 Hollywood Boulevard, outside Amoeba Music.\n\nRichard Blade will host, with Fred Armisen and the Go-Go’s appearing as guest speakers. The band will receive the Walk of Fame’s 2,861st star, in the Recording category. Fans can watch the ceremony live on the official Walk of Fame website.\n\nThe honor recognizes a catalog that includes “Love Shack” and “Roam,” both from 1989’s Cosmic Thing. The Hollywood Chamber of Commerce’s announcement provides the ceremony details and a history of the band.",
+  "photo": {
+    "src": "/images/news/b52s-athens-2011.jpg",
+    "width": 2048,
+    "height": 1047,
+    "alt": "Concert collage featuring Fred Schneider, Kate Pierson, Cindy Wilson, and Keith Strickland of the B-52s",
+    "caption": "The B-52s in Athens, Georgia, February 18, 2011. Clockwise from top left: Fred Schneider, Kate Pierson, Keith Strickland, and Cindy Wilson. Archive concert collage; not the Hollywood ceremony.",
+    "credit": "KevinPatrickLaw",
+    "url": "https://commons.wikimedia.org/wiki/File:BsLiveCollage.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "source": {
+    "name": "Hollywood Chamber of Commerce · Official ceremony announcement",
+    "url": "https://walkoffame.com/press_releases/good-stuff-the-b-52s-to-be-honored-by-hollywood-chamber-of-commerce-with-star-on-the-hollywood-walk-of-fame/"
   }
 },
 {
