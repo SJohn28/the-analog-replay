@@ -27,6 +27,7 @@ const synchronicityPhotos: Record<string, { src: string; alt: string; width: num
   "Three musicians, three ideas of the band": { src: "/images/stories/police-band-portrait.jpg", alt: "The three members of the Police seated together outdoors", width: 1365, height: 2048, caption: "The Police. Photograph supplied by Scott Johnson." },
   "Who gets to shape a Police record?": { src: "/images/stories/police-sunglasses.jpg", alt: "Black-and-white portrait of the Police wearing sunglasses", width: 1335, height: 1634, caption: "Three distinct personalities in one band. Photograph supplied by Scott Johnson." },
   "The tour made the achievement impossible to ignore": { src: "/images/stories/police-live.jpg", alt: "The Police performing onstage under warm amber lighting", width: 1068, height: 801, caption: "The Police onstage. Photograph supplied by Scott Johnson." },
+  "The tour ended, but the breakup took longer": { src: "/images/stories/sting-dean-0-drawing.png", alt: "Caricature of Sting holding a bass guitar, with a small performance photograph in the upper right", width: 1114, height: 1498, caption: "Drawing by Dean-0" },
 };
 
 export function generateStaticParams() {

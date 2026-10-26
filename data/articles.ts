@@ -9,7 +9,7 @@ export const articles = [
     "artists",
     "albums"
   ],
-  "subtitle": "How a demanding recording, a worldwide tour, and the biggest success of their career exposed the limits of a remarkable partnership.",
+  "subtitle": "The recording disputes, stadium tour, and failed follow-up behind the Police’s final studio album.",
   "image": "/images/stories/police-synchronicity-cover.jpg",
   "caption": "The Police — Synchronicity (1983). Album artwork supplied by Scott Johnson.",
   "author": "Scott Johnson",
