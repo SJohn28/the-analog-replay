@@ -1,6 +1,6 @@
-export const newsReviewedOn = "2026-10-26";
+export const newsReviewedOn = "2026-10-27";
 
-export type NewsCategory = "Tours" | "Releases" | "Screen & Stage";
+export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
   id: string;
   artist: string;
@@ -14,6 +14,7 @@ export type NewsItem = {
   tourHeading?: string;
   tourCheckedOn?: string;
   photo?: { src: string; width: number; height: number; alt: string; caption: string; credit?: string; url?: string; license?: string; licenseUrl?: string };
+  companionPhoto?: NonNullable<NewsItem["photo"]>;
   additionalPhotos?: NonNullable<NewsItem["photo"]>[];
   source: { name: string; url: string };
 };
@@ -21,6 +22,113 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "donnie-iris-remembering-2026",
+  "companionPhoto": {"src": "/images/news/donnie-iris-love-is-like-a-rock.jpg", "width": 600, "height": 595, "alt": "Young Donnie Iris on the blue Love Is Like a Rock single sleeve", "caption": "Donnie Iris on the sleeve of “Love Is Like a Rock,” backed with “Agnes.” MCA Records artwork; image supplied by Scott."},
+  "artist": "Donnie Iris",
+  "category": "Remembering",
+  "announcedOn": "2026-10-26",
+  "dateLabel": "Reported",
+  "title": "Remembering Donnie Iris, the voice behind “Ah! Leah!” and “Love Is Like a Rock”",
+  "summary": "Donnie Iris, whose career stretched from the Jaggerz to Donnie Iris and the Cruisers, died on October 26, 2026, at 83. Concert promoter Rich Engler confirmed the news, according to Pittsburgh station WPXI.\n\nFor many rock listeners, Iris’s voice is inseparable from “Ah! Leah!” and “Love Is Like a Rock.” “My Girl” was another of his familiar hits. Before his success with the Cruisers, he had reached a national audience with the Jaggerz and “The Rapper,” and later spent time in Wild Cherry.\n\nHis performing career continued for decades, with a devoted following around Pittsburgh. After cancer treatment, he returned to the stage in March 2024. His final concert was September 28, 2026, at the opening of Citizens Live at the Wylie in Pittsburgh. He announced his retirement in October, citing health issues.\n\nThose last appearances closed a career that connected several generations of listeners—from fans who first heard the Jaggerz to those who discovered him through the Cruisers’ early-1980s records.",
+  "photo": {
+    "src": "/images/news/donnie-iris-south-park-2011.jpg",
+    "width": 960,
+    "height": 720,
+    "alt": "Donnie Iris holding a microphone during an outdoor concert",
+    "caption": "Donnie Iris performing at South Park near Pittsburgh on August 26, 2011. Archive concert photograph.",
+    "credit": "Comic Book Runner",
+    "url": "https://commons.wikimedia.org/wiki/File:Donnie_Iris_South_Park.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "source": {
+    "name": "WPXI · October 26, 2026",
+    "url": "https://www.wpxi.com/news/local/pittsburgh-area-music-legend-donnie-iris-dies-83/ILIA3QG46ZEVTBPYZ56D5MXA6A/"
+  }
+},
+{
+  "id": "santana-planet-of-free-will-2027",
+  "artist": "Santana",
+  "category": "Tours",
+  "announcedOn": "2026-10-26",
+  "title": "Santana announce 13 European dates for 2027’s Planet of Free Will tour",
+  "summary": "Santana have announced the Planet of Free Will Global Tour 2027, with 13 European concerts scheduled from June 30 through July 31. The itinerary begins at London’s O2 and ends at Kaivopuisto Blues in Helsinki, with arena and outdoor appearances across ten countries.\n\nThe October 26 announcement says the performances will draw on more than five decades of music, including the Abraxas and Supernatural eras.\n\nFan presales begin October 27, with most tickets going on general sale October 30. Paris has a later general sale, on November 20. Pordenone, Lucca and Helsinki were already on sale when the itinerary was announced. Check the official tour links for local sale times and availability.",
+  "tourDates": [
+    {
+      "date": "2027-06-30",
+      "city": "London, United Kingdom",
+      "venue": "The O2"
+    },
+    {
+      "date": "2027-07-07",
+      "city": "Paris, France",
+      "venue": "Accor Arena"
+    },
+    {
+      "date": "2027-07-08",
+      "city": "Kestenholz, Switzerland",
+      "venue": "Festival St. Peter at Sunset"
+    },
+    {
+      "date": "2027-07-10",
+      "city": "Mönchengladbach, Germany",
+      "venue": "SparkassenPark"
+    },
+    {
+      "date": "2027-07-14",
+      "city": "Wiesbaden, Germany",
+      "venue": "Brita Arena"
+    },
+    {
+      "date": "2027-07-17",
+      "city": "Pordenone, Italy",
+      "venue": "Pordenone Capitale italiana della Cultura 2027"
+    },
+    {
+      "date": "2027-07-18",
+      "city": "Lucca, Italy",
+      "venue": "Lucca Summer Festival"
+    },
+    {
+      "date": "2027-07-21",
+      "city": "Klam, Austria",
+      "venue": "Burg Clam"
+    },
+    {
+      "date": "2027-07-22",
+      "city": "Slavkov u Brna, Czech Republic",
+      "venue": "Zámecká zahrada"
+    },
+    {
+      "date": "2027-07-24",
+      "city": "Krakow, Poland",
+      "venue": "TAURON Arena Krakow"
+    },
+    {
+      "date": "2027-07-25",
+      "city": "Halle, Germany",
+      "venue": "Freilichtbuehne Peissnitz"
+    },
+    {
+      "date": "2027-07-28",
+      "city": "Oslo, Norway",
+      "venue": "Oslo Spektrum"
+    },
+    {
+      "date": "2027-07-31",
+      "city": "Helsinki, Finland",
+      "venue": "Kaivopuisto Blues"
+    }
+  ],
+  "tourUrl": "https://santana.com/news/santana-announces-planet-of-free-will-global-tour-2027/",
+  "tourHeading": "Announced European concerts · 2027",
+  "tourCheckedOn": "October 27, 2026",
+  "source": {
+    "name": "Santana · Official October 26 announcement",
+    "url": "https://santana.com/news/santana-announces-planet-of-free-will-global-tour-2027/"
+  }
+},
 {
   "id": "deep-purple-splat-video-2026",
   "artist": "Deep Purple",
