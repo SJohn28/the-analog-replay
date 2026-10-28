@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-10-27";
+export const newsReviewedOn = "2026-10-28";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -22,6 +22,53 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "kiss-end-of-the-road-documentary-2026",
+  "artist": "Kiss",
+  "category": "Screen & Stage",
+  "announcedOn": "2026-10-27",
+  "dateLabel": "Reported",
+  "title": "Kiss announce farewell-tour documentary for November 19",
+  "summary": "Kiss will revisit their final tour in Kiss: End of the Road, a documentary directed by DJ Viola. The film will premiere through a special livestream on KissOnline.com on November 19, 2026.\n\nThe documentary follows the work and relationships behind the farewell shows, including the band’s final performances at Madison Square Garden in New York. The tour began in Vancouver on January 31, 2019, and concluded at the Garden on December 2, 2023, after 250 concerts.\n\nThe announcement promises access to the preparations, disagreements and emotions surrounding the closing run. Paul Stanley and Gene Simmons describe it as a chance to experience those shows from inside the band, rather than only from the audience. A trailer is available with the announcement.\n\nFans can check KissOnline.com for the livestream arrangements and further viewing details.",
+  "photo": {
+    "src": "/images/news/kiss-gene-simmons-o2-2019.jpg",
+    "width": 1280,
+    "height": 720,
+    "alt": "Gene Simmons singing and playing bass in Kiss makeup and stage armor",
+    "caption": "Gene Simmons at London’s O2 on July 11, 2019, during Kiss’s End of the Road tour. Archive concert photo; not a documentary still. Resized Wikimedia thumbnail.",
+    "credit": "Raph_PH",
+    "url": "https://commons.wikimedia.org/wiki/File:KissO2110719_(48692469608).jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "source": {
+    "name": "Classic Rock · October 27, 2026",
+    "url": "https://www.loudersound.com/bands-artists/kiss-announce-end-of-the-road-documentary"
+  }
+},
+{
+  "id": "lita-ford-dracula-2026",
+  "artist": "Lita Ford",
+  "category": "Releases",
+  "announcedOn": "2026-10-27",
+  "title": "Lita Ford releases “Dracula” single and video ahead of Halloween",
+  "summary": "Lita Ford has released “Dracula,” a new single accompanied by an official music video. Arriving on October 27, 2026, it is her first release since signing with Frontiers Music Srl and offers a preview of more music expected in 2027.\n\nGary Hoey produced the track, returning to a collaboration that included Ford’s 2012 album Living Like a Runaway. Ford and Hoey perform on the recording alongside drummer Bobby Rock. The song uses its vampire theme to explore attraction, danger and control, with slide guitar adding to the atmosphere.\n\nFord’s previous album, Time Capsule, arrived in 2016 and collected earlier unreleased recordings. “Dracula” puts the focus back on new material from the former Runaways guitarist, whose solo catalog includes “Kiss Me Deadly” and “Close My Eyes Forever.”\n\nThe release also arrives ahead of Halloween-weekend shows in Las Vegas on October 30 and Rancho Mirage, California, on October 31. The official video is included in Classic Rock’s report.",
+  "photo": {
+    "src": "/images/news/lita-ford-2009.jpg",
+    "width": 960,
+    "height": 1280,
+    "alt": "Lita Ford playing a black electric guitar onstage",
+    "caption": "Lita Ford performing on June 27, 2009. Archive concert photo; not a still from “Dracula.” Resized Wikimedia thumbnail of an enhanced photograph.",
+    "credit": "Shadowgate; enhancement by Bojars",
+    "url": "https://commons.wikimedia.org/wiki/File:Lita_Ford.jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "source": {
+    "name": "Classic Rock · October 27, 2026",
+    "url": "https://www.loudersound.com/music/tracks-singles/lita-ford-dracula"
+  }
+},
 {
   "id": "donnie-iris-remembering-2026",
   "companionPhoto": {"src": "/images/news/donnie-iris-love-is-like-a-rock.jpg", "width": 600, "height": 595, "alt": "Young Donnie Iris on the blue Love Is Like a Rock single sleeve", "caption": "Donnie Iris on the sleeve of “Love Is Like a Rock,” backed with “Agnes.” MCA Records artwork; image supplied by Scott."},
