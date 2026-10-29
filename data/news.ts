@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-10-28";
+export const newsReviewedOn = "2026-10-29";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -9,7 +9,7 @@ export type NewsItem = {
   dateLabel?: string;
   title: string;
   summary: string;
-  tourDates?: { date: string; city: string; venue: string }[];
+  tourDates?: { date: string; dateLabel?: string; city: string; venue: string }[];
   tourUrl?: string;
   tourHeading?: string;
   tourCheckedOn?: string;
@@ -22,6 +22,216 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "cheap-trick-2027-concert-cancellations",
+  "artist": "Cheap Trick",
+  "category": "Tours",
+  "announcedOn": "2026-10-28",
+  "dateLabel": "Reported",
+  "title": "Cheap Trick cancel scheduled 2027 shows as band takes touring break",
+  "summary": "Cheap Trick’s scheduled 2027 concerts have been canceled as the band prepares to take time away from performing, according to venue announcements reported by Pollstar on October 28. The 2027 dates had also been removed from the band’s website, while its remaining November 2026 shows were still listed.\n\nSuncoast Charities for Children, organizer of Sarasota’s Thunder by the Bay Music & Motors Festival, said the band’s agency had informed it of a break of undetermined length. The February festival appearance will no longer take place. Harrah’s Cherokee Casino Resort also announced that its scheduled Cheap Trick show had been canceled.\n\nNo return date has been announced. The reports describe a pause in touring, rather than a farewell announcement. Fans holding tickets should consult their venue and ticket seller for cancellation notices and refund instructions.\n\nThe November 2026 All Washed Up dates remain a separate part of the schedule. As of the reports, that run was set to begin November 5 in Fort Wayne, Indiana, and finish November 22 in Detroit. Check current venue listings before making travel plans.",
+  "photo": {
+    "src": "/images/news/cheap-trick-marysville-2009.jpg",
+    "width": 1280,
+    "height": 960,
+    "alt": "Members of Cheap Trick performing onstage",
+    "caption": "Rick Nielsen, Bun E. Carlos and Robin Zander performing in Marysville, California, September 3, 2009. Archive photo featuring an earlier lineup. Resized Wikimedia thumbnail.",
+    "credit": "Nick Ares",
+    "url": "https://commons.wikimedia.org/wiki/File:Cheap-trick.jpg",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  "source": {
+    "name": "Pollstar · October 28, 2026",
+    "url": "https://news.pollstar.com/2026/10/28/cheap-trick-to-take-time-off-cancels-2027-tour-dates/"
+  }
+},
+{
+  "id": "bruce-dickinson-psychogod-tour-2027",
+  "artist": "Bruce Dickinson",
+  "category": "Tours",
+  "announcedOn": "2026-10-27",
+  "title": "Bruce Dickinson announces 2027 PsychoGod solo tour",
+  "summary": "Bruce Dickinson will take his solo band across the UK and Europe in 2027 on the PsychoGod Tour. Announced October 27, the schedule combines summer concerts and festival appearances with a longer run in November and December.\n\nThe Iron Maiden singer says the performances will feature new material alongside favorites and less frequently heard songs from across his solo career. He will be joined by guitarists Chris Declercq and Philip Näslund, bassist Tanya O’Callaghan, drummer Dave Moreno and keyboardist Mistheria. Swedish band Evergrey will support the November–December dates.\n\nThe itinerary begins June 14 at Belfast’s Ulster Hall and ends December 10 at L’Olympia in Paris. Festival entries below show the event’s full date range, as listed in the announcement; Dickinson’s individual performance days have not been specified there.\n\nGeneral ticket sales begin October 30, 2026, at 10 a.m. GMT. Presale access opened October 28. Use the official tour page for tickets and any schedule changes.",
+  "tourDates": [
+    {
+      "date": "2027-06-14",
+      "city": "Belfast, UK",
+      "venue": "Ulster Hall"
+    },
+    {
+      "date": "2027-06-16",
+      "city": "Dublin, Ireland",
+      "venue": "The Academy"
+    },
+    {
+      "date": "2027-06-22",
+      "city": "Milan, Italy",
+      "venue": "Alcatraz"
+    },
+    {
+      "date": "2027-06-23",
+      "city": "Zurich, Switzerland",
+      "venue": "Volkshaus"
+    },
+    {
+      "date": "2027-06-25",
+      "city": "Zagreb, Croatia",
+      "venue": "SRC Salata"
+    },
+    {
+      "date": "2027-06-26",
+      "city": "Belgrade, Serbia",
+      "venue": "Luka Beograd"
+    },
+    {
+      "date": "2027-06-28",
+      "city": "Sofia, Bulgaria",
+      "venue": "Vidas Art Arena"
+    },
+    {
+      "date": "2027-06-29",
+      "city": "Istanbul, Türkiye",
+      "venue": "Bonus Parkorman"
+    },
+    {
+      "date": "2027-07-02",
+      "city": "Cartagena, Spain",
+      "venue": "Rock Imperium · festival dates July 2–4; performance day TBA",
+      "dateLabel": "Jul 2–4, 2027"
+    },
+    {
+      "date": "2027-07-07",
+      "city": "Luxembourg City, Luxembourg",
+      "venue": "Den Atelier"
+    },
+    {
+      "date": "2027-07-07",
+      "city": "Ballenstedt, Germany",
+      "venue": "Rockharz · festival dates July 7–10; performance day TBA",
+      "dateLabel": "Jul 7–10, 2027"
+    },
+    {
+      "date": "2027-07-08",
+      "city": "Vizovice, Czechia",
+      "venue": "Masters of Rock · festival dates July 8–11; performance day TBA",
+      "dateLabel": "Jul 8–11, 2027"
+    },
+    {
+      "date": "2027-11-10",
+      "city": "Warsaw, Poland",
+      "venue": "Stodola"
+    },
+    {
+      "date": "2027-11-12",
+      "city": "Helsinki, Finland",
+      "venue": "Black Box Jäähalli"
+    },
+    {
+      "date": "2027-11-14",
+      "city": "Stockholm, Sweden",
+      "venue": "Annexet"
+    },
+    {
+      "date": "2027-11-16",
+      "city": "Oslo, Norway",
+      "venue": "Sentrum Scene"
+    },
+    {
+      "date": "2027-11-17",
+      "city": "Copenhagen, Denmark",
+      "venue": "Store Vega"
+    },
+    {
+      "date": "2027-11-19",
+      "city": "Hamburg, Germany",
+      "venue": "Inselpark Arena"
+    },
+    {
+      "date": "2027-11-20",
+      "city": "Berlin, Germany",
+      "venue": "UberEats Music Hall"
+    },
+    {
+      "date": "2027-11-22",
+      "city": "Munich, Germany",
+      "venue": "Zenith"
+    },
+    {
+      "date": "2027-11-24",
+      "city": "Düsseldorf, Germany",
+      "venue": "Mitsubishi Electric Halle"
+    },
+    {
+      "date": "2027-11-25",
+      "city": "Amsterdam, Netherlands",
+      "venue": "AFAS Live"
+    },
+    {
+      "date": "2027-11-27",
+      "city": "Lincoln, UK",
+      "venue": "The Engine Shed"
+    },
+    {
+      "date": "2027-11-28",
+      "city": "Glasgow, UK",
+      "venue": "O2 Academy"
+    },
+    {
+      "date": "2027-11-30",
+      "city": "Manchester, UK",
+      "venue": "O2 Apollo"
+    },
+    {
+      "date": "2027-12-01",
+      "city": "Bristol, UK",
+      "venue": "O2 Academy"
+    },
+    {
+      "date": "2027-12-03",
+      "city": "London, UK",
+      "venue": "Eventim Apollo"
+    },
+    {
+      "date": "2027-12-04",
+      "city": "Birmingham, UK",
+      "venue": "O2 Academy"
+    },
+    {
+      "date": "2027-12-07",
+      "city": "Lyon, France",
+      "venue": "Le Radiant-Bellevue"
+    },
+    {
+      "date": "2027-12-08",
+      "city": "Toulouse, France",
+      "venue": "Le Bikini"
+    },
+    {
+      "date": "2027-12-10",
+      "city": "Paris, France",
+      "venue": "L’Olympia"
+    }
+  ],
+  "tourHeading": "PsychoGod Tour · announced 2027 schedule",
+  "tourCheckedOn": "October 29, 2026",
+  "tourUrl": "https://www.brucedickinsonhq.com/bruce-announces-psychogod-tour-2027/",
+  "photo": {
+    "src": "/images/news/bruce-dickinson-paris-2024.jpg",
+    "width": 960,
+    "height": 1399,
+    "alt": "Bruce Dickinson at a record signing with Iron Maiden and solo albums in front of him",
+    "caption": "Bruce Dickinson at a signing at Gibert Joseph in Paris on March 4, 2024. Archive photo; not a 2027 tour image. Resized Wikimedia thumbnail.",
+    "credit": "ManoSolo13241324",
+    "url": "https://commons.wikimedia.org/wiki/File:Bruce_Dickinson_2024.jpg",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "source": {
+    "name": "Bruce Dickinson HQ · Official October 27 announcement",
+    "url": "https://www.brucedickinsonhq.com/bruce-announces-psychogod-tour-2027/"
+  }
+},
 {
   "id": "kiss-end-of-the-road-documentary-2026",
   "artist": "Kiss",
