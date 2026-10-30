@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-10-29";
+export const newsReviewedOn = "2026-10-30";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -9,6 +9,9 @@ export type NewsItem = {
   dateLabel?: string;
   title: string;
   summary: string;
+  setlist?: { song: string; performer: string }[];
+  setlistNote?: string;
+  references?: { name: string; url: string }[];
   tourDates?: { date: string; dateLabel?: string; city: string; venue: string }[];
   tourUrl?: string;
   tourHeading?: string;
@@ -22,6 +25,159 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "aerosmith-hollywood-bowl-october-29-2026",
+  "photo": {
+  "src": "/images/news/aerosmith-hollywood-bowl-2026.jpg",
+  "width": 1280,
+  "height": 720,
+  "alt": "Aerosmith’s winged logo above the Hollywood Bowl stage, illuminated with colorful projections and concert lights",
+  "caption": "The Hollywood Bowl stage at California, Dream On: Aerosmith & Friends. Image supplied by Scott."
+},
+  "artist": "Aerosmith & Friends",
+  "category": "Screen & Stage",
+  "announcedOn": "2026-10-30",
+  "dateLabel": "Reported",
+  "title": "Aerosmith return to the Hollywood Bowl: the songs, the guests and Joey Kramer’s finale",
+  "summary": "Aerosmith returned to the concert stage at the Hollywood Bowl on Thursday, October 29, 2026, closing the first California, Dream On: Aerosmith & Friends show with six songs. Before Steven Tyler and his bandmates appeared, guest performers worked through a much wider selection of the group’s catalog.\n\nThe format gave the evening two distinct parts: a tribute performed by other artists, followed by Aerosmith’s own set. Sully Erna, Warren Haynes, Billy Idol, Sammy Hagar, Heart and Eric Church took turns before longer appearances by the Black Crowes and Guns N’ Roses. The guests did more than revisit the biggest singles. The reported selections included “Make It,” “Lord of the Thighs” and “Write Me a Letter,” alongside later radio favorites.\n\nThe Black Crowes played five songs associated with Aerosmith and Joe Perry, while Guns N’ Roses opened with three Aerosmith covers—“Nobody’s Fault,” “Last Child” and “Seasons of Wither”—before adding their own “Welcome to the Jungle” and “Paradise City.”\n\nLiv Tyler and Alicia Silverstone introduced Aerosmith. Dave Grohl joined Steven Tyler, Joe Perry, Brad Whitford and Tom Hamilton on drums as they opened with “Toys in the Attic,” then moved through “Back in the Saddle,” “Sweet Emotion” and “Dream On.” Johnny Depp joined the guitar lineup for “Train Kept A-Rollin’.”\n\nFor the closing “Walk This Way,” founding drummer Joey Kramer took over the kit. The appearance brought the five longtime members together for the finale, after Grohl had handled the preceding five songs.\n\nThe concert followed the interruption of Aerosmith’s Peace Out farewell tour in September 2023 and the band’s 2024 retirement from touring after Tyler’s vocal injury. These Hollywood Bowl appearances were announced as two special nights, with a second show scheduled for November 1; they were not an announcement of a new full tour.",
+  "setlist": [
+    {
+      "song": "Make It",
+      "performer": "Sully Erna"
+    },
+    {
+      "song": "Lightning Strikes",
+      "performer": "Sully Erna"
+    },
+    {
+      "song": "Lord of the Thighs",
+      "performer": "Warren Haynes"
+    },
+    {
+      "song": "Walkin’ the Dog",
+      "performer": "Warren Haynes"
+    },
+    {
+      "song": "Livin’ on the Edge",
+      "performer": "Billy Idol with Steve Stevens"
+    },
+    {
+      "song": "Draw the Line",
+      "performer": "Sammy Hagar"
+    },
+    {
+      "song": "Helter Skelter",
+      "performer": "Sammy Hagar"
+    },
+    {
+      "song": "Never Loved a Girl",
+      "performer": "Heart"
+    },
+    {
+      "song": "Janie’s Got a Gun",
+      "performer": "Heart"
+    },
+    {
+      "song": "Rag Doll",
+      "performer": "Eric Church"
+    },
+    {
+      "song": "I Don’t Want to Miss a Thing",
+      "performer": "Eric Church"
+    },
+    {
+      "song": "Let the Music Do the Talking",
+      "performer": "The Black Crowes"
+    },
+    {
+      "song": "Write Me a Letter",
+      "performer": "The Black Crowes"
+    },
+    {
+      "song": "Combination",
+      "performer": "The Black Crowes"
+    },
+    {
+      "song": "No More No More",
+      "performer": "The Black Crowes"
+    },
+    {
+      "song": "Chip Away the Stone",
+      "performer": "The Black Crowes"
+    },
+    {
+      "song": "Nobody’s Fault",
+      "performer": "Guns N’ Roses"
+    },
+    {
+      "song": "Last Child",
+      "performer": "Guns N’ Roses"
+    },
+    {
+      "song": "Seasons of Wither",
+      "performer": "Guns N’ Roses"
+    },
+    {
+      "song": "Welcome to the Jungle",
+      "performer": "Guns N’ Roses"
+    },
+    {
+      "song": "Paradise City",
+      "performer": "Guns N’ Roses"
+    },
+    {
+      "song": "Toys in the Attic",
+      "performer": "Aerosmith · Dave Grohl on drums"
+    },
+    {
+      "song": "Back in the Saddle",
+      "performer": "Aerosmith · Dave Grohl on drums"
+    },
+    {
+      "song": "Sweet Emotion",
+      "performer": "Aerosmith · Dave Grohl on drums"
+    },
+    {
+      "song": "Dream On",
+      "performer": "Aerosmith · Dave Grohl on drums"
+    },
+    {
+      "song": "Train Kept A-Rollin’",
+      "performer": "Aerosmith with Johnny Depp · Dave Grohl on drums"
+    },
+    {
+      "song": "Walk This Way",
+      "performer": "Aerosmith · Joey Kramer on drums"
+    }
+  ],
+  "setlistNote": "Reported live-song running order for October 29, checked October 30, 2026. Rows 1–21 are guest performances; Aerosmith’s six-song set begins at row 22. Credits identify the featured act or guest, not a verified list of every backing musician. Playback music is excluded. The full running order comes from the fan-maintained Aerosmith Setlists archive; the Black Crowes, Guns N’ Roses and Aerosmith portions were cross-checked against their separate setlist.fm entries and concert reports.",
+  "references": [
+    {
+      "name": "Full running order · Aerosmith Setlists (fan-maintained)",
+      "url": "https://www.aerosmithsetlists.com/setlist/202610290/2026-10-29-hollywood"
+    },
+    {
+      "name": "Aerosmith concert report · Loudwire",
+      "url": "https://loudwire.com/aerosmith-first-show-hollywood-bowl-setlist/"
+    },
+    {
+      "name": "The Black Crowes · setlist.fm",
+      "url": "https://www.setlist.fm/setlist/the-black-crowes/2026/hollywood-bowl-los-angeles-ca-b7cbd7e.html"
+    },
+    {
+      "name": "Guns N’ Roses · setlist.fm",
+      "url": "https://www.setlist.fm/setlist/guns-n-roses/2026/hollywood-bowl-los-angeles-ca-2b7cb4ce.html"
+    },
+    {
+      "name": "Aerosmith · setlist.fm",
+      "url": "https://www.setlist.fm/setlist/aerosmith/2026/hollywood-bowl-los-angeles-ca-4b7f5b4a.html"
+    }
+  ],
+  "source": {
+    "name": "Ultimate Classic Rock · October 30 concert report",
+    "url": "https://ultimateclassicrock.com/aerosmith-hollywood-bowl-concert-videos-set-list/"
+  }
+},
 {
   "id": "cheap-trick-2027-concert-cancellations",
   "artist": "Cheap Trick",
