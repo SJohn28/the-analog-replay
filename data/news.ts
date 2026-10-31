@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-10-30";
+export const newsReviewedOn = "2026-10-31";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -25,6 +25,42 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "triumph-cancel-remaining-2026-tour",
+  "artist": "Triumph",
+  "category": "Tours",
+  "announcedOn": "2026-10-30",
+  "title": "Triumph cancel remaining 2026 Reloaded tour dates over medical circumstances",
+  "summary": "Triumph have canceled the remaining 2026 dates of their Rock & Roll Machine Reloaded tour, interrupting the second leg of the band’s 50th-anniversary return to the road. The announcement came October 30, less than three weeks before the concerts were due to begin November 17 in Grand Rapids, Michigan.\n\nIn a statement shared through the band’s social media accounts, Triumph cited “sudden and unexpected medical circumstances affecting the band.” The group said the situation prevents rehearsals and means the shows cannot go ahead as planned. It apologized for the short notice and the disappointment to fans.\n\nThe announcement does not identify the affected member or describe the medical issue. It does offer an encouraging update: the band says the outlook is positive and it intends to return to the stage as soon as possible. No return date or replacement schedule was included.\n\nFor ticket holders, the instructions are straightforward. Refunds for the affected concerts will be issued automatically through the original point of purchase; fans do not need to submit a request to start the process. Anyone with questions about an order should contact the ticket provider used for that purchase.\n\nThe fall concerts were intended to continue a comeback that had already brought Triumph back to North American stages in the spring. The planned lineup paired Rik Emmett and Gil Moore with guitarist Phil X, bassist Todd Kerns and drummer Brent Fitz—the same five musicians listed on the band’s official tour website.\n\nFor listeners who grew up with “Lay It on the Line,” “Magic Power” and “Fight the Good Fight,” the Reloaded shows offered another opportunity to hear those songs on an arena stage. The cancellation puts that return on hold, with future plans awaiting an update from the band.",
+  "photo": {
+    "src": "/images/news/triumph-reloaded-band.webp",
+    "width": 1200,
+    "height": 675,
+    "alt": "Triumph’s expanded touring lineup posing onstage in front of a cheering audience",
+    "caption": "Triumph’s expanded touring lineup. Archive image supplied by Scott; not a photograph of the cancellation announcement."
+  },
+  "companionPhoto": {
+    "src": "/images/news/triumph-classic-trio.webp",
+    "width": 780,
+    "height": 520,
+    "alt": "Three longtime members of Triumph acknowledging an audience under warm stage lights",
+    "caption": "Triumph’s classic trio. Archive image supplied by Scott."
+  },
+  "references": [
+    {
+      "name": "Consequence · October 30 cancellation report and band statement",
+      "url": "https://concerts.consequence.net/articles/triumph-cancel-fall-tour"
+    },
+    {
+      "name": "Triumph · official lineup and tour updates",
+      "url": "https://triumphmusic.com/"
+    }
+  ],
+  "source": {
+    "name": "Blabbermouth · October 30, 2026 · band statement reproduced",
+    "url": "https://blabbermouth.net/news/triumph-cancels-leg-two-of-2026-rock-roll-machine-reloaded-u-s-tour-due-to-sudden-and-unexpected-medical-circumstances"
+  }
+},
 {
   "id": "aerosmith-hollywood-bowl-october-29-2026",
   "photo": {
