@@ -26,6 +26,107 @@ export type NewsItem = {
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
 {
+  "id": "u2-europe-2027-tour",
+  "artist": "U2",
+  "category": "Tours",
+  "announcedOn": "2026-10-29",
+  "title": "U2 add 12 UK and European stadium shows for 2027",
+  "summary": "U2 have announced the UK and European leg of The Greatest Show on Earth World Tour, with Wolf Alice supporting all 12 concerts. The run opens April 26, 2027, in Stockholm and concludes July 6 in Milan.\n\nBono, The Edge, Adam Clayton and Larry Mullen Jr. will perform material from across the band’s catalog. The concerts accompany Carnaval De Luz, due November 13, 2026, and follow the previously announced Latin American dates.\n\nU2.com subscriber presales begin November 2 at 10 a.m. local time. The separate artist presale starts November 5, with registration closing November 1 at 10:59 p.m. GMT. Lisbon is excluded from that artist presale. General sales begin November 6 at 10 a.m. local time.\n\nThe schedule below lists the newly announced UK and European shows. Additional North American dates are expected, but were not included in this announcement.",
+  "tourDates": [
+    {
+      "date": "2027-04-26",
+      "city": "Stockholm, Sweden",
+      "venue": "Strawberry Arena"
+    },
+    {
+      "date": "2027-04-28",
+      "city": "Stockholm, Sweden",
+      "venue": "Strawberry Arena"
+    },
+    {
+      "date": "2027-05-05",
+      "city": "Paris, France",
+      "venue": "Stade de France"
+    },
+    {
+      "date": "2027-05-08",
+      "city": "Paris, France",
+      "venue": "Stade de France"
+    },
+    {
+      "date": "2027-05-27",
+      "city": "Lisbon, Portugal",
+      "venue": "Estadio da Luz"
+    },
+    {
+      "date": "2027-06-05",
+      "city": "Amsterdam, Netherlands",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2027-06-06",
+      "city": "Amsterdam, Netherlands",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2027-06-18",
+      "city": "London, United Kingdom",
+      "venue": "Tottenham Hotspur Stadium"
+    },
+    {
+      "date": "2027-06-19",
+      "city": "London, United Kingdom",
+      "venue": "Tottenham Hotspur Stadium"
+    },
+    {
+      "date": "2027-06-30",
+      "city": "Berlin, Germany",
+      "venue": "Olympiastadion"
+    },
+    {
+      "date": "2027-07-05",
+      "city": "Milan, Italy",
+      "venue": "Stadio San Siro"
+    },
+    {
+      "date": "2027-07-06",
+      "city": "Milan, Italy",
+      "venue": "Stadio San Siro"
+    }
+  ],
+  "tourHeading": "UK and Europe · announced 2027 concerts",
+  "tourUrl": "https://www.u2.com/pages/tours",
+  "tourCheckedOn": "October 31, 2026",
+  "photo": {
+    "src": "/images/news/u2-brussels-2017.jpg",
+    "width": 1280,
+    "height": 673,
+    "alt": "Larry Mullen Jr., The Edge, Bono and Adam Clayton performing together onstage",
+    "caption": "U2 in Brussels, August 1, 2017, on the Joshua Tree tour. Archive photo; not a 2027 tour image. Resized Wikimedia thumbnail.",
+    "credit": "Remy",
+    "url": "https://commons.wikimedia.org/wiki/File:U2_on_Joshua_Tree_Tour_2017_Brussels_8-1-17.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "additionalPhotos": [
+    {
+      "src": "/images/news/u2-arlington-2017.jpg",
+      "width": 1280,
+      "height": 853,
+      "alt": "U2’s illuminated Joshua Tree stage and a packed stadium audience",
+      "caption": "U2 at AT&T Stadium in Arlington, Texas, May 26, 2017. Archive stadium view; not the staging for the forthcoming tour. Resized Wikimedia thumbnail.",
+      "credit": "Francois Mulder",
+      "url": "https://commons.wikimedia.org/wiki/File:U2_Joshua_Tree_Tour_2017_in_Dallas_on_May_26,_2017.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "source": {
+    "name": "Live Nation · Official October 29 announcement",
+    "url": "https://news.livenationentertainment.com/news/u2-announces-u-k-europe-tour-dates-for-carnaval-de-luz-presents-the-greatest-show-on-earth-world-tour-2027"
+  }
+},
+{
   "id": "triumph-cancel-remaining-2026-tour",
   "artist": "Triumph",
   "category": "Tours",
