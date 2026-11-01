@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-10-31";
+export const newsReviewedOn = "2026-11-01";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -25,6 +25,42 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "deep-purple-gillan-german-shows-2026",
+  "artist": "Deep Purple",
+  "category": "Tours",
+  "announcedOn": "2026-10-31",
+  "title": "Deep Purple postpone German shows after Ian Gillan is hospitalized",
+  "summary": "Deep Purple have postponed two German concerts after a medical emergency involving singer Ian Gillan led to his hospitalization. The band announced the news on October 31, 2026, ahead of that evening’s scheduled performance in Leipzig.\n\nThe affected concerts are October 31 at the QI Arena in Leipzig and November 1 at the Sporthalle in Hamburg. In its official statement, the group said it was unable to perform those shows as scheduled and acknowledged the short notice for fans.\n\nThe band and its team are working to find replacement dates for both concerts. Tickets already purchased will remain valid for the rescheduled performances. No replacement dates were included in the announcement.\n\nThe statement does not identify Gillan’s medical condition or give a recovery timeline. It addresses these two concerts; it does not announce a cancellation of the entire tour. Fans planning to attend should follow the band and their venue for confirmed scheduling updates.",
+  "photo": {
+    "src": "/images/news/ian-gillan-lieder-am-see-2022.jpg",
+    "width": 1280,
+    "height": 853,
+    "alt": "Ian Gillan singing into a microphone during an outdoor concert",
+    "caption": "Ian Gillan at Lieder am See, July 16, 2022. Archive concert photograph; unrelated to the current medical emergency. Resized Wikimedia thumbnail.",
+    "credit": "Stefan Brending (2eight)",
+    "url": "https://commons.wikimedia.org/wiki/File:2022_Lieder_am_See_-_Deep_Purple_-_Ian_Gillan_-_by_2eight_-_9SC6654.jpg",
+    "license": "CC BY-SA 3.0 DE",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+  },
+  "additionalPhotos": [
+    {
+      "src": "/images/news/deep-purple-hellfest-2017.jpg",
+      "width": 1280,
+      "height": 720,
+      "alt": "Deep Purple performing together on a festival stage",
+      "caption": "Deep Purple at Hellfest on June 16, 2017, including Steve Morse. Archive photograph featuring an earlier lineup. Resized Wikimedia thumbnail.",
+      "credit": "Selbymay",
+      "url": "https://commons.wikimedia.org/wiki/File:Hellfest2017DeepPurple_07.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "source": {
+    "name": "Deep Purple · Official October 31 statement",
+    "url": "https://deep-purple.com/announcement-october-31-2026/"
+  }
+},
 {
   "id": "u2-europe-2027-tour",
   "artist": "U2",
