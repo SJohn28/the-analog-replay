@@ -2,6 +2,22 @@ export const featuredArticleId = "synchronicity";
 
 export const articles = [
 {
+  "id": "highway-to-hell",
+  "title": "AC/DC’s Highway to Hell: Bon Scott’s Breakthrough and the Road to Back in Black",
+  "category": "Feature Story",
+  "topics": [
+    "artists",
+    "albums"
+  ],
+  "subtitle": "The producer change, recording sessions and final Bon Scott tour—and how AC/DC continued with Brian Johnson.",
+  "image": "/images/stories/acdc-grenoble-1979.jpg",
+  "caption": "Bon Scott in Grenoble, December 10, 1979. Photograph: Elfast / Wikimedia Commons. Released into the public domain.",
+  "author": "Scott Johnson",
+  "date": "November 2026",
+  "excerpt": "How AC/DC made Highway to Hell, lost Bon Scott, and began the Brian Johnson era with Back in Black.",
+  "href": "/articles/highway-to-hell"
+},
+{
   "id": "synchronicity",
   "title": "The Police’s Synchronicity: The Triumph That Pulled Them Apart",
   "category": "Feature Story",

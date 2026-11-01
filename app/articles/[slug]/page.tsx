@@ -23,6 +23,11 @@ const purpleRainPhotos: Record<number, { src: string; alt: string; width: number
   9: { src: "/images/stories/prince-dean-merritt.jpg", alt: "Color drawing of Prince in purple clothing holding a yellow guitar against a purple background", width: 2550, height: 3300, maxWidth: 500, caption: "Drawing by Dean-0" },
 };
 
+const highwayPhotos: Record<string, { src: string; alt: string; width: number; height: number; caption: string }> = {
+ "Before the breakthrough: a band that had already done the work": { src: "/images/stories/acdc-belfast-bon-angus.jpg", alt: "Angus Young leaping beside Bon Scott during an AC/DC concert", width: 810, height: 1024, caption: "Angus Young and Bon Scott at Ulster Hall, Belfast, in the 1970s. The date is disputed. Photograph: James Hughes (Lost Parables), via Wikimedia Commons; CC BY 2.0. Image unchanged." },
+ "Taking Highway to Hell onto the stage": { src: "/images/stories/acdc-dean-0.jpg", alt: "Color drawing of Angus Young in school uniform playing a red guitar", width: 2550, height: 3300, caption: "Angus Young artwork. Credit: Dean-0." },
+};
+
 const synchronicityPhotos: Record<string, { src: string; alt: string; width: number; height: number; caption: string }> = {
   "Three musicians, three ideas of the band": { src: "/images/stories/police-band-portrait.jpg", alt: "The three members of the Police seated together outdoors", width: 1365, height: 2048, caption: "The Police. Photograph supplied by Scott Johnson." },
   "Who gets to shape a Police record?": { src: "/images/stories/police-sunglasses.jpg", alt: "Black-and-white portrait of the Police wearing sunglasses", width: 1335, height: 1634, caption: "Three distinct personalities in one band. Photograph supplied by Scott Johnson." },
@@ -76,6 +81,10 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
             {slug === "synchronicity" && synchronicityPhotos[section.title] && <figure className="feature-inline-photo">
               <Image src={synchronicityPhotos[section.title].src} alt={synchronicityPhotos[section.title].alt} width={synchronicityPhotos[section.title].width} height={synchronicityPhotos[section.title].height} sizes="(max-width: 560px) calc(100vw - 48px), 540px" />
               <figcaption>{synchronicityPhotos[section.title].caption}</figcaption>
+            </figure>}
+            {slug === "highway-to-hell" && highwayPhotos[section.title] && <figure className="feature-inline-photo">
+              <Image src={highwayPhotos[section.title].src} alt={highwayPhotos[section.title].alt} width={highwayPhotos[section.title].width} height={highwayPhotos[section.title].height} sizes="(max-width: 560px) calc(100vw - 48px), 540px" />
+              <figcaption>{highwayPhotos[section.title].caption}{section.title === "Before the breakthrough: a band that had already done the work" && <> <a href="https://commons.wikimedia.org/wiki/File:ACDC-Hughes-long_ago.jpg">Source</a> · <a href="https://creativecommons.org/licenses/by/2.0/">License</a></>}</figcaption>
             </figure>}
             {section.text.split("\n\n").map((paragraph, index) => <p key={index}><InlineText text={paragraph} /></p>)}
           </section>
