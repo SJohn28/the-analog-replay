@@ -1,4 +1,4 @@
-export const featuredArticleId = "synchronicity";
+export const featuredArticleId = "highway-to-hell";
 
 export const articles = [
 {
