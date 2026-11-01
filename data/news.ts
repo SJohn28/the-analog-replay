@@ -11,6 +11,7 @@ export type NewsItem = {
   summary: string;
   setlist?: { song: string; performer: string }[];
   setlistNote?: string;
+  setlistHeading?: string;
   references?: { name: string; url: string }[];
   tourDates?: { date: string; dateLabel?: string; city: string; venue: string }[];
   tourUrl?: string;
@@ -25,6 +26,166 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "duran-duran-halloween-o2-2026",
+  "artist": "Duran Duran",
+  "category": "Screen & Stage",
+  "announcedOn": "2026-11-01",
+  "dateLabel": "Show: October 31, 2026",
+  "title": "Duran Duran bring Danse Macabre to London for a Halloween night of hits and covers",
+  "summary": "Duran Duran brought their Danse Macabre Halloween Party to The O2 in London on October 31, 2026, combining familiar singles with darker selections and covers. It was the first London edition of the themed show and the final British date of their autumn arena tour.\n\nThe tradition began with a Halloween concert at the Wynn Theatre in Las Vegas in 2022. That performance inspired the 2023 album Danse Macabre, and subsequent Halloween shows took the concept to Madison Square Garden and Manchester’s Co-op Live. For London, the band had encouraged fans to arrive in costume and promised a set extending beyond the usual hits.\n\nThe fan-maintained setlist.fm report lists 24 live numbers, opening with “Friends of Mine” and ending with an encore of “The Wild Boys” and “Rio.” It records first Duran Duran performances of “Pet Sematary” and “Heads Will Roll,” with Rachael O’Connor taking the lead vocal on the Ramones song alongside Anna Ross.\n\nThe reported running order is below. It is a community-submitted account rather than an official band-issued setlist; performance details may be revised as further reports become available.",
+  "setlistHeading": "October 31, 2026 · reported London setlist",
+  "setlistNote": "Duran Duran throughout; cover credits and featured vocals are noted. Playback introductions are excluded. The final two songs form the encore. Checked November 1 against setlist.fm.",
+  "setlist": [
+    {
+      "song": "Friends of Mine",
+      "performer": "Duran Duran"
+    },
+    {
+      "song": "A View to a Kill",
+      "performer": "Duran Duran"
+    },
+    {
+      "song": "Hungry Like the Wolf",
+      "performer": "Duran Duran"
+    },
+    {
+      "song": "Danse Macabre",
+      "performer": "Duran Duran"
+    },
+    {
+      "song": "Union of the Snake",
+      "performer": "Duran Duran"
+    },
+    {
+      "song": "Evil Woman",
+      "performer": "ELO cover"
+    },
+    {
+      "song": "Lonely in Your Nightmare / Super Freak",
+      "performer": "Duran Duran"
+    },
+    {
+      "song": "The Reflex",
+      "performer": "Duran Duran"
+    },
+    {
+      "song": "Spellbound",
+      "performer": "Siouxsie and the Banshees cover"
+    },
+    {
+      "song": "Pet Sematary",
+      "performer": "Ramones cover; Rachael O’Connor lead vocal, with Anna Ross"
+    },
+    {
+      "song": "Only in Dreams",
+      "performer": "Duran Duran"
+    },
+    {
+      "song": "Winter Marches On",
+      "performer": "Duran Duran"
+    },
+    {
+      "song": "Confession in the Afterlife",
+      "performer": "Duran Duran"
+    },
+    {
+      "song": "New Moon on Monday",
+      "performer": "Duran Duran"
+    },
+    {
+      "song": "Paint It Black",
+      "performer": "Rolling Stones cover"
+    },
+    {
+      "song": "Supernature",
+      "performer": "Cerrone cover"
+    },
+    {
+      "song": "Notorious",
+      "performer": "Duran Duran"
+    },
+    {
+      "song": "Free to Love",
+      "performer": "Duran Duran"
+    },
+    {
+      "song": "Heads Will Roll",
+      "performer": "Yeah Yeah Yeahs cover"
+    },
+    {
+      "song": "Planet Earth",
+      "performer": "Duran Duran"
+    },
+    {
+      "song": "White Lines (Don’t Don’t Do It)",
+      "performer": "Grandmaster Melle Mel cover"
+    },
+    {
+      "song": "Girls on Film / Psycho Killer",
+      "performer": "Duran Duran"
+    },
+    {
+      "song": "The Wild Boys",
+      "performer": "Encore"
+    },
+    {
+      "song": "Rio",
+      "performer": "Encore"
+    }
+  ],
+  "references": [
+    {
+      "name": "Duran Duran · Official Halloween show announcement (July 6, 2026)",
+      "url": "https://duranduran.com/2026/duran-duran-announce-exclusive-halloween-show-for-uk-arena-tour-2026/"
+    },
+    {
+      "name": "setlist.fm · The O2, October 31, 2026 (fan-maintained)",
+      "url": "https://www.setlist.fm/setlist/duran-duran/2026/the-o2-arena-london-england-2b739452.html"
+    }
+  ],
+  "source": {
+    "name": "Duran Duran · Official show background",
+    "url": "https://duranduran.com/2026/duran-duran-announce-exclusive-halloween-show-for-uk-arena-tour-2026/"
+  },
+  "photo": {
+    "src": "/images/news/duran-duran-halloween-band.jpg",
+    "width": 1600,
+    "height": 1194,
+    "alt": "Duran Duran performing in theatrical costumes in front of a large video backdrop",
+    "caption": "Duran Duran onstage in Halloween costumes."
+  },
+  "additionalPhotos": [
+    {
+      "src": "/images/news/duran-duran-halloween-singer.jpg",
+      "width": 1600,
+      "height": 1194,
+      "alt": "A singer in gold face paint and an ornate coat amid stage smoke",
+      "caption": "Gold face paint and theatrical stage effects."
+    },
+    {
+      "src": "/images/news/duran-duran-halloween-keyboards.jpg",
+      "width": 1600,
+      "height": 1188,
+      "alt": "A costumed keyboard player surrounded by keyboards covered in decorative cobwebs",
+      "caption": "Cobweb-covered keyboards add to the Halloween setting."
+    },
+    {
+      "src": "/images/news/duran-duran-halloween-portrait.jpg",
+      "width": 1600,
+      "height": 1261,
+      "alt": "Black-and-white group portrait of Duran Duran in Halloween costumes",
+      "caption": "Duran Duran in a Halloween group portrait."
+    },
+    {
+      "src": "/images/news/duran-duran-halloween-stage.jpg",
+      "width": 1600,
+      "height": 1143,
+      "alt": "Duran Duran performing in pale costumes beneath a large horror-themed stage image",
+      "caption": "Halloween imagery fills the stage backdrop."
+    }
+  ]
+},
 {
   "id": "deep-purple-gillan-german-shows-2026",
   "artist": "Deep Purple",
