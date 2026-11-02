@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-01";
+export const newsReviewedOn = "2026-11-02";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -26,6 +26,87 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "robert-plant-root-branch-2027",
+  "artist": "Robert Plant & Saving Grace",
+  "category": "Tours",
+  "announcedOn": "2026-11-02",
+  "title": "Robert Plant and Saving Grace announce summer 2027 Root & Branch shows",
+  "summary": "Robert Plant and Saving Grace have announced an England and Ireland run for June 2027. The Root & Branch tour follows the group’s 2025 album Saving Grace and the recent digital release of the All That Glitters… EP.\n\nPlant performs with vocalist Suzi Dian and a band working in folk, blues and roots music. Lincoln Castle has confirmed a June 24 show with Kate Rusby and Seth Lakeman as special guests. General ticket sales for the new run begin Friday, November 6, at 10 a.m. local time; presale arrangements vary by event.\n\nThe schedule below lists four dates supported by venue, promoter or Ticketmaster listings. Scarborough is also included in the tour announcement, but published sources disagree over its date. Its date is omitted here pending clarification. Ticketmaster lists Halifax’s Piece Hall concert on June 27.",
+  "tourHeading": "2027 dates checked against event listings",
+  "tourCheckedOn": "November 2, 2026",
+  "tourUrl": "https://www.robertplant.com/",
+  "tourDates": [
+    {
+      "date": "2027-06-19",
+      "city": "London, England",
+      "venue": "Hampton Court Palace Festival"
+    },
+    {
+      "date": "2027-06-24",
+      "city": "Lincoln, England",
+      "venue": "Lincoln Castle"
+    },
+    {
+      "date": "2027-06-27",
+      "city": "Halifax, England",
+      "venue": "The Piece Hall"
+    },
+    {
+      "date": "2027-06-29",
+      "city": "Dublin, Ireland",
+      "venue": "Trinity College Summer Series"
+    }
+  ],
+  "source": {
+    "name": "Lincolnshire County Council · Official show announcement",
+    "url": "https://www.lincolnshire.gov.uk/news/article/3013/robert-plant-saving-grace-announce-summer-2027-root-branch-tour"
+  },
+  "references": [
+    {
+      "name": "Ticketmaster · Halifax, June 27",
+      "url": "https://www.ticketmaster.co.uk/robert-plant-halifax-27-06-2027/event/35006548A0AE3FE6"
+    },
+    {
+      "name": "MCD · Dublin and tour announcement",
+      "url": "https://www.mcd.ie/artists/robert-plant"
+    }
+  ],
+  "photo": {
+    "src": "/images/news/plant-saving-grace.jpg",
+    "width": 1400,
+    "height": 787,
+    "alt": "Robert Plant singing into a microphone onstage",
+    "caption": "Robert Plant performing with Saving Grace at Leas Cliff Hall, Folkestone, April 10, 2022. Archive photograph; resized for display.",
+    "credit": "Raph_PH",
+    "url": "https://commons.wikimedia.org/wiki/File:Robert_Plant_(2022).jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  }
+},
+{
+  "id": "ozzy-sabbath-back-beginning-home-release-2026",
+  "artist": "Ozzy Osbourne & Black Sabbath",
+  "category": "Screen & Stage",
+  "announcedOn": "2026-10-28",
+  "title": "Ozzy Osbourne and Black Sabbath farewell film and soundtrack arrive December 11",
+  "summary": "Ozzy Osbourne & Black Sabbath: Back to the Beginning will receive home-video and soundtrack releases on December 11, 2026, following its October 28 cinema release. The announcement lists 4K Ultra HD, Blu-ray, CD, vinyl and digital formats, with different combinations available by edition.\n\nThe film documents the July 5, 2025 concert at Villa Park in Birmingham. Osbourne performed with his solo band and reunited with Tony Iommi, Geezer Butler and Bill Ward for Black Sabbath’s farewell. It was Osbourne’s final performance; he died 17 days later.\n\nThe concert film runs approximately three and a half hours and includes selected performances and collaborations from the event. Buyers should check the contents of their chosen edition rather than assume every package contains the entire day’s music.\n\nAn expanded deluxe box is scheduled for April 2027, separately from the December releases. Its announced extras include a bonus Blu-ray collecting 35 Osbourne and Black Sabbath songs and covers performed by special guests. An advance performance of “Mr. Crowley” was released with the October 28 announcement.",
+  "source": {
+    "name": "Ozzy Osbourne · Official release announcement",
+    "url": "https://www.ozzy.com/archives/news/ozzy-osbourne-black-sabbath-back-to-the-beginning"
+  },
+  "photo": {
+    "src": "/images/news/ozzy-2007.jpg",
+    "width": 1400,
+    "height": 1047,
+    "alt": "Ozzy Osbourne singing on a concert stage with his band behind him",
+    "caption": "Ozzy Osbourne performing in Spain in 2007. Archive photograph, not the 2025 farewell concert. Resized for display.",
+    "credit": "joxeankoret",
+    "url": "https://commons.wikimedia.org/wiki/File:Ozzy_Osbourne.jpg",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+  }
+},
 {
   "id": "duran-duran-halloween-o2-2026",
   "artist": "Duran Duran",
