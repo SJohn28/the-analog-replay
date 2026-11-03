@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-02";
+export const newsReviewedOn = "2026-11-03";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -26,6 +26,91 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "deep-purple-europe-uk-postponement-november-2026",
+  "artist": "Deep Purple",
+  "category": "Tours",
+  "announcedOn": "2026-11-02",
+  "title": "Deep Purple postpone the rest of their European and UK tour",
+  "summary": "Deep Purple have postponed the remainder of their European and UK tour after Ian Gillan’s recent medical emergency. In a November 2 statement, the singer said doctors and management had advised against continuing because of serious medical risks.\n\nGillan said the problem arose while he was in Leipzig and required urgent hospital attention. He had hoped to receive clearance to finish the tour, but said that was no longer possible. The statement does not identify his diagnosis or give a return date.\n\nThe band and its team are working to reschedule the affected concerts. Tickets already purchased will remain valid for replacement dates. No revised schedule was included in the announcement.\n\nThis expands the October 31 postponement of the Leipzig and Hamburg shows. The new statement covers the remaining European and UK run; it does not announce the cancellation of every future Deep Purple concert. Fans should follow their venue and the band for rescheduling information.",
+  "photo": {
+    "src": "/images/news/ian-gillan-lieder-am-see-2022.jpg",
+    "width": 1280,
+    "height": 853,
+    "alt": "Ian Gillan singing into a microphone during an outdoor concert",
+    "caption": "Ian Gillan at Lieder am See, July 16, 2022. Archive concert photograph; unrelated to the current medical emergency. Resized Wikimedia thumbnail.",
+    "credit": "Stefan Brending (2eight)",
+    "url": "https://commons.wikimedia.org/wiki/File:2022_Lieder_am_See_-_Deep_Purple_-_Ian_Gillan_-_by_2eight_-_9SC6654.jpg",
+    "license": "CC BY-SA 3.0 DE",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+  },
+  "source": {
+    "name": "Deep Purple · November 2 official statement",
+    "url": "https://deep-purple.com/important-message-from-ian-gillan-and-deep-purple/"
+  }
+},
+{
+  "id": "aerosmith-hollywood-bowl-november-1-2026",
+  "artist": "Aerosmith",
+  "category": "Screen & Stage",
+  "announcedOn": "2026-11-02",
+  "dateLabel": "Reported · show November 1",
+  "title": "Aerosmith reunite with Run-DMC at their second Hollywood Bowl show",
+  "summary": "Aerosmith completed their second California, Dream On concert at the Hollywood Bowl on November 1, 2026, with Run-DMC joining them for “Walk This Way.” Joey Kramer returned for that performance, alongside drummer John Douglas.\n\nDouglas played the main Aerosmith set, which added “Come Together” to the selections heard on October 29. The band opened with “Toys in the Attic” and finished with “Train Kept A-Rollin’.”\n\nThe guest performances also changed. Marcus King, Jerry Cantrell, Mike Inez, Richie Kotzen, Tom Morello, Lzzy Hale, Grace Potter and Pat Monahan appeared during the tribute portion. Heart, Billy Idol and Steve Stevens returned, as did the Black Crowes and Guns N’ Roses.\n\nGuns N’ Roses performed “Mama Kin,” “S.O.S. (Too Bad),” “Rats in the Cellar” and “Sick as a Dog,” followed by “Sweet Child O’ Mine” and “Nightrain.” Heart included “Janie’s Got a Gun” and “Barracuda.”\n\nSteven Tyler’s remarks left the possibility of further appearances open. The two Hollywood Bowl shows do not, however, confirm another Aerosmith tour. The running order below covers Aerosmith’s own seven-song set, rather than every guest performance.",
+  "photo": {
+    "src": "/images/news/aerosmith-hollywood-bowl-2026.jpg",
+    "width": 1280,
+    "height": 720,
+    "alt": "Aerosmith’s winged logo above the Hollywood Bowl stage, illuminated with colorful projections and concert lights",
+    "caption": "Hollywood Bowl photograph supplied by Scott Johnson for our October 29 coverage. Archive image from the earlier show, not the November 1 performance."
+  },
+  "setlistHeading": "November 1 · Aerosmith’s main set",
+  "setlistNote": "Reported by Guitar World and Classic Rock. John Douglas played drums throughout; Joey Kramer and Run-DMC also joined Walk This Way. Guest tribute sets are excluded from this table.",
+  "setlist": [
+    {
+      "song": "Toys in the Attic",
+      "performer": "Aerosmith, with John Douglas on drums"
+    },
+    {
+      "song": "Back in the Saddle",
+      "performer": "Aerosmith, with John Douglas on drums"
+    },
+    {
+      "song": "Sweet Emotion",
+      "performer": "Aerosmith, with John Douglas on drums"
+    },
+    {
+      "song": "Dream On",
+      "performer": "Aerosmith, with John Douglas on drums"
+    },
+    {
+      "song": "Come Together",
+      "performer": "Aerosmith, with John Douglas on drums"
+    },
+    {
+      "song": "Walk This Way",
+      "performer": "Aerosmith + Run-DMC; Joey Kramer and John Douglas on drums"
+    },
+    {
+      "song": "Train Kept A-Rollin’",
+      "performer": "Aerosmith, with John Douglas on drums"
+    }
+  ],
+  "references": [
+    {
+      "name": "Classic Rock · Second-night report and full guest running order",
+      "url": "https://www.loudersound.com/bands-artists/aerosmith-dream-on-hollywood-bowl-night-two"
+    },
+    {
+      "name": "Hollywood Bowl · November 1 event",
+      "url": "https://www.hollywoodbowl.com/events/instances/5fzv6ejs/2026-11-01/aerosmith-and-friends"
+    }
+  ],
+  "source": {
+    "name": "Guitar World · November 1 concert report",
+    "url": "https://www.guitarworld.com/artists/concerts-gigs-tours/aerosmith-and-friends-california-dream-on-night-two"
+  }
+},
 {
   "id": "journey-neal-schon-long-goodbye-2026",
   "artist": "Journey",
@@ -303,7 +388,7 @@ export const news: NewsItem[] = [
   "category": "Tours",
   "announcedOn": "2026-10-31",
   "title": "Deep Purple postpone German shows after Ian Gillan is hospitalized",
-  "summary": "Deep Purple have postponed two German concerts after a medical emergency involving singer Ian Gillan led to his hospitalization. The band announced the news on October 31, 2026, ahead of that evening’s scheduled performance in Leipzig.\n\nThe affected concerts are October 31 at the QI Arena in Leipzig and November 1 at the Sporthalle in Hamburg. In its official statement, the group said it was unable to perform those shows as scheduled and acknowledged the short notice for fans.\n\nThe band and its team are working to find replacement dates for both concerts. Tickets already purchased will remain valid for the rescheduled performances. No replacement dates were included in the announcement.\n\nThe statement does not identify Gillan’s medical condition or give a recovery timeline. It addresses these two concerts; it does not announce a cancellation of the entire tour. Fans planning to attend should follow the band and their venue for confirmed scheduling updates.",
+  "summary": "Update, November 2: Deep Purple have since postponed the rest of their European and UK tour on medical advice. See the band’s November 2 statement for the expanded postponement. Tickets remain valid for rescheduled dates.\n\nDeep Purple have postponed two German concerts after a medical emergency involving singer Ian Gillan led to his hospitalization. The band announced the news on October 31, 2026, ahead of that evening’s scheduled performance in Leipzig.\n\nThe affected concerts are October 31 at the QI Arena in Leipzig and November 1 at the Sporthalle in Hamburg. In its official statement, the group said it was unable to perform those shows as scheduled and acknowledged the short notice for fans.\n\nThe band and its team are working to find replacement dates for both concerts. Tickets already purchased will remain valid for the rescheduled performances. No replacement dates were included in the announcement.",
   "photo": {
     "src": "/images/news/ian-gillan-lieder-am-see-2022.jpg",
     "width": 1280,
@@ -331,7 +416,13 @@ export const news: NewsItem[] = [
   "source": {
     "name": "Deep Purple · Official October 31 statement",
     "url": "https://deep-purple.com/announcement-october-31-2026/"
-  }
+  },
+  "references": [
+    {
+      "name": "November 2 · Expanded European and UK postponement",
+      "url": "https://deep-purple.com/important-message-from-ian-gillan-and-deep-purple/"
+    }
+  ]
 },
 {
   "id": "u2-europe-2027-tour",
