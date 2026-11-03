@@ -27,6 +27,36 @@ export type NewsItem = {
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
 {
+  "id": "journey-neal-schon-long-goodbye-2026",
+  "artist": "Journey",
+  "category": "Tours",
+  "announcedOn": "2026-11-02",
+  "dateLabel": "Reported",
+  "title": "Neal Schon says Journey’s farewell feels more like “The Long Goodbye”",
+  "summary": "Neal Schon says Journey’s time on the road has brought the band closer together and left him open about what comes next. In a Facebook message to fans, the guitarist described the group’s Final Frontier farewell as increasingly feeling like “The Long Goodbye.”\n\nSchon said the band had completed 110 shows in 2026 and had been playing two-and-a-half-hour Evening with Journey performances, which he described as their longest shows. He credited the audiences’ support with strengthening the musicians’ relationships, both personally and musically. Those show totals and performance lengths are Schon’s account in the message.\n\nThe post thanks fans for continuing to attend and sing along, and says the band will let its connection with those audiences help guide its next steps. It does not specify new concert dates, announce a formal tour-name change or set a revised retirement date.\n\nSchon had already raised the possibility of an extended farewell in a CNN interview broadcast in October. Discussing the Final Frontier name, he said he would not be surprised if the tour became a long goodbye.\n\nJourney previously added 40 North American dates to the tour in a May 12 announcement. That announcement scheduled the fall run from September 12 in Los Angeles through November 28 at San Francisco’s Chase Center. The current lineup comprises Schon, Jonathan Cain, Arnel Pineda, Deen Castronovo, Todd Jensen and Jason Derlatka.\n\nFor now, Schon’s message expresses a willingness to keep the future open. Fans should look to Journey’s official channels for any confirmed additions or changes.",
+  "photo": {
+    "src": "/images/news/journey-its-not-over.jpg",
+    "width": 1258,
+    "height": 1600,
+    "alt": "Journey graphic reading It’s Not Over, with a winged scarab and the names of the six band members",
+    "caption": "Journey “It’s Not Over” graphic supplied by Scott Johnson. The wording on the image is not a confirmed announcement of additional tour dates."
+  },
+  "references": [
+    {
+      "name": "CNN · October interview with Journey",
+      "url": "https://transcripts.cnn.com/show/cnr/date/2026-10-26/segment/17"
+    },
+    {
+      "name": "Prudential Center · May 12 tour extension announcement",
+      "url": "https://www.prucenter.com/news/journey-extends-the-final-frontier-tour-40-additional-north-american-dates-announced-for-fall-2026"
+    }
+  ],
+  "source": {
+    "name": "Journey · Official website",
+    "url": "https://www.journeymusic.com/"
+  }
+},
+{
   "id": "robert-plant-root-branch-2027",
   "artist": "Robert Plant & Saving Grace",
   "category": "Tours",
