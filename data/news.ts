@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-03";
+export const newsReviewedOn = "2026-11-04";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -26,6 +26,164 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "scorpions-love-peace-rock-roll-2027",
+  "artist": "Scorpions",
+  "category": "Tours",
+  "announcedOn": "2026-11-02",
+  "title": "Scorpions announce 2027 Love, Peace & Rock ’N’ Roll tour",
+  "summary": "Scorpions have announced their Love, Peace & Rock ’N’ Roll tour for 2027, with a European run from April 29 through July 18. The schedule includes four concerts in Ireland and the United Kingdom, alongside dates across mainland Europe.\n\nThe band’s November 2 announcement gives Rock Zone Community members early ticket access beginning Wednesday, November 4, at 11 a.m. Central European Time. General sales for the newly announced shows begin November 6, but local times and arrangements differ. Fans should use the ticket links on the band’s official tour page for their chosen concert.\n\nThe European dates follow the planned German cinema release of the band’s biographical film Wind of Change on January 28, 2027. An international release date has not been formally announced.\n\nThe schedule below covers the European run. The official calendar also lists Mexico concerts and a Las Vegas residency later in 2027; those appear separately from this April–July itinerary.",
+  "tourHeading": "2027 European concert dates",
+  "tourCheckedOn": "November 4, 2026",
+  "tourUrl": "https://www.the-scorpions.com/tour/",
+  "tourDates": [
+    {
+      "date": "2027-04-29",
+      "city": "Barcelona, Spain",
+      "venue": "Palau Sant Jordi"
+    },
+    {
+      "date": "2027-05-02",
+      "city": "Coruña, Spain",
+      "venue": "Coliseum"
+    },
+    {
+      "date": "2027-05-05",
+      "city": "Bilbao, Spain",
+      "venue": "Bizkaia Arena"
+    },
+    {
+      "date": "2027-05-08",
+      "city": "Madrid, Spain",
+      "venue": "Movistar Arena"
+    },
+    {
+      "date": "2027-05-12",
+      "city": "Stuttgart, Germany",
+      "venue": "Schleyer-Halle"
+    },
+    {
+      "date": "2027-05-15",
+      "city": "Dortmund, Germany",
+      "venue": "Westfalenhalle"
+    },
+    {
+      "date": "2027-05-19",
+      "city": "Frankfurt, Germany",
+      "venue": "Festhalle"
+    },
+    {
+      "date": "2027-05-22",
+      "city": "Munich, Germany",
+      "venue": "Olympiahalle"
+    },
+    {
+      "date": "2027-06-03",
+      "city": "Kraków, Poland",
+      "venue": "Tauron Arena"
+    },
+    {
+      "date": "2027-06-06",
+      "city": "Vilnius, Lithuania",
+      "venue": "Arena Vilnius"
+    },
+    {
+      "date": "2027-06-09",
+      "city": "Prague, Czech Republic",
+      "venue": "O2 Arena"
+    },
+    {
+      "date": "2027-06-12",
+      "city": "Zagreb, Croatia",
+      "venue": "Arena Zagreb"
+    },
+    {
+      "date": "2027-06-15",
+      "city": "Vienna, Austria",
+      "venue": "Stadthalle"
+    },
+    {
+      "date": "2027-06-17",
+      "city": "Zürich, Switzerland",
+      "venue": "Hallenstadion"
+    },
+    {
+      "date": "2027-06-20",
+      "city": "Rotterdam, Netherlands",
+      "venue": "Ahoy"
+    },
+    {
+      "date": "2027-06-23",
+      "city": "Rättvik, Sweden",
+      "venue": "Dalhalla"
+    },
+    {
+      "date": "2027-06-26",
+      "city": "Oslo, Norway",
+      "venue": "Tons of Rock"
+    },
+    {
+      "date": "2027-06-30",
+      "city": "Dublin, Ireland",
+      "venue": "3Arena"
+    },
+    {
+      "date": "2027-07-03",
+      "city": "Glasgow, UK",
+      "venue": "OVO Hydro"
+    },
+    {
+      "date": "2027-07-06",
+      "city": "London, UK",
+      "venue": "The O2"
+    },
+    {
+      "date": "2027-07-09",
+      "city": "Manchester, UK",
+      "venue": "Co-op Live"
+    },
+    {
+      "date": "2027-07-12",
+      "city": "Paris, France",
+      "venue": "Accor Arena"
+    },
+    {
+      "date": "2027-07-15",
+      "city": "Nîmes, France",
+      "venue": "Arènes de Nîmes"
+    },
+    {
+      "date": "2027-07-18",
+      "city": "Milano, Italy",
+      "venue": "Unipol Arena"
+    }
+  ],
+  "photo": {
+    "src": "/images/news/scorpions-barcelona-2015.jpg",
+    "width": 934,
+    "height": 494,
+    "alt": "Scorpions performing together on a red-lit concert stage",
+    "caption": "Scorpions at Rock Fest Barcelona, July 23, 2015. Archive photograph featuring the lineup of that period; image unchanged.",
+    "credit": "dr_zoidberg",
+    "url": "https://commons.wikimedia.org/wiki/File:Scorpions_2015.jpg",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  "references": [
+    {
+      "name": "Scorpions · Official tour calendar",
+      "url": "https://www.the-scorpions.com/tour/"
+    },
+    {
+      "name": "Classic Rock · Tour and film release reporting",
+      "url": "https://www.loudersound.com/bands-artists/concerts-shows/scorpions-love-peace-and-rocknroll-european-tour"
+    }
+  ],
+  "source": {
+    "name": "Scorpions · Official November 2 announcement",
+    "url": "https://www.the-scorpions.com/love-peace-rock-n-roll-tour-2027/"
+  }
+},
 {
   "id": "deep-purple-europe-uk-postponement-november-2026",
   "artist": "Deep Purple",
