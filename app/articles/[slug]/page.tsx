@@ -65,7 +65,7 @@ const stopMakingSensePhotos: Record<string, {src: string; alt: string; width: nu
   },
   "From the 1984 premiere to a renewed life": {
     "src": "/images/stories/stop-making-sense-advert-1984.jpg",
-    "alt": "Historical Stop Making Sense album advertising sign featuring David Byrne in his oversized suit",
+    "alt": "Historical Talking Heads Stop Making Sense album advertising sign with red and white lettering",
     "width": 1400,
     "height": 1382,
     "caption": "Talking Heads (Stop Making Sense) Album Release In-Store Advertising Sign. Credit: Talking Heads. Via Wikimedia Commons; listed there as public domain. Resized; full framing retained.",
