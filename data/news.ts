@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-04";
+export const newsReviewedOn = "2026-11-05";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -26,6 +26,74 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "blackmores-night-30th-anniversary-2027",
+  "artist": "Blackmore’s Night",
+  "category": "Tours",
+  "announcedOn": "2026-11-03",
+  "title": "Blackmore’s Night announce six concerts for their 30th anniversary",
+  "summary": "Ritchie Blackmore and Candice Night have announced a limited Blackmore’s Night tour for March 2027, marking 30 years since the folk-rock project began. The six-show itinerary covers New Jersey, New York and Connecticut.\n\nThe announcement follows the interruption of the band’s 2025 touring plans because of Blackmore’s health. In a statement at the time, the former Deep Purple and Rainbow guitarist described an episode of severe vertigo. The new dates announce a return to Blackmore’s Night concerts; they do not establish that his underlying health issues have resolved.\n\nThe announced run opens March 6 in Newton, New Jersey, and ends March 27 in Englewood. Stops include Port Washington, Norwalk, Woodstock and Riverhead. The Englewood ticket listing confirms March 27, 2027, at Bergen Performing Arts Center.\n\nThe schedule below follows the March 2027 itinerary reported with the anniversary announcement. The band’s current tour page contains inconsistent year, month and ticket-sale labels. Fans should open the individual ticket links and confirm details with the venue before purchasing or making travel plans.",
+  "tourHeading": "Announced March 2027 anniversary dates",
+  "tourCheckedOn": "November 5, 2026",
+  "tourUrl": "https://www.blackmoresnight.com/tour",
+  "tourDates": [
+    {
+      "date": "2027-03-06",
+      "city": "Newton, NJ",
+      "venue": "Newton Theatre"
+    },
+    {
+      "date": "2027-03-11",
+      "city": "Port Washington, NY",
+      "venue": "Landmark on Main Street"
+    },
+    {
+      "date": "2027-03-13",
+      "city": "Norwalk, CT",
+      "venue": "District Music Hall"
+    },
+    {
+      "date": "2027-03-19",
+      "city": "Woodstock, NY",
+      "venue": "Bearsville Theater"
+    },
+    {
+      "date": "2027-03-21",
+      "city": "Riverhead, NY",
+      "venue": "Suffolk Theater"
+    },
+    {
+      "date": "2027-03-27",
+      "city": "Englewood, NJ",
+      "venue": "Bergen Performing Arts Center"
+    }
+  ],
+  "photo": {
+    "src": "/images/news/blackmores-night-tarrytown-2012.jpg",
+    "width": 1400,
+    "height": 933,
+    "alt": "Candice Night singing beside Ritchie Blackmore and other Blackmore’s Night musicians on a blue-lit stage",
+    "caption": "Blackmore’s Night at Tarrytown Music Hall, October 25, 2012. Archive photograph; resized for display.",
+    "credit": "Nsoveiko",
+    "url": "https://commons.wikimedia.org/wiki/File:Blackmore%27s_Night_in_2012.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "references": [
+    {
+      "name": "Blackmore’s Night · Official tour and ticket links",
+      "url": "https://www.blackmoresnight.com/tour"
+    },
+    {
+      "name": "Ticketmaster · Bergen Performing Arts Center, March 27, 2027",
+      "url": "https://www.ticketmaster.com/event/00006561A74C6256"
+    }
+  ],
+  "source": {
+    "name": "Guitar Player · Anniversary announcement and itinerary",
+    "url": "https://www.guitarplayer.com/guitarists/ritchie-blackmore-s-night-tour-2027"
+  }
+},
 {
   "id": "scorpions-love-peace-rock-roll-2027",
   "artist": "Scorpions",
