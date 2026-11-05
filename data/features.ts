@@ -1,7 +1,9 @@
+import { stopMakingSense } from "./stop-making-sense";
 import { highwayToHell } from "./highway-to-hell";
 import { synchronicity } from "./synchronicity";
 
 export const features: Record<string,{intro:string;sections:{title:string;text:string}[]}> = {
+  "stop-making-sense": stopMakingSense,
   synchronicity,
   "highway-to-hell": highwayToHell,
 escape: {

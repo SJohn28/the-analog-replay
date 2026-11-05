@@ -35,6 +35,45 @@ const synchronicityPhotos: Record<string, { src: string; alt: string; width: num
   "The tour ended, but the breakup took longer": { src: "/images/stories/sting-dean-0-drawing.png", alt: "Caricature of Sting holding a bass guitar, with a small performance photograph in the upper right", width: 1114, height: 1498, caption: "Drawing by Dean-0" },
 };
 
+const stopMakingSensePhotos: Record<string, {src: string; alt: string; width: number; height: number; caption: string; source: string; license: string}> = {
+  "Before the empty stage": {
+    "src": "/images/stories/talking-heads-1979.jpg",
+    "alt": "Chris Frantz, Jerry Harrison, David Byrne and Tina Weymouth in a 1979 publicity portrait",
+    "width": 1400,
+    "height": 879,
+    "caption": "Talking Heads in a 1979 publicity photo. From left to right; Chris Frantz, Jerry Harrison, David Byrne, and Tina Weymouth. Credit: Ron Pownall; Distributed by Sire Records. Via Wikimedia Commons; listed there as public domain. Resized; full framing retained.",
+    "source": "https://commons.wikimedia.org/wiki/File:Talking_Heads_(1979_Sire_publicity_photo).jpg",
+    "license": ""
+  },
+  "Nine people sharing the rhythm": {
+    "src": "/images/stories/talking-heads-1980.jpg",
+    "alt": "David Byrne, Jerry Harrison, Tina Weymouth and Chris Frantz in a 1980 publicity photograph",
+    "width": 1366,
+    "height": 1400,
+    "caption": "Musical group Talking Heads; left to right: David Byrne, Jerry Harrison, Tina Weymouth, Chris Frantz, in a promotional photo for the album Remain In Light. Credit: Distributed by Sire Records. Photographer uncredited. Via Wikimedia Commons; listed there as public domain. Resized; full framing retained.",
+    "source": "https://commons.wikimedia.org/wiki/File:Talking_Heads_Remain_In_Light_(1980_Sire_publicity_photo).jpg",
+    "license": ""
+  },
+  "Demme’s camera makes room for the performers": {
+    "src": "/images/stories/jonathan-demme-2015.jpg",
+    "alt": "Jonathan Demme at the 2015 Montclair Film Festival",
+    "width": 1120,
+    "height": 1400,
+    "caption": "Demme at the 2015 Montclair Film Festival. Credit: Dan D'Errico / Montclair Film Festival. Via Wikimedia Commons; CC BY 2.0. Resized; full framing retained.",
+    "source": "https://commons.wikimedia.org/wiki/File:Jonathan_Demme_May_2015.jpg",
+    "license": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "From the 1984 premiere to a renewed life": {
+    "src": "/images/stories/stop-making-sense-advert-1984.jpg",
+    "alt": "Historical Stop Making Sense album advertising sign featuring David Byrne in his oversized suit",
+    "width": 1400,
+    "height": 1382,
+    "caption": "Talking Heads (Stop Making Sense) Album Release In-Store Advertising Sign. Credit: Talking Heads. Via Wikimedia Commons; listed there as public domain. Resized; full framing retained.",
+    "source": "https://commons.wikimedia.org/wiki/File:Talking_Heads_-_Stop_Making_Sense_12%22_advertising_sign.jpg",
+    "license": ""
+  }
+};
+
 export function generateStaticParams() {
   return Object.keys(features).map((slug) => ({ slug }));
 }
@@ -63,6 +102,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     <main>
       <ReadingProgress />
       <ArticlePage category={article.category} title={article.title} subtitle={article.subtitle} author={article.author} date={article.date} hero={article.image} caption={article.caption}>
+        {slug === "stop-making-sense" && <p style={{ fontSize: 13 }}>Hero photograph: <a href="https://commons.wikimedia.org/wiki/File:Gary_%26_Talking_Heads.jpg">Katie Elliott / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>}
         {body.intro.split("\n\n").map((paragraph, index) => {
           const photo = slug === "purple-rain" ? purpleRainPhotos[index] : undefined;
           return (
@@ -78,6 +118,13 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         {body.sections.map((section, sectionIndex) => (
           <section key={section.title} id={`section-${sectionIndex + 1}`}>
             <h2>{section.title}</h2>
+            {slug === "stop-making-sense" && stopMakingSensePhotos[section.title] && (() => {
+              const photo = stopMakingSensePhotos[section.title];
+              return <figure className="feature-inline-photo">
+                <Image src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} sizes="(max-width: 560px) calc(100vw - 48px), 540px" />
+                <figcaption>{photo.caption} <a href={photo.source}>Source and rights record</a>{photo.license && <> · <a href={photo.license}>License</a></>}</figcaption>
+              </figure>;
+            })()}
             {slug === "synchronicity" && synchronicityPhotos[section.title] && <figure className="feature-inline-photo">
               <Image src={synchronicityPhotos[section.title].src} alt={synchronicityPhotos[section.title].alt} width={synchronicityPhotos[section.title].width} height={synchronicityPhotos[section.title].height} sizes="(max-width: 560px) calc(100vw - 48px), 540px" />
               <figcaption>{synchronicityPhotos[section.title].caption}</figcaption>

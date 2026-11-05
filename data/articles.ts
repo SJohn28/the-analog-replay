@@ -2,6 +2,22 @@ export const featuredArticleId = "highway-to-hell";
 
 export const articles = [
 {
+  "id": "stop-making-sense",
+  "title": "Stop Making Sense: How Talking Heads Turned a Concert Into Cinema",
+  "category": "Screen & Sound",
+  "topics": [
+    "screen-and-sound",
+    "artists"
+  ],
+  "subtitle": "Inside the growing ensemble, Jonathan Demme’s filmmaking and the extraordinary physical world of Talking Heads’ 1984 concert film.",
+  "image": "/images/stories/talking-heads-pantages-crew-1983.jpg",
+  "caption": "Talking Heads and crew at the Pantages Theatre, December 1983. Photograph: Katie Elliott, via Wikimedia Commons; CC BY 4.0. Resized for the web. Full source and license below.",
+  "author": "Scott Johnson",
+  "date": "November 2026",
+  "excerpt": "The musicians, staging and filmmaking behind Stop Making Sense—from the spare opening to the big suit and the film’s renewed life.",
+  "href": "/articles/stop-making-sense"
+},
+{
   "id": "highway-to-hell",
   "title": "AC/DC’s Highway to Hell: Bon Scott’s Breakthrough and the Road to Back in Black",
   "category": "Feature Story",
