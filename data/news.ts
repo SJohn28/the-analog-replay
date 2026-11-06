@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-05";
+export const newsReviewedOn = "2026-11-06";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -26,6 +26,108 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "rush-sphere-elevate-from-norm-2027",
+  "artist": "Rush",
+  "category": "Tours",
+  "announcedOn": "2026-11-05",
+  "title": "Rush announce five Sphere concerts, with two complete albums planned",
+  "summary": "Rush will play five concerts at Sphere in Las Vegas in May 2027. Announced November 5, the Elevate From The Norm residency brings Geddy Lee and Alex Lifeson to the venue on May 21, 23, 26, 28 and 30.\n\nLee says the band is developing a production specifically for Sphere and plans to perform 2112 and Moving Pictures in full, alongside other selections. The announcement describes the concerts as a celebration of Rush’s catalog and the late drummer and lyricist Neil Peart.\n\nThe artist presale opens November 11 at 10 a.m. Pacific, with registration available through Rush’s website. Regular tickets go on sale November 13 at 10 a.m. Pacific.\n\nVIP and travel packages follow a separate schedule: Rush Backstage and newsletter subscribers receive access November 6 at 10 a.m. Pacific, followed by the public package sale at noon Pacific. Those packages should not be confused with the regular concert-ticket sale.",
+  "tourDates": [
+    {
+      "date": "2027-05-21",
+      "city": "Las Vegas, NV",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2027-05-23",
+      "city": "Las Vegas, NV",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2027-05-26",
+      "city": "Las Vegas, NV",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2027-05-28",
+      "city": "Las Vegas, NV",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2027-05-30",
+      "city": "Las Vegas, NV",
+      "venue": "Sphere"
+    }
+  ],
+  "tourUrl": "https://www.rush.com/sphere/",
+  "tourHeading": "Elevate From The Norm · announced Sphere dates",
+  "tourCheckedOn": "November 6, 2026",
+  "photo": {
+    "src": "/images/news/rush-toronto-2010.jpg",
+    "width": 1400,
+    "height": 1050,
+    "alt": "Alex Lifeson and Geddy Lee performing beside Neil Peart at his drum kit",
+    "caption": "Rush at Toronto’s Air Canada Centre, July 17, 2010. Archive photograph featuring Neil Peart; not the 2027 performing lineup. Resized for display.",
+    "credit": "Clalansingh",
+    "url": "https://commons.wikimedia.org/wiki/File:Rush_all.JPG",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "references": [
+    {
+      "name": "Rush · Official dates and ticket-sale schedule",
+      "url": "https://www.rush.com/sphere/"
+    }
+  ],
+  "source": {
+    "name": "Sphere Entertainment · November 5 announcement",
+    "url": "https://www.sphereentertainmentco.com/rush-announces-five-date-elevate-from-the-norm-residency-at-sphere/"
+  }
+},
+{
+  "id": "ozzfest-three-countries-2027",
+  "artist": "Ozzfest",
+  "category": "Tours",
+  "announcedOn": "2026-11-05",
+  "title": "Ozzfest returns in 2027 with dates in Britain, California and Mexico",
+  "summary": "Ozzfest has announced three festival dates for 2027, beginning July 10 at the National Bowl in Milton Keynes, England. The November 5 announcement also confirms September 11 at Glen Helen Amphitheater in San Bernardino, California, and September 18 at Estadio GNP Seguros in Mexico City.\n\nSharon Osbourne will curate the lineups, which have not yet been announced. The festival says artist announcements will follow in the coming months. No headliner or participating band should be treated as confirmed at this stage.\n\nThe return follows the death of co-founder Ozzy Osbourne in 2025. Sharon describes the festival as part of his continuing legacy. The Mexico City event will be Ozzfest’s first edition in that city.\n\nEarly Bat tickets are scheduled to go on sale November 6 at 10 a.m. in each event’s local time zone. The official Ozzfest announcement provides separate ticket links for Britain, the United States and Mexico.",
+  "tourDates": [
+    {
+      "date": "2027-07-10",
+      "city": "Milton Keynes, England",
+      "venue": "The National Bowl"
+    },
+    {
+      "date": "2027-09-11",
+      "city": "San Bernardino, CA",
+      "venue": "Glen Helen Amphitheater"
+    },
+    {
+      "date": "2027-09-18",
+      "city": "Mexico City, Mexico",
+      "venue": "Estadio GNP Seguros"
+    }
+  ],
+  "tourHeading": "Ozzfest 2027 · announced festival dates",
+  "tourCheckedOn": "November 6, 2026",
+  "tourUrl": "https://www.ozzfest.com/",
+  "photo": {
+    "src": "/images/news/ozzy-2007.jpg",
+    "width": 1400,
+    "height": 1047,
+    "alt": "Ozzy Osbourne singing on a concert stage with his band behind him",
+    "caption": "Ozzfest co-founder Ozzy Osbourne performing in Spain in 2007. Archive photograph; resized for display.",
+    "credit": "joxeankoret",
+    "url": "https://commons.wikimedia.org/wiki/File:Ozzy_Osbourne.jpg",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  "source": {
+    "name": "Ozzfest · Official November 5 announcement",
+    "url": "https://www.ozzfest.com/news.html%3Fn_id=805.html"
+  }
+},
 {
   "id": "blackmores-night-30th-anniversary-2027",
   "artist": "Blackmore’s Night",
