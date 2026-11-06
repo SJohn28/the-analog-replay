@@ -64,15 +64,11 @@ export const news: NewsItem[] = [
   "tourHeading": "Elevate From The Norm · announced Sphere dates",
   "tourCheckedOn": "November 6, 2026",
   "photo": {
-    "src": "/images/news/rush-toronto-2010.jpg",
-    "width": 1400,
-    "height": 1050,
-    "alt": "Alex Lifeson and Geddy Lee performing beside Neil Peart at his drum kit",
-    "caption": "Rush at Toronto’s Air Canada Centre, July 17, 2010. Archive photograph featuring Neil Peart; not the 2027 performing lineup. Resized for display.",
-    "credit": "Clalansingh",
-    "url": "https://commons.wikimedia.org/wiki/File:Rush_all.JPG",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+    "src": "/images/news/rush-sphere-2027.jpeg",
+    "width": 631,
+    "height": 721,
+    "alt": "Rush Elevate From The Norm Sphere Las Vegas announcement graphic listing May 21, 23, 26, 28 and 30",
+    "caption": "Rush’s Elevate From The Norm residency at Sphere, May 2027. Announcement graphic supplied by Scott Johnson."
   },
   "references": [
     {
@@ -83,7 +79,20 @@ export const news: NewsItem[] = [
   "source": {
     "name": "Sphere Entertainment · November 5 announcement",
     "url": "https://www.sphereentertainmentco.com/rush-announces-five-date-elevate-from-the-norm-residency-at-sphere/"
-  }
+  },
+  "additionalPhotos": [
+    {
+      "src": "/images/news/rush-toronto-2010.jpg",
+      "width": 1400,
+      "height": 1050,
+      "alt": "Alex Lifeson and Geddy Lee performing beside Neil Peart at his drum kit",
+      "caption": "Rush at Toronto’s Air Canada Centre, July 17, 2010. Archive photograph featuring Neil Peart; not the 2027 performing lineup. Resized for display.",
+      "credit": "Clalansingh",
+      "url": "https://commons.wikimedia.org/wiki/File:Rush_all.JPG",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+    }
+  ]
 },
 {
   "id": "ozzfest-three-countries-2027",
