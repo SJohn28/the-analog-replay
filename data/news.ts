@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-06";
+export const newsReviewedOn = "2026-11-08";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -135,6 +135,18 @@ export const news: NewsItem[] = [
   "source": {
     "name": "Ozzfest · Official November 5 announcement",
     "url": "https://www.ozzfest.com/news.html%3Fn_id=805.html"
+  }
+},
+{
+  "id": "songwriters-hall-of-fame-2027-nominees",
+  "artist": "Blondie, America & ZZ Top",
+  "category": "Screen & Stage",
+  "announcedOn": "2026-11-05",
+  "title": "Blondie, America and ZZ Top songwriters nominated for Songwriters Hall of Fame",
+  "summary": "Debbie Harry and Chris Stein of Blondie, Gerry Beckley and Dewey Bunnell of America, and Billy Gibbons, Dusty Hill and Frank Beard of ZZ Top are on the Songwriters Hall of Fame’s 2027 ballot. The Hall announced the nominees on November 5, 2026. All three entries are in the performing songwriters category.\n\nThe Hall highlights “Heart of Glass” and “Rapture” from Blondie’s catalog, “A Horse with No Name” and “Sister Golden Hair” from America’s, and “La Grange” and “Sharp Dressed Man” from ZZ Top’s. The ballot also includes Jack White and a group nomination for WAR’s songwriters.\n\nEligible members have until December 14, 2026, to cast ballots. They can vote for up to three entries in each of the songwriter and performing songwriter categories. The Hall will honor the selected inductees at its 2027 gala in New York City.",
+  "source": {
+    "name": "Songwriters Hall of Fame · Official 2027 nominee list",
+    "url": "https://www.songhall.org/news/songwriters-hall-of-fame-2027-nominees-for-induction-announced"
   }
 },
 {
