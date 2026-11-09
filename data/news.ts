@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-08";
+export const newsReviewedOn = "2026-11-09";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -26,6 +26,31 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "tom-petty-origins-1971-1978",
+  "artist": "Tom Petty & the Heartbreakers",
+  "category": "Releases",
+  "announcedOn": "2026-11-06",
+  "dateLabel": "Released",
+  "title": "Tom Petty’s Origins traces the road from Mudcrutch to the Heartbreakers",
+  "summary": "Origins 1971–1978, released November 6 through UMe, follows Tom Petty’s early recordings through the formation of the Heartbreakers and their first two albums. The estate first announced the collection on September 16 as part of the band’s 50th anniversary.\n\nThe 51-track set opens with No Sleep Til L.A., a 12-track collection that starts with Mudcrutch. The box also includes the Heartbreakers’ self-titled debut, You’re Gonna Get It!, a 1977 Record Plant performance and a disc of rarities. Ryan Ulyate mixed the recordings from the original multitrack tapes.\n\nThe five-LP edition includes Blu-ray Audio and a DVD of the band’s 1978 appearance on the BBC’s Old Grey Whistle Test. No Sleep Til L.A. is also available separately.",
+  "source": {
+    "name": "Tom Petty Official · Box set contents and track listing",
+    "url": "https://store.tompetty.com/products/tom-petty-and-the-heartbreakers-origins-1971-1978-5lp-deluxe"
+  }
+},
+{
+  "id": "pink-floyd-animals-50",
+  "artist": "Pink Floyd",
+  "category": "Releases",
+  "announcedOn": "2026-11-05",
+  "title": "Pink Floyd’s Animals turns 50 with rarities and a 1977 Oakland concert",
+  "summary": "Pink Floyd announced Animals 50 on November 5. The anniversary edition arrives January 22, 2027, with a deluxe box that brings together the original 1977 album, James Guthrie’s 2018 remix and recordings from the band’s archive.\n\nThe rarities include early takes of “Sheep” and “Dogs” and a previously unheard Roger Waters track, “Young Nicholas Jon.” A separate pair of CDs in the deluxe box contains Reinhard Hohlwein’s audience recording of the May 9, 1977 concert at the Oakland Coliseum Arena. The Oakland recording is also included in the digital edition.\n\nA radio edit of “Sheep,” originally distributed for promotion in 1977, became commercially available with the announcement. The deluxe box also includes a book with previously unpublished photographs and accounts of the album artwork and tour.",
+  "source": {
+    "name": "Pink Floyd · Official Animals 50 announcement",
+    "url": "https://www.pinkfloyd.com/pink-floyd-announce-animals-50/"
+  }
+},
 {
   "id": "rush-sphere-elevate-from-norm-2027",
   "artist": "Rush",
