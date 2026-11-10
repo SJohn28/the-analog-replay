@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-09";
+export const newsReviewedOn = "2026-11-10";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -26,6 +26,49 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "phil-collins-solo-rock-hall-2026",
+  "artist": "Phil Collins",
+  "category": "Screen & Stage",
+  "announcedOn": "2026-11-09",
+  "dateLabel": "Interview coverage",
+  "title": "Phil Collins reflects on his solo Rock Hall induction",
+  "summary": "Phil Collins said he was surprised to learn he was being considered for the Rock & Roll Hall of Fame as a solo artist. In a New York Times interview covered by Louder on November 9, he looked back on making Face Value, his 1981 solo debut, and how working without a clear sense of the rules gave him room to experiment.\n\nThe Hall announced Collins as a 2026 inductee in April. The solo honor follows his 2010 induction with Genesis and recognizes the career he began with Face Value, the album that introduced “In the Air Tonight.”\n\nThe induction ceremony is scheduled for November 14 at the Peacock Theater in Los Angeles. The Hall says the ceremony will debut on ABC and Disney+ in December.",
+  "references": [
+    {
+      "name": "Rock & Roll Hall of Fame · Class of 2026 and ceremony details",
+      "url": "https://rockhall.com/press-release/the-rock-roll-hall-of-fame-reveals-2026-inductees/"
+    }
+  ],
+  "source": {
+    "name": "Louder · November 9 interview coverage",
+    "url": "https://www.loudersound.com/bands-artists/iphil-collins-on-rock-and-roll-hall-of-fame-induction-i-got-used-to-being-overlooked"
+  },
+  "photo": {
+    "src": "/images/news/phil-collins-genesis-2007.jpg",
+    "width": 1050,
+    "height": 1400,
+    "alt": "Phil Collins singing onstage with Genesis",
+    "caption": "Phil Collins performing “In the Cage” with Genesis at Washington, D.C.’s Verizon Center on September 23, 2007. Archive photo resized for display.",
+    "credit": "Andrew Bossi",
+    "url": "https://commons.wikimedia.org/wiki/File:2433_-_Washington_DC_-_Verizon_Center_-_Genesis_-_In_the_Cage.JPG",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/"
+  },
+  "additionalPhotos": [
+    {
+      "src": "/images/news/phil-collins-drum-duet-2007.jpg",
+      "width": 1400,
+      "height": 1050,
+      "alt": "Phil Collins and Chester Thompson playing a drum duet",
+      "caption": "Collins and Chester Thompson performing a drum duet at the same Genesis concert. Archive photo resized for display.",
+      "credit": "Andrew Bossi",
+      "url": "https://commons.wikimedia.org/wiki/File:2494_-_Washington_DC_-_Verizon_Center_-_Genesis_-_Drum_Duet.JPG",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/"
+    }
+  ]
+},
 {
   "id": "tom-petty-origins-1971-1978",
   "artist": "Tom Petty & the Heartbreakers",
