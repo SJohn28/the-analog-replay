@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-10";
+export const newsReviewedOn = "2026-11-11";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -26,6 +26,58 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "mccartney-starr-vetsaid-2027",
+  "artist": "Joe Walsh, Paul McCartney & Ringo Starr",
+  "category": "Tours",
+  "announcedOn": "2026-11-09",
+  "title": "Paul McCartney and Ringo Starr to join Joe Walsh at VetsAid",
+  "summary": "Paul McCartney and Ringo Starr will join Joe Walsh onstage at the tenth VetsAid benefit on January 29, 2027, at MGM Grand Garden Arena in Las Vegas. Walsh announced the lineup on November 9.\n\nThe two Beatles will appear during Walsh’s set. The Killers, The War on Drugs, St. Vincent and Lucius are each scheduled to play full sets. The concert will raise money to support veterans and their families.\n\nPublic ticket sales open through AXS on November 13 at 10 a.m. Pacific. The artist presale runs from November 11 at 10 a.m. Pacific through November 12 at 10 p.m. Pacific.",
+  "tourDates": [
+    {
+      "date": "2027-01-29",
+      "city": "Las Vegas, NV",
+      "venue": "MGM Grand Garden Arena"
+    }
+  ],
+  "tourHeading": "VetsAid 2027 benefit concert",
+  "tourCheckedOn": "November 11, 2026",
+  "tourUrl": "https://joewalsh.com/blogs/vetsaid-news/joe-walsh-friends-hit-the-jackpot-vetsaid-2027-lands-in-las-vegas-for-its-biggest-show-ever-hosting-the-10th-benefit-at-mgm-grand-garden-arena-friday-jan-29-2027",
+  "source": {
+    "name": "Joe Walsh · Official VetsAid announcement",
+    "url": "https://joewalsh.com/blogs/vetsaid-news/joe-walsh-friends-hit-the-jackpot-vetsaid-2027-lands-in-las-vegas-for-its-biggest-show-ever-hosting-the-10th-benefit-at-mgm-grand-garden-arena-friday-jan-29-2027"
+  },
+  "references": [
+    {
+      "name": "AXS · Artist presale details",
+      "url": "https://www.axs.com/events/1664475/joe-walsh-friends-present-vetsaid-tickets/promos/1226589"
+    }
+  ],
+  "photo": {
+    "src": "/images/news/mccartney-starr-2009.jpg",
+    "width": 1400,
+    "height": 1050,
+    "alt": "Paul McCartney and Ringo Starr onstage with other musicians in 2009",
+    "caption": "Paul McCartney, Ringo Starr and fellow performers on April 4, 2009. Archive photo resized for display.",
+    "credit": "audreylynne",
+    "url": "https://commons.wikimedia.org/wiki/File:Paul_mc_cartney,_ringo_starr_%26_friends.jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "additionalPhotos": [
+    {
+      "src": "/images/news/joe-walsh-2019.jpg",
+      "width": 628,
+      "height": 767,
+      "alt": "Joe Walsh at a microphone",
+      "caption": "VetsAid founder Joe Walsh in a 2019 archive photo.",
+      "credit": "drbaseball95",
+      "url": "https://commons.wikimedia.org/wiki/File:Joe_Walsh_2019.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+    }
+  ]
+},
 {
   "id": "phil-collins-solo-rock-hall-2026",
   "artist": "Phil Collins",
