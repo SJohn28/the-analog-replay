@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-11";
+export const newsReviewedOn = "2026-11-12";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -26,6 +26,49 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "ann-wilson-in-my-voice-digital-2026",
+  "artist": "Ann Wilson",
+  "category": "Screen & Stage",
+  "announcedOn": "2026-11-11",
+  "dateLabel": "Reported",
+  "title": "Ann Wilson’s In My Voice documentary heads to digital platforms November 25",
+  "summary": "Heart singer Ann Wilson’s documentary In My Voice is due on Amazon and Apple on November 25, 2026, according to Classic Rock’s November 11 interview. The film premiered in Seattle in May.\n\nDirected by Barbara Hall and narrated by Wilson, the film follows her from childhood through her career with Heart. It draws on home movies, journals, photographs and previously unseen band footage. Paul Stanley and Chappell Roan are among the artists featured.\n\nWilson told Classic Rock that she invited her sister and Heart bandmate Nancy to be interviewed. According to Ann, Nancy wanted to save her account for a documentary of her own.",
+  "photo": {
+    "src": "/images/news/ann-wilson-walk-of-fame-2012.jpg",
+    "width": 631,
+    "height": 794,
+    "alt": "Ann Wilson at Heart’s Hollywood Walk of Fame ceremony",
+    "caption": "Ann Wilson at Heart’s Hollywood Walk of Fame ceremony on September 25, 2012. Archive photograph.",
+    "credit": "Angela George",
+    "url": "https://commons.wikimedia.org/wiki/File:AnnWilsonHWOFSept2012.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "additionalPhotos": [
+    {
+      "src": "/images/news/heart-canary-foundation-2007.jpg",
+      "width": 876,
+      "height": 584,
+      "alt": "Nancy and Ann Wilson performing with Heart",
+      "caption": "Nancy and Ann Wilson performing at a Canary Foundation benefit on July 28, 2007. Archive photograph.",
+      "credit": "Michael Sierra (Fatcat125)",
+      "url": "https://commons.wikimedia.org/wiki/File:Heart-07-28-07.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "references": [
+    {
+      "name": "Apple TV · Film listing",
+      "url": "https://tv.apple.com/us/movie/ann-wilson-in-my-voice/umc.cmc.cn9wf4h9psjzs0y80ozvkxfn"
+    }
+  ],
+  "source": {
+    "name": "Classic Rock · November 11 Ann Wilson interview",
+    "url": "https://www.loudersound.com/bands-artists/ann-wilson-why-sister-nancy-doesnt-appear-in-her-film"
+  }
+},
 {
   "id": "mccartney-starr-vetsaid-2027",
   "artist": "Joe Walsh, Paul McCartney & Ringo Starr",
