@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-12";
+export const newsReviewedOn = "2026-11-13";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -26,6 +26,36 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "u2-carnaval-de-luz-release-2026",
+  "artist": "U2",
+  "category": "Releases",
+  "announcedOn": "2026-11-13",
+  "dateLabel": "Released",
+  "title": "U2 release Carnaval De Luz, featuring a duet with Dolly Parton",
+  "summary": "U2 released Carnaval De Luz on November 13 through Island Records. First announced September 24, it is the band’s 16th studio album and their first album of new material in nine years.\n\nThe closing song, “Torn,” is a duet between Bono and Dolly Parton. U2 says Parton recorded her vocal in Nashville in June 2026 and describes it as her final recorded vocal performance. U2, Parton and Johnny McDaid co-wrote the song. Daniel Lanois plays pedal steel on the album track.\n\nA country version of “Torn,” credited to Kent Wells, was also released this week. Brian Eno contributed songwriting and synthesizers to three other songs on the album.",
+  "photo": {
+    "src": "/images/news/u2-brussels-2017.jpg",
+    "width": 1280,
+    "height": 673,
+    "alt": "Larry Mullen Jr., The Edge, Bono and Adam Clayton performing together onstage",
+    "caption": "U2 on the Joshua Tree tour in Brussels on August 1, 2017. Archive photograph resized for display.",
+    "credit": "Remy",
+    "url": "https://commons.wikimedia.org/wiki/File:U2_on_Joshua_Tree_Tour_2017_Brussels_8-1-17.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "references": [
+    {
+      "name": "U2 · September 24 album announcement and credits",
+      "url": "https://www.u2.com/blogs/news/carnaval-de-luz-new-album-coming-in-november"
+    }
+  ],
+  "source": {
+    "name": "U2 · November 13 release announcement",
+    "url": "https://www.u2.com/blogs/news/out-now-1"
+  }
+},
 {
   "id": "ann-wilson-in-my-voice-digital-2026",
   "artist": "Ann Wilson",
@@ -194,8 +224,8 @@ export const news: NewsItem[] = [
   "artist": "Rush",
   "category": "Tours",
   "announcedOn": "2026-11-05",
-  "title": "Rush announce five Sphere concerts, with two complete albums planned",
-  "summary": "Rush will play five concerts at Sphere in Las Vegas in May 2027. Announced November 5, the Elevate From The Norm residency brings Geddy Lee and Alex Lifeson to the venue on May 21, 23, 26, 28 and 30.\n\nLee says the band is developing a production specifically for Sphere and plans to perform 2112 and Moving Pictures in full, alongside other selections. The announcement describes the concerts as a celebration of Rush’s catalog and the late drummer and lyricist Neil Peart.\n\nThe artist presale opens November 11 at 10 a.m. Pacific, with registration available through Rush’s website. Regular tickets go on sale November 13 at 10 a.m. Pacific.\n\nVIP and travel packages follow a separate schedule: Rush Backstage and newsletter subscribers receive access November 6 at 10 a.m. Pacific, followed by the public package sale at noon Pacific. Those packages should not be confused with the regular concert-ticket sale.",
+  "title": "Rush add five June concerts to their Las Vegas Sphere residency",
+  "summary": "Rush have expanded their Elevate From The Norm residency at Sphere in Las Vegas to ten shows. The five additional dates, reported November 11, are June 15, 17, 19, 24 and 26, 2027. They join the five May concerts announced November 5.\n\nGeddy Lee said Rush plans to perform 2112 and Moving Pictures in full alongside other songs. The residency celebrates the band’s catalog and the late drummer and lyricist Neil Peart.\n\nGeneral ticket sales are scheduled to begin November 13 at 10 a.m. Pacific. See the venue and ticket listings for availability.",
   "tourDates": [
     {
       "date": "2027-05-21",
@@ -221,22 +251,55 @@ export const news: NewsItem[] = [
       "date": "2027-05-30",
       "city": "Las Vegas, NV",
       "venue": "Sphere"
+    },
+    {
+      "date": "2027-06-15",
+      "city": "Las Vegas, NV",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2027-06-17",
+      "city": "Las Vegas, NV",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2027-06-19",
+      "city": "Las Vegas, NV",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2027-06-24",
+      "city": "Las Vegas, NV",
+      "venue": "Sphere"
+    },
+    {
+      "date": "2027-06-26",
+      "city": "Las Vegas, NV",
+      "venue": "Sphere"
     }
   ],
-  "tourUrl": "https://www.rush.com/sphere/",
+  "tourUrl": "https://thesphere.com/shows/rush",
   "tourHeading": "Elevate From The Norm · announced Sphere dates",
-  "tourCheckedOn": "November 6, 2026",
+  "tourCheckedOn": "November 13, 2026",
   "photo": {
     "src": "/images/news/rush-sphere-2027.jpeg",
     "width": 631,
     "height": 721,
     "alt": "Rush Elevate From The Norm Sphere Las Vegas announcement graphic listing May 21, 23, 26, 28 and 30",
-    "caption": "Rush’s Elevate From The Norm residency at Sphere, May 2027. Announcement graphic supplied by Scott Johnson."
+    "caption": "The original announcement graphic lists the five May 2027 shows. The complete schedule below includes the June additions. Graphic supplied by Scott Johnson."
   },
   "references": [
     {
       "name": "Rush · Official dates and ticket-sale schedule",
       "url": "https://www.rush.com/sphere/"
+    },
+    {
+      "name": "Ticketmaster · May and June concert listings",
+      "url": "https://www.ticketmaster.com/rush-tickets/artist/807344?venueId=189524"
+    },
+    {
+      "name": "Louder · November 11 residency expansion",
+      "url": "https://www.loudersound.com/bands-artists/rush-las-vegas-sphere"
     }
   ],
   "source": {
