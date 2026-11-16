@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-13";
+export const newsReviewedOn = "2026-11-16";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -26,6 +26,36 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "rock-hall-ceremony-2026-collins-idol",
+  "artist": "Phil Collins & Billy Idol",
+  "category": "Screen & Stage",
+  "announcedOn": "2026-11-14",
+  "dateLabel": "Ceremony",
+  "title": "Phil Collins and Billy Idol take the spotlight at the 2026 Rock Hall induction",
+  "summary": "Phil Collins accepted his solo induction into the Rock & Roll Hall of Fame on November 14, 2026, at the Peacock Theater in Los Angeles. Travis Barker of Blink-182 introduced Collins, then played drums as Cynthia Erivo sang “In the Air Tonight,” the opening track from Collins’s 1981 solo debut, Face Value. Collins had already entered the Hall with Genesis in 2010.\n\nGwen Stefani and Tony Kanal of No Doubt inducted Billy Idol and his longtime guitarist Steve Stevens. Idol and Stevens played “White Wedding,” and Stefani joined Idol to sing “Eyes Without a Face.”\n\nThe ceremony also honored Iron Maiden, Oasis and Joy Division/New Order in the performer category. The Rock Hall says the ceremony will debut on ABC and Disney+ in December.",
+  "photo": {
+    "src": "/images/news/phil-collins-travis-barker-rock-hall-2026.jpeg",
+    "width": 495,
+    "height": 619,
+    "alt": "Travis Barker embraces Phil Collins onstage",
+    "caption": "Phil Collins and Travis Barker at the 2026 Rock & Roll Hall of Fame induction in Los Angeles. Image supplied by Scott Johnson."
+  },
+  "references": [
+    {
+      "name": "Rock & Roll Hall of Fame · Class of 2026 and broadcast plans",
+      "url": "https://rockhall.com/press-release/the-rock-roll-hall-of-fame-reveals-2026-inductees/"
+    },
+    {
+      "name": "Peacock Theater · November 14 ceremony",
+      "url": "https://www.peacocktheater.com/events/detail/rrhof111426"
+    }
+  ],
+  "source": {
+    "name": "Associated Press · Induction and performance recap",
+    "url": "https://apnews.com/article/3171abbc75a9529119a39762fb8ddbd5"
+  }
+},
 {
   "id": "u2-carnaval-de-luz-release-2026",
   "artist": "U2",
