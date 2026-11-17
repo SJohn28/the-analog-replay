@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-16";
+export const newsReviewedOn = "2026-11-17";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -26,6 +26,68 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "megadeth-outbreak-north-america-2027",
+  "artist": "Megadeth",
+  "category": "Tours",
+  "announcedOn": "2026-11-16",
+  "title": "Megadeth add 42 North American farewell dates with Anthrax and Kerry King",
+  "summary": "Megadeth announced a 42-date North American leg of their farewell tour on November 16. The Outbreak: Vaccination of the Nations tour opens May 14, 2027, in Albuquerque and ends September 30 in Spokane. Anthrax and Slayer guitarist Kerry King join as special guests.\n\nThe itinerary includes Los Angeles, Phoenix, Chicago, Toronto, New York and Atlanta, with a September 21 stop at Milwaukee’s BMO Pavilion. The new leg follows the January 2026 release of Megadeth’s self-titled final studio album.\n\nThe band’s Cyber Army presale starts November 17 at 10 a.m. local time. General ticket sales begin November 20 at 10 a.m. local time.",
+  "source": {
+    "name": "Megadeth · November 16 announcement",
+    "url": "https://www.megadeth.com/blogs/news/outbreak-vaccination-of-the-nations-tour"
+  },
+  "references": [
+    {
+      "name": "BMO Pavilion · Full tour itinerary",
+      "url": "https://www.bmopavilion.com/about/press-releases/2026/11/16/megadeth-september-21-at-bmo-pavilion/"
+    }
+  ],
+  "photo": {
+    "src": "/images/news/megadeth-wacken-2017.jpg",
+    "width": 1400,
+    "height": 931,
+    "alt": "Megadeth at Wacken Open Air on August 4, 2017.",
+    "caption": "Megadeth at Wacken Open Air on August 4, 2017. Archive photograph resized for display.",
+    "credit": "Markus Felix / PushingPixels",
+    "url": "https://commons.wikimedia.org/wiki/File:20170804_Wacken_Wacken_Open_Air_Megadeth_0073.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  }
+},
+{
+  "id": "foo-fighters-take-cover-europe-2027",
+  "artist": "Foo Fighters",
+  "category": "Tours",
+  "announcedOn": "2026-11-16",
+  "title": "Foo Fighters add 2027 European dates, including two nights at Wembley",
+  "summary": "Foo Fighters announced new European dates for their Take Cover World Tour on November 16. The run starts June 9, 2027, in Reykjavík and includes two nights at London’s Wembley Stadium on September 9 and 11. The band also plays Darlington on September 14 and Edinburgh’s Murrayfield on September 16. The closing date at Dublin’s Croke Park on September 18 is subject to licence.\n\nGarbage and Reclus.É are billed for the first Wembley show, with St. Vincent and Florence Road on the second. The Hives join several June dates. General sales for Dublin start November 20 at 10 a.m. local time, according to promoter MCD. The band’s tour page lists ticket details by venue.",
+  "source": {
+    "name": "Foo Fighters · Official tour dates",
+    "url": "https://www.foofighters.com/tour-dates"
+  },
+  "references": [
+    {
+      "name": "Scottish Rugby · November 16 announcement",
+      "url": "https://scottishrugby.org/news-and-features/foo-fighters-to-play-at-scottish-gas-murrayfield/"
+    },
+    {
+      "name": "MCD · Dublin show and ticket details",
+      "url": "https://www.mcd.ie/artists/foo-fighters/"
+    }
+  ],
+  "photo": {
+    "src": "/images/news/foo-fighters-berlin-2017.jpg",
+    "width": 1400,
+    "height": 789,
+    "alt": "Foo Fighters at Lollapalooza Berlin on September 10, 2017.",
+    "caption": "Foo Fighters at Lollapalooza Berlin on September 10, 2017. Archive photograph resized for display.",
+    "credit": "Raph_PH",
+    "url": "https://commons.wikimedia.org/wiki/File:FoosLollBerlin190917-18.jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  }
+},
 {
   "id": "rock-hall-ceremony-2026-collins-idol",
   "artist": "Phil Collins & Billy Idol",
