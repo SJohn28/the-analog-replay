@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-17";
+export const newsReviewedOn = "2026-11-18";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -9,6 +9,7 @@ export type NewsItem = {
   dateLabel?: string;
   title: string;
   summary: string;
+  spotifyAlbumId?: string;
   setlist?: { song: string; performer: string }[];
   setlistNote?: string;
   setlistHeading?: string;
@@ -26,6 +27,26 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "queen-thank-god-its-christmas-again-2026",
+  "artist": "Queen",
+  "category": "Releases",
+  "announcedOn": "2026-11-16",
+  "dateLabel": "Released",
+  "title": "Queen revisit their Christmas single with Freddie Mercury’s original vocal",
+  "summary": "Queen released “Thank God It’s Christmas… Again!” digitally on November 16, 2026. Brian May and Roger Taylor returned to the 1984 recording, keeping Freddie Mercury’s lead vocal and adding newly recorded guitar, live drums and backing vocals.\n\nQueen first released “Thank God It’s Christmas” in the UK on November 26, 1984, during a break in The Works tour. May and Taylor produced the new version with Joshua J. Macrae, Justin Shirley-Smith and Kris Fredriksson.\n\nQueen’s official store lists a limited seven-inch vinyl edition for December 18, 2026.",
+  "spotifyAlbumId": "5uVEnSIzW6j6u4BOgRQcLs",
+  "references": [
+    {
+      "name": "Queen Official Store · Seven-inch single",
+      "url": "https://store.queenonline.com/products/thank-god-its-christmas-again"
+    }
+  ],
+  "source": {
+    "name": "Queen · November 16 release announcement",
+    "url": "https://www.queenonline.com/news/press-release-thank-god-its-christmasagain"
+  }
+},
 {
   "id": "megadeth-outbreak-north-america-2027",
   "artist": "Megadeth",
