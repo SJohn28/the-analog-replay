@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-18";
+export const newsReviewedOn = "2026-11-19";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -27,6 +27,52 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "bruce-dickinson-psychogod-album-2027",
+  "artist": "Bruce Dickinson",
+  "category": "Releases",
+  "announcedOn": "2026-11-18",
+  "title": "Bruce Dickinson announces PsychoGod album and releases “Speaking in Tongues”",
+  "summary": "Bruce Dickinson will release PsychoGod on March 12, 2027, through BMG. Announced November 18, the Iron Maiden singer’s eighth solo studio album follows 2024’s The Mandrake Project. Its first single, “Speaking in Tongues,” is available now, with a video co-directed by Dickinson and Leo Liberti.\n\nThe band recorded the album at Dave Grohl’s Studio 606 in California early in 2026, performing the songs together in the studio. Brendan Duffey produced and mixed the sessions. Dickinson’s lineup includes guitarists Chris Declercq and Philip Näslund, bassist Tanya O’Callaghan, keyboardist Mistheria and drummer Dave Moreno.\n\nGuests include Devin Townsend and Sepultura’s Andreas Kisser and Derrick Green. The 13-track album draws on literature and mythology; opening song “Necropolis” connects with the characters introduced in The Mandrake Project.\n\nBMG will issue PsychoGod on CD, double vinyl and digital platforms. A deluxe CD/Blu-ray edition includes a Dolby Atmos mix and three interconnected videos. Dickinson’s previously announced European solo dates run across summer and late 2027.",
+  "photo": {
+    "src": "/images/news/bruce-dickinson-paris-2024.jpg",
+    "width": 960,
+    "height": 1399,
+    "alt": "Bruce Dickinson signing records at Gibert Joseph in Paris in March 2024.",
+    "caption": "Bruce Dickinson at a Paris record signing on March 4, 2024. Archive photograph resized for display.",
+    "credit": "ManoSolo13241324",
+    "url": "https://commons.wikimedia.org/wiki/File:Bruce_Dickinson_2024.jpg",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "source": {
+    "name": "Bruce Dickinson · November 18 album announcement",
+    "url": "https://www.brucedickinsonhq.com/psychogod-the-brand-new-studio-album-coming-march-12-2027/"
+  }
+},
+{
+  "id": "steve-hackett-through-sea-flames-2027",
+  "artist": "Steve Hackett",
+  "category": "Releases",
+  "announcedOn": "2026-11-17",
+  "title": "Steve Hackett announces Through a Sea of Flames for February 2027",
+  "summary": "Steve Hackett will release Through a Sea of Flames on February 26, 2027. The former Genesis guitarist announced the completed album on November 17, with preorders and a first preview of the new music expected December 9.\n\nMore than 20 musicians and other contributors took part in the project. Bruce Soord of The Pineapple Thief handled its Dolby Atmos mixes, the first for a Hackett solo album. The opening track, “The Sea Inside,” has already been performed during Hackett’s 2026 concerts.\n\nThe announcement follows The Roaring Waves, Hackett’s collaboration with Marillion guitarist Steve Rothery, released in August. Hackett is finishing his 2026 touring schedule in Italy; his Florence performance is being filmed and recorded for a separate future live release. He also has North American concerts scheduled for 2027.",
+  "photo": {
+    "src": "/images/news/steve-hackett-nuremberg-2024.jpg",
+    "width": 1400,
+    "height": 933,
+    "alt": "Steve Hackett and his band performing on an outdoor stage in Nuremberg in July 2024.",
+    "caption": "Steve Hackett and his band in Nuremberg on July 18, 2024. Original: “2024 Steve Hackett - by 2eight - 9SC4046.” Resized for display.",
+    "credit": "Stefan Brending",
+    "url": "https://commons.wikimedia.org/wiki/File:2024_Steve_Hackett_-_by_2eight_-_9SC4046.jpg",
+    "license": "CC BY-SA 3.0 DE",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/"
+  },
+  "source": {
+    "name": "Steve Hackett · Official album announcement",
+    "url": "https://hackettsongs.com/news/through-a-sea-of-flames"
+  }
+},
 {
   "id": "queen-thank-god-its-christmas-again-2026",
   "artist": "Queen",
