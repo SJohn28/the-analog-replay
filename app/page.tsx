@@ -1,53 +1,23 @@
-import Hero from "@/components/home/Hero";
-import Image from "next/image";
+import type { Metadata } from "next";
 import Link from "next/link";
-import { articles, featuredArticleId } from "@/data/articles";
+import NewsFeed from "@/components/NewsFeed";
+import { newsReviewedOn } from "@/data/news";
+import "./news/news.css";
+
+export const metadata: Metadata = {
+  title: "Classic Rock News Today",
+  alternates: { canonical: "https://www.theanalogreplay.com" },
+  description: "Classic rock news today: tour announcements, new releases, artist updates and music on screen and stage. Verified reporting with links to original sources.",
+};
 
 export default function Home() {
-  const stories = articles.filter((article) => article.id !== featuredArticleId);
-
   return (
-    <main className="magazine-home">
-      <Hero />
-
-      <section className="journal-section" aria-labelledby="in-the-grooves">
-        <div className="section-heading">
-          <div><p className="eyebrow">Good records. Better stories.</p><h2 id="in-the-grooves">In the grooves.</h2></div>
-          <Link className="text-link" href="/archive">All stories <span aria-hidden="true">↗</span></Link>
-        </div>
-        <div className="editorial-grid">
-          <div className="story-rows">
-            {stories.map((story, index) => (
-              <Link className="editorial-story" key={story.id} href={story.href}>
-                <div className="story-art"><Image src={story.image} alt="" fill sizes="(max-width: 600px) 36vw, 180px" /></div>
-                <div className="story-details"><p className="eyebrow">0{index + 1} / {story.category}</p><h3>{story.title}</h3><p className="story-description">{story.excerpt}</p><span className="text-link">Read the story <span aria-hidden="true">↗</span></span></div>
-              </Link>
-            ))}
-          </div>
-          <aside className="turntable" aria-labelledby="on-the-turntable">
-            <p className="eyebrow" id="on-the-turntable"><span className="live-dot" /> On the turntable</p>
-            <div className="record-stage"><div className="vinyl-record" aria-hidden="true"><span>THE<br />ANALOG<br />REPLAY</span></div><Image src="/images/albums/escape-cover.jpg" alt="Journey’s Escape album cover" width={300} height={300} className="record-sleeve" /></div>
-            <p className="record-caption">Journey · 1981</p><h3>Escape, on repeat.</h3><p>Big melodies. Open roads. Some records were made to be played all the way through.</p><Link className="text-link" href="/articles/escape">Take another listen <span aria-hidden="true">↗</span></Link>
-          </aside>
-        </div>
-      </section>
-
-      <section className="replay-banner" aria-labelledby="replay-five">
-        <div className="banner-number" aria-hidden="true">05</div>
-        <div className="banner-copy"><p className="eyebrow">The Replay Five</p><h2 id="replay-five">Your next great<br /><em>listening session.</em></h2><p>Five songs from our featured records. No algorithms. Just a little inspiration for what to put on next.</p></div>
-        <Link className="light-button" href="/charts">Find your next spin <span aria-hidden="true">↗</span></Link>
-      </section>
-
-      <section className="journal-section explore-section" aria-labelledby="find-your-frequency">
-        <div className="section-heading"><div><p className="eyebrow">Follow your curiosity</p><h2 id="find-your-frequency">Find your frequency.</h2></div></div>
-        <div className="frequency-grid">
-          {[
-            { number: "01", title: "The artists", text: "The voices. The vision. The people behind the sound.", href: "/artists" },
-            { number: "02", title: "The albums", text: "Familiar favorites, heard with fresh ears.", href: "/albums" },
-            { number: "03", title: "Screen & sound", text: "When the music becomes part of the picture.", href: "/screen-and-sound" },
-          ].map((item) => <Link key={item.href} href={item.href} className="frequency-link"><span className="frequency-number">{item.number}</span><h3>{item.title}<span aria-hidden="true">↗</span></h3><p>{item.text}</p></Link>)}
-        </div>
-      </section>
+    <main className="news-page">
+      <header className="news-heading"><div><p className="eyebrow">The music keeps moving.</p><h1>Classic Rock<br />News <em>Today</em><span>.</span></h1><p className="news-intro">The latest tour announcements, new releases and updates from classic rock artists.</p></div><div className="news-edition"><span className="news-edition-dot" aria-hidden="true" /><span>Last reviewed<br /><time dateTime={newsReviewedOn}>{new Date(`${newsReviewedOn}T12:00:00Z`).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}</time></span></div></header>
+      <div className="news-layout">
+        <section aria-label="Selected artist news"><NewsFeed /></section>
+        <aside className="news-sidebar"><p className="eyebrow">A little context</p><h2>Still making noise.</h2><p>The records may be classics. The story is still unfolding.</p><p>We select stories from official artist sources and established music publications and write a short summary, so you can follow the news back to where it started.</p><div className="news-editor-note"><h3>About these updates</h3><p>This is a curated news page, not a live feed. The review date above shows when this selection was checked. Follow the source for the latest schedules and release details.</p></div><div className="news-sidebar-links"><p className="eyebrow">Stay a little longer</p><Link href="/archive">Back to the long play <span aria-hidden="true">↗</span></Link><Link href="/artists">The artists behind it all <span aria-hidden="true">↗</span></Link></div></aside>
+      </div>
     </main>
   );
 }

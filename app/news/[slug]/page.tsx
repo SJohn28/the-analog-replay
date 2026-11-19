@@ -32,5 +32,5 @@ export default async function NewsStory({ params }: Props) {
   const { slug } = await params;
   const item = news.find((story) => story.id === slug);
   if (!item) notFound();
-  return <main className="news-page news-story"><Link className="news-back" href="/news">← All News & Notes</Link><NewsFeed items={[item]} standalone /></main>;
+  return <main className="news-page news-story"><Link className="news-back" href="/">← Classic Rock News Today</Link><NewsFeed items={[item]} standalone /></main>;
 }
