@@ -10,6 +10,7 @@ export type NewsItem = {
   title: string;
   summary: string;
   spotifyAlbumId?: string;
+  musicSections?: { id: string; title: string; note: string; tracks: { artist: string; song: string }[] }[];
   setlist?: { song: string; performer: string }[];
   setlistNote?: string;
   setlistHeading?: string;
@@ -27,6 +28,860 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "grand-theft-auto-vi-rock-songs-2026",
+  "artist": "Grand Theft Auto VI",
+  "category": "Screen & Stage",
+  "announcedOn": "2026-11-20",
+  "dateLabel": "Guide checked",
+  "title": "Here Are All of the Rock Songs in Grand Theft Auto VI",
+  "summary": "Grand Theft Auto VI’s music includes AC/DC, Aerosmith, Queen, Van Halen, the Police and Tom Petty, alongside metal from Black Sabbath, Iron Maiden, Metallica and Slayer. The game launched November 19, 2026, and its radio stations put decades of rock music into the streets of Vice City and the surrounding state of Leonida.\n\nV-Rock is hosted by Lindsey Buckingham and Michael McDonald. The Chamber 106.6 brings in Slayer’s Kerry King and Tom Araya for its metal programming. Emotion 98.3 covers ballads and soft rock, while Vice City FM includes new wave and pop-rock among its 1980s selections.\n\nThe station-by-station guide below was checked against Rockstar’s official music credits on November 20. It includes full V-Rock, Chamber and Emotion playlists, plus rock and rock-adjacent tracks from mixed-format stations and additional music credits. Genre boundaries overlap, so soft rock and new wave are included; this is not a list of every pop, country, blues or electronic track in the game.\n\nSome launch-day reports list songs absent from the official credits, including Metallica’s “Battery” and Stevie Nicks’s “For What It’s Worth.” Those have been left out of the verified tables pending confirmation. The new Power Trip song is titled “Mutual Death Warrant” in Rockstar’s credits; some reports give it a different name. The lists below follow the official credit.",
+  "musicSections": [
+    {
+      "id": "v-rock",
+      "title": "V-Rock · classic rock and hard rock",
+      "note": "Hosted by Lindsey Buckingham and Michael McDonald. The complete station song list in Rockstar’s launch credits.",
+      "tracks": [
+        {
+          "artist": "38 Special",
+          "song": "Rockin' Into The Night"
+        },
+        {
+          "artist": "AC/DC",
+          "song": "Sin City"
+        },
+        {
+          "artist": "Aerosmith",
+          "song": "Livin' On The Edge"
+        },
+        {
+          "artist": "April Wine",
+          "song": "Roller"
+        },
+        {
+          "artist": "Bad Company",
+          "song": "Rock ‘N' Roll Fantasy"
+        },
+        {
+          "artist": "Billy Squier",
+          "song": "Everybody Wants You"
+        },
+        {
+          "artist": "Blue Öyster Cult",
+          "song": "Shooting Shark"
+        },
+        {
+          "artist": "Bob Seger",
+          "song": "Shakedown"
+        },
+        {
+          "artist": "Bon Jovi",
+          "song": "Runaway"
+        },
+        {
+          "artist": "Christopher Cross",
+          "song": "Ride Like the Wind"
+        },
+        {
+          "artist": "David Lee Roth",
+          "song": "Just Like Paradise"
+        },
+        {
+          "artist": "Def Leppard",
+          "song": "Pour Some Sugar On Me"
+        },
+        {
+          "artist": "Def Leppard",
+          "song": "Comin' Under Fire"
+        },
+        {
+          "artist": "Dire Straits",
+          "song": "Money For Nothing"
+        },
+        {
+          "artist": "Eddie Money",
+          "song": "Take Me Home Tonight"
+        },
+        {
+          "artist": "Eric Clapton",
+          "song": "Cocaine"
+        },
+        {
+          "artist": "Eric Clapton",
+          "song": "Bad Love"
+        },
+        {
+          "artist": "Fleetwood Mac",
+          "song": "Big Love"
+        },
+        {
+          "artist": "Foreigner",
+          "song": "Urgent"
+        },
+        {
+          "artist": "Gerry Rafferty",
+          "song": "Get It Right Next Time"
+        },
+        {
+          "artist": "Gerry Rafferty",
+          "song": "Right Down the Line"
+        },
+        {
+          "artist": "Gino Vannelli",
+          "song": "Black Cars"
+        },
+        {
+          "artist": "Harry Nilsson",
+          "song": "Jump into the Fire"
+        },
+        {
+          "artist": "Huey Lewis & The News",
+          "song": "I Want a New Drug"
+        },
+        {
+          "artist": "Jane's Addiction",
+          "song": "Had a Dad"
+        },
+        {
+          "artist": "Jay Ferguson",
+          "song": "Thunder Island"
+        },
+        {
+          "artist": "Jefferson Starship",
+          "song": "Find Your Way Back"
+        },
+        {
+          "artist": "John Mellencamp",
+          "song": "Jack & Diane"
+        },
+        {
+          "artist": "John Parr",
+          "song": "Naughty Naughty"
+        },
+        {
+          "artist": "Kenny Loggins",
+          "song": "Heart To Heart"
+        },
+        {
+          "artist": "Kiss",
+          "song": "Sure Know Something"
+        },
+        {
+          "artist": "Lindsey Buckingham",
+          "song": "Go Insane"
+        },
+        {
+          "artist": "Loverboy",
+          "song": "Lovin' Every Minute of It"
+        },
+        {
+          "artist": "Michael McDonald",
+          "song": "I Gotta Try"
+        },
+        {
+          "artist": "Mötley Crüe",
+          "song": "Dr. Feelgood"
+        },
+        {
+          "artist": "Pete Townshend",
+          "song": "Let My Love Open The Door"
+        },
+        {
+          "artist": "Poison",
+          "song": "Nothin' But A Good Time"
+        },
+        {
+          "artist": "Queen",
+          "song": "Hammer To Fall"
+        },
+        {
+          "artist": "Red Rider",
+          "song": "Lunatic Fringe"
+        },
+        {
+          "artist": "REO Speedwagon",
+          "song": "Take It On the Run"
+        },
+        {
+          "artist": "Stephen Stills",
+          "song": "Love the One You're With"
+        },
+        {
+          "artist": "Stephen Stills",
+          "song": "Stranger"
+        },
+        {
+          "artist": "Stevie Nicks",
+          "song": "Rooms on Fire"
+        },
+        {
+          "artist": "Steve Winwood",
+          "song": "Freedom Overspill"
+        },
+        {
+          "artist": "Styx",
+          "song": "Too Much Time On My Hands"
+        },
+        {
+          "artist": "The Clash",
+          "song": "Rock The Casbah"
+        },
+        {
+          "artist": "The Doobie Brothers",
+          "song": "Takin' It to the Streets"
+        },
+        {
+          "artist": "The Kinks",
+          "song": "Living On A Thin Line"
+        },
+        {
+          "artist": "The Police",
+          "song": "Driven To Tears"
+        },
+        {
+          "artist": "The Rolling Stones",
+          "song": "Emotional Rescue"
+        },
+        {
+          "artist": "The Romantics",
+          "song": "Talking In Your Sleep"
+        },
+        {
+          "artist": "The Steve Miller Band",
+          "song": "Take The Money And Run"
+        },
+        {
+          "artist": "The Who",
+          "song": "Bargain"
+        },
+        {
+          "artist": "Tina Turner",
+          "song": "Better Be Good to Me"
+        },
+        {
+          "artist": "Todd Rundgren",
+          "song": "I Saw the Light"
+        },
+        {
+          "artist": "Tom Petty",
+          "song": "Love Is A Long Road"
+        },
+        {
+          "artist": "Tom Petty",
+          "song": "You Wreck Me"
+        },
+        {
+          "artist": "Tom Petty",
+          "song": "Dogs on the Run"
+        },
+        {
+          "artist": "Tom Petty",
+          "song": "The Wild One, Forever"
+        },
+        {
+          "artist": "Tom Petty",
+          "song": "Wildflowers"
+        },
+        {
+          "artist": "Tom Petty",
+          "song": "Between Two Worlds"
+        },
+        {
+          "artist": "Tom Petty",
+          "song": "The Damage You've Done"
+        },
+        {
+          "artist": "Toto",
+          "song": "Georgy Porgy"
+        },
+        {
+          "artist": "U2",
+          "song": "The Unforgettable Fire"
+        },
+        {
+          "artist": "Van Halen",
+          "song": "Panama"
+        },
+        {
+          "artist": "Warrant",
+          "song": "Cherry Pie"
+        },
+        {
+          "artist": "Warren Zevon",
+          "song": "Lawyers, Guns and Money"
+        },
+        {
+          "artist": "Whitesnake",
+          "song": "Give Me All Your Love"
+        },
+        {
+          "artist": "Yes",
+          "song": "Rhythm of Love"
+        },
+        {
+          "artist": "ZZ Top",
+          "song": "Got Me Under Pressure"
+        }
+      ]
+    },
+    {
+      "id": "the-chamber",
+      "title": "The Chamber 106.6 · heavy metal",
+      "note": "Hosted by Slayer’s Kerry King and Tom Araya, with Brian Posehn also credited. These are the tracks in the official station credits.",
+      "tracks": [
+        {
+          "artist": "Anthrax",
+          "song": "I Am the Law"
+        },
+        {
+          "artist": "Black Sabbath",
+          "song": "I"
+        },
+        {
+          "artist": "Dio",
+          "song": "We Rock"
+        },
+        {
+          "artist": "Exodus",
+          "song": "Bonded by Blood"
+        },
+        {
+          "artist": "Flotsam & Jetsam",
+          "song": "Hammerhead"
+        },
+        {
+          "artist": "Iron Maiden",
+          "song": "The Trooper"
+        },
+        {
+          "artist": "Judas Priest",
+          "song": "Freewheel Burning"
+        },
+        {
+          "artist": "Mastodon",
+          "song": "Blood and Thunder"
+        },
+        {
+          "artist": "Megadeth",
+          "song": "Symphony of Destruction"
+        },
+        {
+          "artist": "Metallica",
+          "song": "Master of Puppets"
+        },
+        {
+          "artist": "Metallica",
+          "song": "Seek & Destroy"
+        },
+        {
+          "artist": "Overkill",
+          "song": "Rotten to the Core"
+        },
+        {
+          "artist": "Pantera",
+          "song": "I'm Broken"
+        },
+        {
+          "artist": "Sepultura",
+          "song": "Territory"
+        },
+        {
+          "artist": "Slayer",
+          "song": "Raining Blood"
+        },
+        {
+          "artist": "Slayer",
+          "song": "Payback"
+        },
+        {
+          "artist": "System Of A Down",
+          "song": "Sugar"
+        },
+        {
+          "artist": "Testament",
+          "song": "Over the Wall"
+        },
+        {
+          "artist": "TOOL",
+          "song": "Sober"
+        },
+        {
+          "artist": "Venom",
+          "song": "Countess Bathory"
+        },
+        {
+          "artist": "Voivod",
+          "song": "Panorama"
+        },
+        {
+          "artist": "Power Trip",
+          "song": "Mutual Death Warrant"
+        }
+      ]
+    },
+    {
+      "id": "emotion",
+      "title": "Emotion 98.3 · soft rock and ballads",
+      "note": "Hosted by Doug Stanhope as Doug Van Dyke. The full station playlist is included here, including its pop and soul crossovers.",
+      "tracks": [
+        {
+          "artist": "Ace",
+          "song": "How Long"
+        },
+        {
+          "artist": "Air Supply",
+          "song": "All Out of Love"
+        },
+        {
+          "artist": "Bruce Hornsby And The Range",
+          "song": "The Way It Is"
+        },
+        {
+          "artist": "Captain & Tennille",
+          "song": "But I Think It's A Dream"
+        },
+        {
+          "artist": "Carly Simon",
+          "song": "Coming Around Again"
+        },
+        {
+          "artist": "Cheap Trick",
+          "song": "The Flame"
+        },
+        {
+          "artist": "Chicago",
+          "song": "Hard to Say I'm Sorry / Get Away"
+        },
+        {
+          "artist": "Chris Isaak",
+          "song": "Lie To Me"
+        },
+        {
+          "artist": "Chris Rea",
+          "song": "Fool (If You Think It's Over)"
+        },
+        {
+          "artist": "Cliff Richard",
+          "song": "Devil Woman"
+        },
+        {
+          "artist": "Def Leppard",
+          "song": "Love Bites"
+        },
+        {
+          "artist": "Double",
+          "song": "The Captain of Her Heart"
+        },
+        {
+          "artist": "Dr. Hook",
+          "song": "When You're in Love With a Beautiful Woman"
+        },
+        {
+          "artist": "Elton John",
+          "song": "I Guess That's Why They Call It The Blues"
+        },
+        {
+          "artist": "Eric Carmen",
+          "song": "All By Myself"
+        },
+        {
+          "artist": "Exile",
+          "song": "Kiss You All Over"
+        },
+        {
+          "artist": "Gary Wright",
+          "song": "Dream Weaver"
+        },
+        {
+          "artist": "George Michael",
+          "song": "Father Figure"
+        },
+        {
+          "artist": "Genesis",
+          "song": "Tonight, Tonight, Tonight"
+        },
+        {
+          "artist": "Heart",
+          "song": "Alone"
+        },
+        {
+          "artist": "Juice Newton",
+          "song": "Angel Of The Morning"
+        },
+        {
+          "artist": "Lindsey Buckingham",
+          "song": "Trouble"
+        },
+        {
+          "artist": "Patti Labelle, Michael McDonald",
+          "song": "On My Own"
+        },
+        {
+          "artist": "Phil Collins",
+          "song": "In the Air Tonight"
+        },
+        {
+          "artist": "Phil Collins",
+          "song": "Against All Odds (Take a Look at Me Now)"
+        },
+        {
+          "artist": "Robert Plant",
+          "song": "In The Mood"
+        },
+        {
+          "artist": "Ronnie Milsap",
+          "song": "Stranger In My House"
+        },
+        {
+          "artist": "Roxette",
+          "song": "Listen to Your Heart"
+        },
+        {
+          "artist": "Russ Ballard",
+          "song": "Voices"
+        },
+        {
+          "artist": "Scritti Politti",
+          "song": "Overnite"
+        },
+        {
+          "artist": "Stevie Nicks, Tom Petty and the Heartbreakers",
+          "song": "Stop Draggin' My Heart Around"
+        },
+        {
+          "artist": "The Cars",
+          "song": "Drive"
+        },
+        {
+          "artist": "The Doobie Brothers",
+          "song": "It Keeps You Runnin'"
+        },
+        {
+          "artist": "The Walker Brothers",
+          "song": "No Regrets"
+        },
+        {
+          "artist": "Will to Power",
+          "song": "Baby, I Love Your Way / Freebird"
+        }
+      ]
+    },
+    {
+      "id": "vice-city",
+      "title": "Vice City FM · rock, new wave and pop-rock",
+      "note": "Rock and rock-adjacent selections from the wider 1980s pop station. Pure pop, funk and dance selections are outside this guide’s scope.",
+      "tracks": [
+        {
+          "artist": "A Flock Of Seagulls",
+          "song": "Wishing (If I Had a Photograph of You)"
+        },
+        {
+          "artist": "ABC",
+          "song": "Vanity Kills"
+        },
+        {
+          "artist": "Belouis Some",
+          "song": "Imagination"
+        },
+        {
+          "artist": "Big Audio Dynamite",
+          "song": "E = MC2"
+        },
+        {
+          "artist": "Billy Idol",
+          "song": "Flesh For Fantasy"
+        },
+        {
+          "artist": "Blancmange",
+          "song": "Don't Tell Me"
+        },
+        {
+          "artist": "Bryan Ferry",
+          "song": "Kiss and Tell"
+        },
+        {
+          "artist": "China Crisis",
+          "song": "Working With Fire And Steel"
+        },
+        {
+          "artist": "Culture Club",
+          "song": "Miss Me Blind"
+        },
+        {
+          "artist": "Daryl Hall & John Oates",
+          "song": "Crime Pays"
+        },
+        {
+          "artist": "Depeche Mode",
+          "song": "People Are People"
+        },
+        {
+          "artist": "Echo & the Bunnymen",
+          "song": "Lips Like Sugar"
+        },
+        {
+          "artist": "Elton John",
+          "song": "Kiss The Bride"
+        },
+        {
+          "artist": "Erasure",
+          "song": "Sometimes"
+        },
+        {
+          "artist": "Feargal Sharkey",
+          "song": "A Good Heart"
+        },
+        {
+          "artist": "Fine Young Cannibals",
+          "song": "Good Thing"
+        },
+        {
+          "artist": "Genesis",
+          "song": "Land Of Confusion"
+        },
+        {
+          "artist": "Howard Jones",
+          "song": "Things Can Only Get Better"
+        },
+        {
+          "artist": "Information Society",
+          "song": "What's On Your Mind (Pure Energy)"
+        },
+        {
+          "artist": "Joe Jackson",
+          "song": "Steppin' Out"
+        },
+        {
+          "artist": "Johnny Hates Jazz",
+          "song": "Shattered Dreams"
+        },
+        {
+          "artist": "Kenny Loggins",
+          "song": "I'm Alright"
+        },
+        {
+          "artist": "Living In A Box",
+          "song": "Blow the House Down"
+        },
+        {
+          "artist": "Matthew Wilder",
+          "song": "Break My Stride"
+        },
+        {
+          "artist": "Missing Persons",
+          "song": "Words"
+        },
+        {
+          "artist": "Naked Eyes",
+          "song": "When The Lights Go Out"
+        },
+        {
+          "artist": "New Order",
+          "song": "Thieves Like Us"
+        },
+        {
+          "artist": "Orchestral Manoeuvres in the Dark",
+          "song": "If You Leave"
+        },
+        {
+          "artist": "Prefab Sprout",
+          "song": "Cars and Girls"
+        },
+        {
+          "artist": "Propaganda",
+          "song": "Duel (Bittersweet) The Third Side Face To Face"
+        },
+        {
+          "artist": "Red 7",
+          "song": "Heartbeat"
+        },
+        {
+          "artist": "Robert Palmer",
+          "song": "I Didn't Mean To Turn You On"
+        },
+        {
+          "artist": "Rod Stewart",
+          "song": "Infatuation"
+        },
+        {
+          "artist": "Simple Minds",
+          "song": "Alive and Kicking"
+        },
+        {
+          "artist": "Simple Minds",
+          "song": "Love Song"
+        },
+        {
+          "artist": "Simply Red",
+          "song": "Money's Too Tight (To Mention)"
+        },
+        {
+          "artist": "Steve Winwood",
+          "song": "Valerie"
+        },
+        {
+          "artist": "Stevie Nicks",
+          "song": "Wild Heart"
+        },
+        {
+          "artist": "Sting",
+          "song": "If You Love Somebody Set Them Free"
+        },
+        {
+          "artist": "Talk Talk",
+          "song": "Talk Talk"
+        },
+        {
+          "artist": "Tears For Fears",
+          "song": "Head Over Heels"
+        },
+        {
+          "artist": "The Cars",
+          "song": "You Might Think"
+        },
+        {
+          "artist": "The Cure",
+          "song": "Just Like Heaven"
+        },
+        {
+          "artist": "The Motels",
+          "song": "Suddenly Last Summer"
+        },
+        {
+          "artist": "The Police",
+          "song": "Walking On The Moon"
+        },
+        {
+          "artist": "The Sisters Of Mercy",
+          "song": "Lucretia My Reflection"
+        },
+        {
+          "artist": "The Thompson Twins",
+          "song": "Love On Your Side"
+        },
+        {
+          "artist": "The The",
+          "song": "This Is the Day"
+        },
+        {
+          "artist": "Tina Turner",
+          "song": "Steamy Windows"
+        },
+        {
+          "artist": "Tina Turner",
+          "song": "We Don't Need Another Hero (Thunderdome)"
+        },
+        {
+          "artist": "Wang Chung",
+          "song": "Everybody Have Fun Tonight"
+        },
+        {
+          "artist": "Wax",
+          "song": "Bridge To Your Heart"
+        }
+      ]
+    },
+    {
+      "id": "stockyard",
+      "title": "Stockyard FM · alternative and electronic-rock crossovers",
+      "note": "Rock-related selections from the station hosted by The Dare and PinkPantheress. This is not the station’s entire dance/electronic playlist.",
+      "tracks": [
+        {
+          "artist": "!!!",
+          "song": "All U Writers"
+        },
+        {
+          "artist": "!!! ft. Meah Pace",
+          "song": "Off The Grid"
+        },
+        {
+          "artist": "Justice, Tame Impala",
+          "song": "One Night/All Night"
+        },
+        {
+          "artist": "LCD Soundsystem",
+          "song": "North American Scum"
+        },
+        {
+          "artist": "Måneskin",
+          "song": "I WANNA BE YOUR SLAVE"
+        },
+        {
+          "artist": "Nation of Language",
+          "song": "Across That Fine Line"
+        },
+        {
+          "artist": "Wet Leg, The Dare",
+          "song": "mangetout (The Dare Remix)"
+        },
+        {
+          "artist": "HEALTH",
+          "song": "NIGHTMARE"
+        },
+        {
+          "artist": "The Dare",
+          "song": "Interesting"
+        }
+      ]
+    },
+    {
+      "id": "elsewhere",
+      "title": "Elsewhere in the game · blues-rock and additional credits",
+      "note": "Keith Richards is credited on Gloriana Blues Radio. Tony Joe White and the Kentucky Headhunters appear on Back Country Radio. Rockstar also credits Korn, Linkin Park and War outside the main station lists; their placement is not specified here.",
+      "tracks": [
+        {
+          "artist": "Keith Richards",
+          "song": "Bright Lights, Big City"
+        },
+        {
+          "artist": "Tony Joe White",
+          "song": "Polk Salad Annie"
+        },
+        {
+          "artist": "The Kentucky Headhunters",
+          "song": "Walk Softly On This Heart Of Mine"
+        },
+        {
+          "artist": "War",
+          "song": "Low Rider"
+        },
+        {
+          "artist": "Korn",
+          "song": "Freak On a Leash"
+        },
+        {
+          "artist": "Linkin Park",
+          "song": "In The End"
+        }
+      ]
+    }
+  ],
+  "photo": {
+    "src": "/images/news/gta-vi-rock-songs-title.png",
+    "width": 1448,
+    "height": 1086,
+    "alt": "Grand Theft Auto mural with the headline Here Are All of the Rock Songs in Grand Theft Auto VI.",
+    "caption": "Original photograph supplied by Scott Johnson. Headline overlay created for The Analog Replay. The mural features Grand Theft Auto artwork."
+  },
+  "source": {
+    "name": "Rockstar Games · Official Grand Theft Auto VI music credits",
+    "url": "https://www.rockstargames.com/VI/credits"
+  },
+  "references": [
+    {
+      "name": "Rock Cellar · Launch-day rock radio coverage",
+      "url": "https://rockcellarmagazine.com/grand-theft-auto-vi-rock-songs-soundtrack-radio-stations/"
+    },
+    {
+      "name": "Loudwire · Early rock and metal song report",
+      "url": "https://loudwire.com/rock-metal-soundtrack-songs-grand-theft-auto-6/"
+    },
+    {
+      "name": "ThePRP · Additional metal tracks and launch-day updates",
+      "url": "https://www.theprp.com/2026/11/19/news/even-more-metal-songs-have-been-discovered-in-grand-theft-auto-vi/"
+    }
+  ]
+},
 {
   "id": "beatles-in-my-life-owen-cooper-video-2026",
   "artist": "The Beatles",

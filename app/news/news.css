@@ -76,3 +76,18 @@
 .news-references ul { padding-left: 18px; }
 .news-references a { color: var(--accent); text-decoration: underline; }
 @media (max-width: 500px) { .news-setlist table { font-size: 12px; } .news-setlist th, .news-setlist td { padding: 10px 4px; } .news-setlist th:first-child { width: 25px; } }
+
+.news-music-guide { margin-top: 38px; }
+.news-music-guide > h2 { font-size: 32px; }
+.news-music-guide p { color: var(--muted); font-size: 14px; line-height: 1.8; margin: 12px 0 20px; }
+.news-music-jumps { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 34px; }
+.news-music-jumps a { border: 1px solid var(--rule); padding: 10px 13px; font-size: 13px; color: var(--accent); }
+.news-music-jumps a:hover { border-color: var(--accent); }
+.news-music-section { margin: 38px 0; scroll-margin-top: 115px; }
+.news-music-section h3 { font: 400 26px/1.3 Georgia, serif; }
+.news-music-section table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 15px; line-height: 1.6; }
+.news-music-section th, .news-music-section td { padding: 12px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--rule); overflow-wrap: anywhere; }
+.news-music-section th { font-weight: 500; width: 42%; }
+.news-music-section thead { color: var(--accent); background: #ffffff05; }
+.news-music-source { display: inline-block; margin-top: 16px; font-size: 12px; color: var(--accent); }
+@media (max-width: 560px) { .news-music-section table { font-size: 13px; } .news-music-section th, .news-music-section td { padding: 10px 6px; } }

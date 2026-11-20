@@ -31,7 +31,7 @@ export default function NewsFeed({ items = news, standalone = false }: { items?:
                 allow="encrypted-media; fullscreen; picture-in-picture"
                 style={{ border: 0, borderRadius: 12 }}
               />
-            )}{item.summary.split("\n\n").map((paragraph, index) => <p className="news-summary" key={index}>{paragraph}</p>)}{item.setlist && <section className="news-setlist" aria-label="Song-by-song performance credits"><h3>{item.setlistHeading ?? "October 29 setlist · who performed each song"}</h3><p>{item.setlistNote}</p><table><thead><tr><th scope="col">#</th><th scope="col">Song</th><th scope="col">Featured performer</th></tr></thead><tbody>{item.setlist.map((entry, index) => <tr key={`${index}-${entry.song}`}><td>{index + 1}</td><th scope="row">{entry.song}</th><td>{entry.performer}</td></tr>)}</tbody></table></section>}{item.references && <section className="news-references" aria-label="Reporting and setlist sources"><h3>Sources and setlist checks</h3><ul>{item.references.map((ref) => <li key={ref.url}><a href={ref.url}>{ref.name} ↗</a></li>)}</ul></section>}{item.tourDates && <section className="news-tour" aria-label={`${item.artist} concert dates`}><h3>{item.tourHeading ?? "2027 concert dates"}</h3><ol>{item.tourDates.map((show) => <li key={`${show.date}-${show.city}`}><time dateTime={show.date}>{show.dateLabel ?? new Date(`${show.date}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" })}</time><div><strong>{show.city}</strong><span>{show.venue}</span></div></li>)}</ol><p>Announced dates as of {item.tourCheckedOn ?? "October 20, 2026"}. <a href={item.tourUrl}>Check the band’s tour page for updates and ticket information ↗</a></p></section>}{item.additionalPhotos?.map((photo) => <NewsPhoto key={photo.src} photo={photo} itemId={item.id} />)}{!standalone && <Link className="news-permalink" href={`/news/${item.id}`}>Open this story & share ↗</Link>}<a className="news-source" href={item.source.url}>Read the full story <span aria-hidden="true">↗</span><span className="news-source-name">{item.source.name}</span></a></div>
+            )}{item.summary.split("\n\n").map((paragraph, index) => <p className="news-summary" key={index}>{paragraph}</p>)}{item.musicSections && (standalone ? <MusicGuide sections={item.musicSections} /> : <Link className="news-permalink" href={`/news/${item.id}`}>See the full station-by-station song guide ↗</Link>)}{item.setlist && <section className="news-setlist" aria-label="Song-by-song performance credits"><h3>{item.setlistHeading ?? "October 29 setlist · who performed each song"}</h3><p>{item.setlistNote}</p><table><thead><tr><th scope="col">#</th><th scope="col">Song</th><th scope="col">Featured performer</th></tr></thead><tbody>{item.setlist.map((entry, index) => <tr key={`${index}-${entry.song}`}><td>{index + 1}</td><th scope="row">{entry.song}</th><td>{entry.performer}</td></tr>)}</tbody></table></section>}{item.references && <section className="news-references" aria-label="Reporting and setlist sources"><h3>Sources and setlist checks</h3><ul>{item.references.map((ref) => <li key={ref.url}><a href={ref.url}>{ref.name} ↗</a></li>)}</ul></section>}{item.tourDates && <section className="news-tour" aria-label={`${item.artist} concert dates`}><h3>{item.tourHeading ?? "2027 concert dates"}</h3><ol>{item.tourDates.map((show) => <li key={`${show.date}-${show.city}`}><time dateTime={show.date}>{show.dateLabel ?? new Date(`${show.date}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" })}</time><div><strong>{show.city}</strong><span>{show.venue}</span></div></li>)}</ol><p>Announced dates as of {item.tourCheckedOn ?? "October 20, 2026"}. <a href={item.tourUrl}>Check the band’s tour page for updates and ticket information ↗</a></p></section>}{item.additionalPhotos?.map((photo) => <NewsPhoto key={photo.src} photo={photo} itemId={item.id} />)}{!standalone && <Link className="news-permalink" href={`/news/${item.id}`}>Open this story & share ↗</Link>}<a className="news-source" href={item.source.url}>Read the full story <span aria-hidden="true">↗</span><span className="news-source-name">{item.source.name}</span></a></div>
           </article>
         ))}
       </div>
@@ -40,3 +40,27 @@ export default function NewsFeed({ items = news, standalone = false }: { items?:
 }
 
 function NewsPhoto({ photo, itemId }: { photo: NonNullable<NewsItem["photo"]>; itemId: string }) { return (<figure className="news-photo"><Image src={photo.src} width={photo.width} height={photo.height} alt={photo.alt} sizes="(max-width: 800px) 100vw, 700px" /><figcaption>{photo.caption} {photo.credit && <span>Photo: <a href={photo.url}>{photo.credit} {photo.url?.includes("commons.wikimedia.org") ? " / Wikimedia Commons" : ""}</a> · <a href={photo.licenseUrl}>{photo.license}</a>{itemId === "tommy-north-american-theatre-tour" ? " · Resized for display." : ""}</span>}</figcaption></figure>); }
+
+
+function MusicGuide({ sections }: { sections: NonNullable<NewsItem["musicSections"]> }) {
+  const count = sections.reduce((total, section) => total + section.tracks.length, 0);
+  return (
+    <section className="news-music-guide" aria-label="Rock soundtrack song guide">
+      <h2>The songs · by station</h2>
+      <p>{count} credited selections, including soft rock and new wave. Checked November 20, 2026.</p>
+      <nav className="news-music-jumps" aria-label="Jump to a radio station">
+        {sections.map((section) => <a key={section.id} href={`#music-${section.id}`}>{section.title.split(" · ")[0]} <span>({section.tracks.length})</span></a>)}
+      </nav>
+      {sections.map((section) => (
+        <section className="news-music-section" id={`music-${section.id}`} key={section.id} aria-labelledby={`music-heading-${section.id}`}>
+          <h3 id={`music-heading-${section.id}`}>{section.title}</h3>
+          <p>{section.note}</p>
+          <table><caption className="sr-only">{section.title} songs</caption><thead><tr><th scope="col">Artist</th><th scope="col">Song</th></tr></thead><tbody>
+            {section.tracks.map((track) => <tr key={`${track.artist}-${track.song}`}><th scope="row">{track.artist}</th><td>{track.song}</td></tr>)}
+          </tbody></table>
+          <a className="news-music-source" href="https://www.rockstargames.com/VI/credits">Source: Rockstar Games music credits ↗</a>
+        </section>
+      ))}
+    </section>
+  );
+}
