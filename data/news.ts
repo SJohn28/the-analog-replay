@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-19";
+export const newsReviewedOn = "2026-11-20";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -27,6 +27,36 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "beatles-in-my-life-owen-cooper-video-2026",
+  "artist": "The Beatles",
+  "category": "Screen & Stage",
+  "announcedOn": "2026-11-19",
+  "dateLabel": "Released",
+  "title": "The Beatles release new “In My Life” video starring Owen Cooper",
+  "summary": "The Beatles released a new official video for “In My Life” on November 19, 2026. Starring Adolescence actor Owen Cooper, the film was shot in Liverpool and directed by Jessica Swale and Irina Alexiu. It accompanies the newly mixed and expanded edition of Rubber Soul, the 1965 album that originally included the song.\n\nThe story begins with a meeting in a Liverpool park in the 1940s and follows a ukulele as it passes through a family. Filming locations include the River Mersey, Royal Albert Dock and Strawberry Field. Scenes recall Abbey Road’s cover and George Harrison’s fall in A Hard Day’s Night.\n\nThe video uses the 2026 mix of the existing recording. Giles Martin and Sam Okell mixed the Rubber Soul Special Edition, which includes stereo and Dolby Atmos versions, the original mono mix, session recordings and demos. The release also includes the contemporary single “Day Tripper” and “We Can Work It Out.”\n\nWatch the official video using the link below.",
+  "photo": {
+    "src": "/images/news/beatles-press-conference-1965.jpg",
+    "width": 585,
+    "height": 418,
+    "alt": "The Beatles seated together at a press conference in 1965.",
+    "caption": "The Beatles at Metropolitan Stadium in Minnesota on August 21, 1965, the year Rubber Soul was released. Archive photograph, not a still from the new video. File supplied unchanged; the Commons version was previously cropped and color-corrected.",
+    "credit": "Minnesota Historical Society",
+    "url": "https://commons.wikimedia.org/wiki/File:Beatles_press_conference_1965.jpg",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  "references": [
+    {
+      "name": "The Beatles · Watch the official “In My Life” video",
+      "url": "https://www.youtube.com/watch?v=KePvp0-hcn0"
+    }
+  ],
+  "source": {
+    "name": "The Beatles · November 19 official announcement",
+    "url": "https://www.thebeatles.com/my-life-official-music-video-starring-owen-cooper-out-now"
+  }
+},
 {
   "id": "bruce-dickinson-psychogod-album-2027",
   "artist": "Bruce Dickinson",
