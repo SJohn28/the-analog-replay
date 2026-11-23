@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-20";
+export const newsReviewedOn = "2026-11-23";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -28,6 +28,39 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "kiss-archival-box-sets-2027",
+  "artist": "KISS",
+  "category": "Releases",
+  "announcedOn": "2026-11-15",
+  "title": "KISS plan Love Gun and Alive II anniversary boxes, plus a 1977 Japan collection",
+  "summary": "KISS have three archival box sets planned for 2027: 50th-anniversary editions of Love Gun and Alive II, and a collection of the band’s first Japanese concerts. Universal Music Enterprises executive Jeff Fura discussed the projects during the November 15 “Future of KISS” panel at KISS Kruise: Land-Locked in Las Vegas.\n\nThe Japan project, presented as KISS Conquers Japan 1977, is intended to contain all four Budokan concerts on vinyl and CD, plus soundcheck selections and full-length video from two performances. Longtime KISS engineer Eddie Kramer is mixing the collection, according to reporting on the panel.\n\nFura said mixing and some mastering work had begun on the Love Gun anniversary edition. The Alive II set was still being assembled. Both albums were originally released in 1977, making 2027 their 50th anniversary.\n\nThe sets revisit the era of Gene Simmons, Paul Stanley, Ace Frehley and Peter Criss. Love Gun includes “Christine Sixteen,” “Shock Me” and its title track; Alive II combines live material with five studio recordings, including “Rocket Ride.”\n\nExact release dates, prices and final track lists have not been announced. The proposed contents remain plans rather than a finalized preorder listing.",
+  "photo": {
+    "src": "/images/news/kiss-gene-simmons-o2-2019.jpg",
+    "width": 1280,
+    "height": 720,
+    "alt": "Gene Simmons singing and playing bass in Kiss makeup and stage armor",
+    "caption": "Gene Simmons at London’s O2 on July 11, 2019. Archive photograph from the End of the Road tour; not the original 1977 lineup or artwork for the planned box sets. Resized Wikimedia thumbnail.",
+    "credit": "Raph_PH",
+    "url": "https://commons.wikimedia.org/wiki/File:KissO2110719_(48692469608).jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "source": {
+    "name": "Blabbermouth · November 22 panel reporting",
+    "url": "https://blabbermouth.net/news/kiss-to-release-50th-anniversary-love-gun-and-alive-ii-deluxe-box-sets-in-2027"
+  },
+  "references": [
+    {
+      "name": "Blabbermouth · November 16 Japan box-set report",
+      "url": "https://blabbermouth.net/news/kiss-to-release-conquers-japan-1977-live-box-set-in-2027"
+    },
+    {
+      "name": "Ultimate Classic Rock · November 15 panel coverage",
+      "url": "https://ultimateclassicrock.com/kiss-2027-box-sets/"
+    }
+  ]
+},
 {
   "id": "grand-theft-auto-vi-rock-songs-2026",
   "artist": "Grand Theft Auto VI",
