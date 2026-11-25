@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-23";
+export const newsReviewedOn = "2026-11-25";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -28,6 +28,145 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "andy-taylor-remembering-2026",
+  "artist": "Andy Taylor",
+  "category": "Remembering",
+  "announcedOn": "2026-11-25",
+  "dateLabel": "Announced",
+  "title": "Remembering Andy Taylor, Duran Duran and Power Station guitarist",
+  "summary": "Andy Taylor, the original Duran Duran guitarist who also co-founded the Power Station, has died at 65. His family and former bandmates announced the news on November 25, 2026. Their statement said he died peacefully at home, surrounded by family, on November 23 after a long battle with prostate cancer.\n\nTaylor played on the records that established Duran Duran internationally, including “Hungry Like the Wolf,” “Rio” and “The Reflex.” His guitar was part of the original lineup alongside Simon Le Bon, Nick Rhodes, John Taylor and Roger Taylor.\n\nWith bassist John Taylor, singer Robert Palmer and drummer Tony Thompson, he formed the Power Station. Their 1985 debut produced “Some Like It Hot” and a cover of T. Rex’s “Get It On (Bang a Gong).”\n\nHe left Duran Duran in 1986 and returned for the original lineup’s reunion from 2001 to 2006. He later contributed to the band’s 2023 album Danse Macabre.\n\nIn November 2022, Taylor publicly disclosed his stage-four metastatic prostate cancer diagnosis in a letter read during Duran Duran’s Rock & Roll Hall of Fame induction. He was unable to attend the ceremony.",
+  "photo": {
+    "src": "/images/news/andy-taylor-remembering-2026.png",
+    "width": 1134,
+    "height": 1310,
+    "alt": "Andy Taylor holding a guitar, with a tribute reading Andy Taylor of Duran Duran, 1961–2026.",
+    "caption": "Andy Taylor tribute image supplied by Scott Johnson."
+  },
+  "source": {
+    "name": "Duran Duran · Family and band statement",
+    "url": "https://duranduran.com/2026/andy-taylor-1961-2026/"
+  },
+  "references": [
+    {
+      "name": "Associated Press · November 25 obituary",
+      "url": "https://apnews.com/article/2334d13b2b0b0196488721611036d977"
+    },
+    {
+      "name": "Duran Duran · Andy Taylor’s 2022 letter",
+      "url": "https://duranduran.com/2022/a-note-from-andy-taylor/"
+    }
+  ]
+},
+{
+  "id": "u2-north-america-greatest-show-2027",
+  "artist": "U2",
+  "category": "Tours",
+  "announcedOn": "2026-11-24",
+  "title": "U2 announce 15 North American stadium shows for 2027",
+  "summary": "U2 have announced 15 stadium concerts across the United States and Canada for 2027. The North American leg of Carnaval De Luz presents: The Greatest Show On Earth World Tour opens August 13 at Miami’s Hard Rock Stadium and closes October 18 at Vancouver’s BC Place.\n\nThe November 24 announcement includes two nights each at MetLife Stadium in East Rutherford, Rogers Stadium in Toronto and SoFi Stadium in Los Angeles. Stephen Wilson Jr. supports the August shows through September 14; The War on Drugs joins from September 27 through the end of the run.\n\nU2.com subscriber presales begin November 30 at 10 a.m. Visa presales follow December 2, and the artist presale begins December 3 at 10 a.m. local time. Fans must register for the artist presale by November 29 at 9 p.m. Eastern. General sales begin December 4 at 10 a.m.; check the official ticket links for local arrangements.\n\nThe tour follows the November 13 release of Carnaval De Luz, U2’s first album of new material in nine years. These North American shows follow previously announced Latin American, European and UK dates.",
+  "tourDates": [
+    {
+      "date": "2027-08-13",
+      "city": "Miami, FL",
+      "venue": "Hard Rock Stadium"
+    },
+    {
+      "date": "2027-08-17",
+      "city": "Atlanta, GA",
+      "venue": "Mercedes-Benz Stadium"
+    },
+    {
+      "date": "2027-08-20",
+      "city": "Baltimore, MD",
+      "venue": "M&T Bank Stadium"
+    },
+    {
+      "date": "2027-08-26",
+      "city": "East Rutherford, NJ",
+      "venue": "MetLife Stadium"
+    },
+    {
+      "date": "2027-08-28",
+      "city": "East Rutherford, NJ",
+      "venue": "MetLife Stadium"
+    },
+    {
+      "date": "2027-09-03",
+      "city": "Chicago, IL",
+      "venue": "Soldier Field"
+    },
+    {
+      "date": "2027-09-07",
+      "city": "Toronto, ON",
+      "venue": "Rogers Stadium"
+    },
+    {
+      "date": "2027-09-09",
+      "city": "Toronto, ON",
+      "venue": "Rogers Stadium"
+    },
+    {
+      "date": "2027-09-14",
+      "city": "Foxborough, MA",
+      "venue": "Gillette Stadium"
+    },
+    {
+      "date": "2027-09-27",
+      "city": "Arlington, TX",
+      "venue": "AT&T Stadium"
+    },
+    {
+      "date": "2027-10-01",
+      "city": "Los Angeles, CA",
+      "venue": "SoFi Stadium"
+    },
+    {
+      "date": "2027-10-02",
+      "city": "Los Angeles, CA",
+      "venue": "SoFi Stadium"
+    },
+    {
+      "date": "2027-10-09",
+      "city": "Las Vegas, NV",
+      "venue": "Allegiant Stadium"
+    },
+    {
+      "date": "2027-10-15",
+      "city": "Santa Clara, CA",
+      "venue": "Levi’s Stadium"
+    },
+    {
+      "date": "2027-10-18",
+      "city": "Vancouver, BC",
+      "venue": "BC Place"
+    }
+  ],
+  "tourHeading": "2027 North American stadium dates",
+  "tourCheckedOn": "November 25, 2026",
+  "tourUrl": "https://www.u2.com/pages/tours",
+  "photo": {
+    "src": "/images/news/u2-brussels-2017.jpg",
+    "width": 1280,
+    "height": 673,
+    "alt": "Larry Mullen Jr., The Edge, Bono and Adam Clayton performing together onstage",
+    "caption": "U2 on the Joshua Tree tour in Brussels on August 1, 2017. Archive photograph resized for display.",
+    "credit": "Remy",
+    "url": "https://commons.wikimedia.org/wiki/File:U2_on_Joshua_Tree_Tour_2017_Brussels_8-1-17.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "source": {
+    "name": "U2 · November 24 tour announcement",
+    "url": "https://www.u2.com/blogs/news/the-greatest-show-on-earth-set-for-north-america"
+  },
+  "references": [
+    {
+      "name": "Live Nation · Dates, support acts and ticket information",
+      "url": "https://news.livenationentertainment.com/news/u2-announces-north-american-stadium-dates-for-carnaval-de-luz-presents-the-greatest-show-on-earth-world-tour-2027"
+    }
+  ]
+},
 {
   "id": "kiss-archival-box-sets-2027",
   "artist": "KISS",
