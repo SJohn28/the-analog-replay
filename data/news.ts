@@ -1,4 +1,4 @@
-export const newsReviewedOn = "2026-11-25";
+export const newsReviewedOn = "2026-11-27";
 
 export type NewsCategory = "Tours" | "Releases" | "Screen & Stage" | "Remembering";
 export type NewsItem = {
@@ -28,6 +28,64 @@ export type NewsItem = {
 // Original editorial summaries. Dates refer to the linked announcement,
 // not the date of the performance or release. Keep newest announcements first.
 export const news: NewsItem[] = [
+{
+  "id": "peter-gabriel-oi-release-2026",
+  "artist": "Peter Gabriel",
+  "category": "Releases",
+  "announcedOn": "2026-11-27",
+  "dateLabel": "Released",
+  "title": "Peter Gabriel releases o\\i, completing his two-album project",
+  "summary": "Peter Gabriel released o\\i on November 27, 2026. The 13-song album follows 2023’s i/o and completes a 25-track project spanning the two records. Gabriel introduced the new material through releases timed to the full moon during 2026.\n\nThe album is available digitally, on vinyl and as a four-CD edition. Buyers can choose separate double-vinyl editions of the Bright-Side and Dark-Side mixes. The four-CD set includes both versions, with each mix spread across two discs, and a 32-page booklet.\n\nThe songs include “Been Undone,” “Put the Bucket Down,” “Who Are We Talking To?” and “Yes, It Will Go.” The latter features vocals from Gabriel’s daughter Melanie and was released on November 24, shortly before the complete album.\n\nThe companion albums address nature, time, technology and humanity’s place in the world. Gabriel describes o\\i as his longest album. Its release comes three years after i/o.\n\nThe release-day announcement also clarifies that the Dolby Atmos In-Side mixes are still being finished. Their release plans will be announced separately.",
+  "photo": {
+    "src": "/images/news/peter-gabriel-2023.jpg",
+    "width": 1280,
+    "height": 558,
+    "alt": "Peter Gabriel performing with a headset microphone during his 2023 i/o tour",
+    "caption": "Peter Gabriel on the i/o tour, June 19, 2023. Archive photo; black space added at the sides by Sebastián Arena. Resized Wikimedia version.",
+    "credit": "Raph_PH; adaptation by Sebastián Arena",
+    "url": "https://commons.wikimedia.org/wiki/File:Peter_Gabriel_en_2023_-_modified.jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "source": {
+    "name": "Peter Gabriel · November 27 release announcement",
+    "url": "https://petergabriel.com/news/oi-is-released-today/"
+  },
+  "references": [
+    {
+      "name": "Peter Gabriel · Album details",
+      "url": "https://petergabriel.com/release/oi/"
+    },
+    {
+      "name": "Peter Gabriel · Yes, It Will Go",
+      "url": "https://petergabriel.com/release/yes-it-will-go/"
+    }
+  ]
+},
+{
+  "id": "doors-debut-60th-anniversary-2027",
+  "artist": "The Doors",
+  "category": "Releases",
+  "announcedOn": "2026-11-26",
+  "dateLabel": "Reported",
+  "title": "The Doors mark debut album’s 60th anniversary with 1966 session recordings",
+  "summary": "The Doors’ self-titled debut will receive a 60th-anniversary edition on January 8, 2027. Rhino’s two-CD and digital collection pairs the 1967 album with working tapes from its 1966 recording sessions.\n\nThe bonus recordings follow the development of “Moonlight Drive,” “Indian Summer” and “I Looked At You” through complete takes, false starts and unfinished performances. The “I Looked At You” recordings are previously unreleased; the other two songs’ session recordings are appearing on CD for the first time.\n\nOther anniversary formats include a picture disc, a limited Rhino High Fidelity reel-to-reel edition and a 10-inch “Light My Fire” single. That single pairs the mono single edit, played at 78 rpm, with the mono album version at 45 rpm.\n\nJim Morrison, Ray Manzarek, Robby Krieger and John Densmore recorded the debut at Hollywood’s Sunset Sound with producer Paul Rothchild and engineer Bruce Botnick. Released in January 1967, it reached No. 2 on Billboard’s album chart. “Light My Fire” spent three weeks at No. 1.\n\nRhino also schedules an upgraded “Break On Through” video for January 1 and a new “Light My Fire” lyric video for January 4.",
+  "photo": {
+    "src": "/images/news/doors-1966.jpg",
+    "width": 1715,
+    "height": 1394,
+    "alt": "The Doors in a black-and-white publicity photograph: Jim Morrison, John Densmore, Robby Krieger and Ray Manzarek",
+    "caption": "The Doors in a November 1966 publicity photograph from their debut-album era.",
+    "credit": "Joel Brodsky / APA",
+    "url": "https://commons.wikimedia.org/wiki/File:The_Doors_1968.JPG",
+    "license": "Public domain in the U.S.",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:The_Doors_1968.JPG#Licensing"
+  },
+  "source": {
+    "name": "Rhino · 60th-anniversary release details",
+    "url": "https://media.rhino.com/press-release/doors-60th-anniversary-edition"
+  }
+},
 {
   "id": "andy-taylor-remembering-2026",
   "artist": "Andy Taylor",
